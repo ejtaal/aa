@@ -10,3 +10,22 @@ I could really use your help with the following:
 - Adding new dictionaries; I have been asked to add a popular AR -> French dictionary to the Almanac which seems like a great idea. The only help I would need is to be provided with a spreadsheet listing the page headers for each page. I can then prepare the scanned images from the dictionary itself for inclusion. I would like to add Misbah ul Lughat as I'm told this is very popular with Urdu speakers.
 
 Contact me at ejtaal@gmail.com if you could help with any of the above.
+
+How to use
+==========
+Click on the search button and enter the arabic root you would like to look up. You may use roman (english) letters incase you don't have an arabic keyboard. The letters will be replaced according to the following table:
+
+...
+
+TODO
+====
+- Make a more user friendly settings area, which let's you easily select which books to display and in which order.
+- Add more dictionaries...
+- Improve roman -> arabic letters substitution (make it more like yamli)
+
+Acknowledgements
+================
+
+This project would not have been possible without the initial help of certain people, namely:
+
+...
