@@ -48,6 +48,7 @@ j -> "ج"        l -> "ل"
 r -> "ر"        n -> "ن"
 E, e or 3 -> "ع"   w -> "و"
 f -> "ف"        y -> "ي"
+v -> "ث"
 </pre>
 
 There are also some keyboard shortcuts you can use:
