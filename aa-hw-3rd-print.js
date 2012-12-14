@@ -6,7 +6,7 @@ function hw_get_img_url ( page) {
 	var prefixed_page = p;
 	if ( p < 10) prefixed_page = "00" + p;
 	else if ( p < 100) prefixed_page = "0" + p;
-	return "hw/" + Math.floor(page/100) + "/hw-p" + prefixed_page + ".png";
+	return "hw3/" + Math.floor(page/100) + "/hw-p" + prefixed_page + ".png";
 }
 
 function hw_getchap( page) {
