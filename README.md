@@ -2,17 +2,15 @@ Please read below for the latest news, planned updates and more background infor
 
 Request for help!
 =================
-I could really use your help with the following:
 
-- Updating the index of Hans Wehr (3rd or 4th print); Currently this website uses the 3rd print and you may have noticed a search for a root in Hans Wehr is sometimes off by a page. This is due to the fact that the index uses the page headers which have been assigned in a non-conventional way, namely listing the first root for pages on the left hand side and listing the last root on the page for pages on the right.
+I hope to include/update the following dictionaries soon:
 
-- 	Adding 4 new dictionaries; I have been asked to add Kazimirski (a popular Arabic -> French dictionary) to the Almanac which seems like a great idea. I'd also like to add the popular Misbah ul Lughat for the benefit of Urdu speakers.
-	
-	On top of that I've been pointed to the 4th print of Hans Wehr being available as a pdf so I would like to include this as well, but can only do so with help in preparing the index. Additionally I've been informed about another good dictionary, namely "The student's Arabic-English dictionary", by Steingass which I might want to look into adding as well.
+- 4th print of Hans Wehr
+- Kazimirski, a popular Arabic -> French dictionary
+- Misbah ul Lughat for the benefit of Urdu speakers
+- "The student's Arabic-English dictionary", by Steingass, similar to Hans Wehr but more useful for classical arabic words.
 
-How could you help with these indexes?
-
-I would need a list of the last root used on every page of the book. You could provide in any way you wish, a spreadsheet probably being the easiest. If a number of people can contribute we can share the workload.
+For all these books I would need an index of page headers for it to be included in this website. How could you help? I would need a list of the last root used on every page of the book. You could provide this in any way you wish, a spreadsheet probably being the easiest. If a number of people can contribute we can share the workload.
 
 Contact me at ejtaal@gmail.com if you could help with any of the above.
 
@@ -56,6 +54,7 @@ There are also some keyboard shortcuts you can use:
 <pre>
 search (find): f
 switch between column and full page view: v
+The following keys only apply for the book you're currently looking at:
 back 1 page: left arrow, d or z
 forward 1 page: right arrow, g or x
 </pre>
@@ -65,8 +64,8 @@ Starting points:
 
 Here are some links to get you started:
 
-- [Prefaces](aa.html#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE)
-- [Morphology](aa.html#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
+- [Prefaces](./#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE)
+- [Morphology](./#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
 - [Abbreviations](./#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE)
 - [First page of content](./#HW=19,LL=1_38,LS=3,HA=21)
 - [Lane's Lexicon Editor's preface and memoir (about 40 pages)](./#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE)
@@ -74,7 +73,7 @@ Here are some links to get you started:
 Latest news
 ===========
 
-- Version 2.0 beta - _/_/2013 (inshallah)
+- (Planned) Version 2.0 beta - _/_/2013 (inshallah)
 
 	Inclusion of the following books:
 
@@ -88,7 +87,9 @@ Latest news
 	- Toggle for making pages fit to browser width
 
 - version 1.8 - 14/12/2012
-	- Improved index for Hans Wehr (3rd print), about 60% done.
+	- Improved index for Hans Wehr (3rd print), about 60% done, not sure if it will be completed as looking into using the 4th print
+	- Site is now hosted at Memset.com, hopefully this will end outages :)
+
 - Version 1.7 - 19/7/2012
 	- Updated images of Hava book to scans that Ahmad Sheikh had prepared.
 	- Tweak HW lookup as it often goes to the page before a root
