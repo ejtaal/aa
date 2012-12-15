@@ -73,6 +73,7 @@ Here are some links to get you started:
 Latest news
 ===========
 
+<!--
 - (Planned) Version 2.0 beta - _/_/2013 (inshallah)
 
 	Inclusion of the following books:
@@ -85,10 +86,10 @@ Latest news
 	
 	- Improved configuration settings
 	- Toggle for making pages fit to browser width
-
+-->
 - version 1.8 - 14/12/2012
 	- Improved index for Hans Wehr (3rd print), about 60% done, not sure if it will be completed as looking into using the 4th print
-	- Site is now hosted at Memset.com, hopefully this will end outages :)
+	- Site is now hosted at Memset.com, hopefully this will allow for faster and more stable server  :)
 
 - Version 1.7 - 19/7/2012
 	- Updated images of Hava book to scans that Ahmad Sheikh had prepared.
@@ -106,7 +107,7 @@ Latest news
 - Version 1.3 - 4/11/2011
 	- added Hava dictionary, thanks to a fan of this website for providing some missing pages :)
 	- fixed window title to be according to order and visibility of the books
-- provide a downloadable version. If you can provide mirroring for a 615MB files, then
+	- provide a downloadable version. If you can provide mirroring for a 615MB files, then
 please drop me a line!
 
 - Version 1.2 - 3/11/2011
@@ -159,13 +160,14 @@ phone. You can always change the view manually with the 'View' button.
 <p>Warning! With all books visible a single page may take up to 500k of
 data! Watch your internet usage allowance!
 
-Download for offline use!
-=========================
+Download for offline use
+========================
 
 You can now download the entire website and install it for instance on your phone's SD card
 or your desktop PC for super fast access.<br>
 Download link: 
-- Main download site @ archive.org: [Arabic_Almanac.zip](http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac.zip)
+
+- **Main download site @ archive.org:** [Arabic_Almanac.zip](http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac.zip)
 - <small>Secondary backup site: [here](../Arabic_Almanac.zip)</small>
 
 The size is about 615 MB. The zip file contains a folder named "aa" which you should place somewhere on your
