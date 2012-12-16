@@ -157,6 +157,18 @@ image = 663x1064
 <a href='../chapter_2.html'><div class='button'>&uarr; Chapter index</div></a><br>
 */
 </style>
+<!-- Google Analytics stuff: -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34010688-1']);
+_gaq.push(['_setDomainName', 'ejtaal.net']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 <meta name='viewport' content='width=device-width'/>  
 </head>
 <body>
@@ -199,6 +211,17 @@ image = 663x1064
 </center>
 </div>
 </a>
+<div id='settings'>
+Book display order:<br>
+<ol>
+	<li> <input type=select>
+		<select id=book1>
+			<option>1
+			<option>2
+			<option>3
+			<option>4
+		</select>
+</div>
 -->
 <center>
 <small>
@@ -212,19 +235,16 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 
 <center>
 
-<!--
+
+<a href='javascript:testing4()'><div class='button'>Testing</div></a>
+Choose the order in which you want the available books displayed:<br>
 <div id='settings'>
-Book display order:<br>
-<ul>
-	<li> <input type=select>
-		<select id=book1>
-			<option>1
-			<option>2
-			<option>3
-			<option>4
-		</select>
+<select id=setbook1></select><br>
+<select id=setbook2></select><br>
+<select id=setbook3></select><br>
+<select id=setbook4></select><br>
 </div>
--->
+<a href='javascript:testing5()'><div class='button'>Save</div></a>
 
 <div id='all_books'>
 
@@ -239,8 +259,9 @@ Book display order:<br>
 <div class='book_toggle' onclick="javascript: hide_show( 'hanswehr', 'hw_toggle');"> Hide Hans Wehr _ </div>
 	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
 <div class='book_toggle' id='hw_toggle' onclick="javascript: hideme_show( this, 'hanswehr');"> Show Hans Wehr [_] </div>
+	<td> <a href="javascript:move_up( 'book_hw');"><div class='button'>^</div></a> </td>
 -->
-<div id="book_hw">
+<div id='HW'>
 <div class='book_toggle' id='hw_toggle' onclick="javascript:hide_book('HW', false);"> Show Hans Wehr [_] </div>
 <div id='hanswehr'>
 <table class='navtable'>
@@ -248,7 +269,6 @@ Book display order:<br>
 	<td> <a href='javascript:shift_page("HW", -1)' id='hw_a_prev2'><div class='button'>&larr;</div></a> </td>
 	<td> <a href='javascript:hw_showindex()'><div class='button'>HW</div></a> </td>
 	<td> <a href="javascript:hide_book( 'HW', true);"><div class='button'>hide</div></a> </td>
-	<td> <a href="javascript:move_up( 'book_hw');"><div class='button'>^</div></a> </td>
 	<td> <a href='javascript:shift_page("HW", 1)' id='hw_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
@@ -282,8 +302,9 @@ Book display order:<br>
 <!--
 	Content for Lane's Lexicon
 <div class='book_toggle' onclick="javascript: hide_show( 'laneslexicon', 'll_toggle');"> Hide Lane's Lexicon _ </div>
+	<td> <a href="javascript:move_up( 'book_ll');"><div class='button'>^</div></a> </td>
 -->
-<div id='book_ll'>
+<div id='LL'>
 <div class='book_toggle' id='ll_toggle' onclick="javascript:hide_book('LL', false);"> Show Lane's Lexicon [_] </div>
 <div id='laneslexicon'>
 <table class='navtable'>
@@ -291,7 +312,6 @@ Book display order:<br>
 	<td> <a href='javascript:shift_page("LL", -1)' id='ll_a_prev2'><div class='button'>&larr;</div></a> </td>
 	<td> <a href='javascript:ll_showindex()'><div class='button'>LL</div></a> </td>
 	<td> <a href="javascript:hide_book('LL', true);"><div class='button'>hide</div></a> </td>
-	<td> <a href="javascript:move_up( 'book_ll');"><div class='button'>^</div></a> </td>
 	<td> <a href='javascript:shift_page("LL", 1)' id='ll_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
@@ -330,8 +350,9 @@ Book display order:<br>
 <!--
 	Content for Supplement of Lane's Lexicon
 <div class='book_toggle' onclick="javascript: hide_show( 'laneslexiconsup', 'ls_toggle');"> Hide Supplement _ </div>
+	<td> <a href="javascript:move_up( 'book_ls');"><div class='button'>^</div></a> </td>
 -->
-<div id='book_ls'>
+<div id='LS'>
 <div class='book_toggle' id='ls_toggle' onclick="javascript:hide_book('LS', false);">
 <span id='ls_search_status'></span>
 Show Supplement [_]
@@ -342,7 +363,6 @@ Show Supplement [_]
 	<td> <a href='javascript:shift_page("LS", -1)' id='ls_a_prev2'><div class='button'>&larr;</div></a> </td>
 	<td> <a href='javascript:ls_showindex()'><div class='button'>LS</div></a> </td>
 	<td> <a href="javascript:hide_book('LS', true);"><div class='button'>hide</div></a> </td>
-	<td> <a href="javascript:move_up( 'book_ls');"><div class='button'>^</div></a> </td>
 	<td> <a href='javascript:shift_page("LS", 1)' id='ls_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
@@ -383,8 +403,9 @@ Show Supplement [_]
 <div class='book_toggle' onclick="javascript: hide_show( 'hanswehr', 'hw_toggle');"> Hide Hans Wehr _ </div>
 	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
 <div class='book_toggle' id='hw_toggle' onclick="javascript: hideme_show( this, 'hanswehr');"> Show Hans Wehr [_] </div>
+	<td> <a href="javascript:move_up( 'book_ha');"><div class='button'>^</div></a> </td>
 -->
-<div id="book_ha">
+<div id='HA'>
 <div class='book_toggle' id='ha_toggle' onclick="javascript:hide_book('HA', false);"> Show Hava [_] </div>
 <div id='hava'>
 <table class='navtable'>
@@ -392,7 +413,6 @@ Show Supplement [_]
 	<td> <a href='javascript:shift_page("HA", -1)' id='ha_a_prev2'><div class='button'>&larr;</div></a> </td>
 	<td> <a href='javascript:ha_showindex()'><div class='button'>HA</div></a> </td>
 	<td> <a href="javascript:hide_book( 'HA', true);"><div class='button'>hide</div></a> </td>
-	<td> <a href="javascript:move_up( 'book_ha');"><div class='button'>^</div></a> </td>
 	<td> <a href='javascript:shift_page("HA", 1)' id='ha_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
@@ -422,6 +442,16 @@ Show Supplement [_]
 
 <hr>
 <hr>
+</div>
+
+<div id='SG'>
+SG
+</div>
+<div id='ML'>
+ML
+</div>
+<div id='KA'>
+KA
 </div>
 
 <!-- end of div all_books -->
@@ -460,11 +490,11 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="jslib/jquery.ba-hashchange.min.js"></script>
 <script type="text/javascript" src="jslib/shortcut.js"></script>
 <!-- Data for Hans Wehr -->
-<script type="text/javascript" src="aa-hw3-index.js"></script>
+<script type="text/javascript" src="aa-hw3-index.js?000"></script>
 <!-- Data for Lane's Lexicon &  Supplement -->
-<script type="text/javascript" src="aa-ll-index.js?abc"></script>
+<script type="text/javascript" src="aa-ll-index.js?000"></script>
 <!-- Data for Hava -->
-<script type="text/javascript" src="aa-ha-index.js?abc"></script>
+<script type="text/javascript" src="aa-ha-index.js?000"></script>
 <!--
 <script type="text/javascript" src="aa-ll-data.js"></script>
 <script type="text/javascript" src="aa-ls-data.js"></script>
@@ -472,12 +502,14 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script>
 
 // Some global vars that we need:
-var version = "1.8";
+var version = "2.0";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw_offset = 19;
 var ha_offset = 21;
 //var total_pages = 1129;
+var initial_book_order = "KA,HA,LL,LS,HW";
+var aa_book_order = "KA,HA,LL,LS,HW";
 var starting_hash = "#HW=19,LL=1_38,LS=3,HA=21";
 var cur_hw_page = 19, req_hw_page = 19;
 var cur_ll_page = 38, req_ll_page = 38;
@@ -891,20 +923,12 @@ function first_page_load() {
 	toggle_view();
 	
 	// first sort out the book order
-	var aa_book_order = getCookie('aa_book_order');
-	if ( ! isUndefined(aa_book_order) && aa_book_order != "") {
-		var book_array = aa_book_order.split(',');
-		for ( i = book_array.length - 1; i >= 0; i--) {
-			//debug( book_array[i]);
-			if ( book_array[i] != "" ) {
-				//debug( book_array[i]);
-				var content = document.getElementById(book_array[i]);
-				var parent = content.parentNode;
-				parent.insertBefore(content, parent.firstChild);
-				//debug( book_array[i]);
-			}
-		}
-	}
+	var saved_book_order = getCookie('aa_book_order');
+	if ( isUndefined(saved_book_order) || saved_book_order != "")
+		aa_book_order = initial_book_order;
+	else
+		aa_book_order = saved_book_order;
+	set_book_order();
 
 	
 	// Set default hash value, and show About if this appears to be the first visit
@@ -921,6 +945,45 @@ function first_page_load() {
 	} else parse_hash();
 }
 
+function set_book_order() {
+	var book_array = aa_book_order.split(',');
+	for ( i = book_array.length - 1; i >= 0; i--) {
+		//debug( book_array[i]);
+		if ( book_array[i] != "" ) {
+			//debug( book_array[i]);
+			var content = document.getElementById(book_array[i]);
+			var parent = content.parentNode;
+			parent.insertBefore(content, parent.firstChild);
+			//debug( book_array[i]);
+		}
+	}
+}
+
+function testing4() {
+	var itemval = '<option value="HW">Hans Wehr (3rd print)</option>'
+		+ '<option value="HW4">Hans Wehr (4th print)</option>'
+		+ '<option value="LL">Lane\'s Lexicon</option>'
+		+ '<option value="LS">Lane\'s Lexicon supplement</option>'
+		+ '<option value="HA">Hava</option>'
+		+ '<option value="SG">Steingass</option>';
+	$("#setbook1").append(itemval);
+	$("#setbook2").append(itemval);
+	$("#setbook3").append(itemval);
+	$("#setbook4").append(itemval);
+	var book_array = aa_book_order.split(',');
+	for ( i = book_array.length - 1; i >= 0; i--) {
+		$("#setbook"+i).val(book_array[i]);
+	}
+}
+
+function testing5() {
+	var new_book_order = "";
+	for ( i = 1; i <= 3; i++ ) new_book_order += $("#setbook"+i).val() + ',';
+	new_book_order += $("#setbook4").val();
+	debug(new_book_order);
+	aa_book_order = new_book_order;
+	set_book_order();
+}
 
 function testing123() {
 	var i = 1;
