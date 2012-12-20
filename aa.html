@@ -444,6 +444,8 @@ Show Supplement [_]
 <hr>
 </div>
 
+<!--
+
 <div id='SG'>
 SG
 </div>
@@ -453,6 +455,12 @@ ML
 <div id='KA'>
 KA
 </div>
+
+<div id='HW4'>
+HW4
+</div>
+
+-->
 
 <!-- end of div all_books -->
 </div>
@@ -508,8 +516,8 @@ var toggle = 1;
 var hw_offset = 19;
 var ha_offset = 21;
 //var total_pages = 1129;
-var initial_book_order = "KA,HA,LL,LS,HW";
-var aa_book_order = "KA,HA,LL,LS,HW";
+var initial_book_order = "HA,LL,LS,HW";
+var aa_book_order = "HA,LL,LS,HW";
 var starting_hash = "#HW=19,LL=1_38,LS=3,HA=21";
 var cur_hw_page = 19, req_hw_page = 19;
 var cur_ll_page = 38, req_ll_page = 38;
@@ -950,22 +958,25 @@ function set_book_order() {
 	for ( i = book_array.length - 1; i >= 0; i--) {
 		//debug( book_array[i]);
 		if ( book_array[i] != "" ) {
-			//debug( book_array[i]);
+			debug( book_array[i]);
 			var content = document.getElementById(book_array[i]);
 			var parent = content.parentNode;
 			parent.insertBefore(content, parent.firstChild);
 			//debug( book_array[i]);
 		}
 	}
+	setCookie('aa_book_order', aa_book_order, 365);
 }
 
 function testing4() {
 	var itemval = '<option value="HW">Hans Wehr (3rd print)</option>'
-		+ '<option value="HW4">Hans Wehr (4th print)</option>'
 		+ '<option value="LL">Lane\'s Lexicon</option>'
 		+ '<option value="LS">Lane\'s Lexicon supplement</option>'
-		+ '<option value="HA">Hava</option>'
-		+ '<option value="SG">Steingass</option>';
+		+ '<option value="HA">Hava</option>';
+	/*
+		+ '<option value="HW4">Hans Wehr (4th print)</option>'
+		+ '<option value="SG">Steingass</option>'
+	*/
 	$("#setbook1").append(itemval);
 	$("#setbook2").append(itemval);
 	$("#setbook3").append(itemval);
