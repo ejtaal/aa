@@ -932,10 +932,13 @@ function first_page_load() {
 	
 	// first sort out the book order
 	var saved_book_order = getCookie('aa_book_order');
-	if ( isUndefined(saved_book_order) || saved_book_order != "")
+	//alert('test');
+	debug('aa_book_order in cookie = ' + saved_book_order);
+	if ( isUndefined(saved_book_order) && saved_book_order != "")
 		aa_book_order = initial_book_order;
 	else
 		aa_book_order = saved_book_order;
+	debug('using aa_book_order: ' + aa_book_order);
 	set_book_order();
 
 	

@@ -5,9 +5,19 @@ Request for help!
 
 I hope to include/update the following dictionaries soon:
 
-- 4th print of Hans Wehr
-- Kazimirski, a popular Arabic -> French dictionary
-- Misbah ul Lughat for the benefit of Urdu speakers
+- 4th print of Hans Wehr 
+- Kazimirski, a popular Arabic -> French dictionary ( [Vol. 1](http://archive.org/details/dictionnairearab01bibeuoft), [Vol. 2](http://archive.org/details/dictionnairearab02bibeuoft) )
+- Misbah ul Lughat for the benefit of Urdu speakers (The print available at 
+
+http://archive.org/details/MisbahUlLughat_part1
+http://archive.org/details/MisbahUlLughat_part22
+http://archive.org/details/MisbahUlLughat-com
+http://archive.org/details/misbah-ul-lughat
+
+
+ 
+
+however is unfortunately not usable, anyone know of a better copy?)
 - "The student's Arabic-English dictionary", by Steingass, similar to Hans Wehr but more useful for classical arabic words.
 
 For all these books I would need an index of page headers for it to be included in this website. How could you help? I would need a list of the last root used on every page of the book. You could provide this in any way you wish, a spreadsheet probably being the easiest. If a number of people can contribute we can share the workload.
