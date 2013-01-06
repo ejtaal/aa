@@ -114,7 +114,7 @@ image = 663x1064
 	overflow: hidden;
 }
 
-#hw_toggle,#ll_toggle,#ls_toggle,#ha_toggle { display: none; }
+#hw_toggle,#ll_toggle,#ls_toggle,#ha_toggle,#sg_toggle { display: none; }
 
 #hw_col1,#hw_col2,#ha_col1,#ha_col2 {
 	position: relative;
@@ -145,14 +145,14 @@ image = 663x1064
 	right: 100%;
 }
 #about { display: none; }
-#hw_load_status_line,#ll_load_status_line,#ls_load_status_line,#ha_load_status_line { 
-	color: white; background-color: navy; text-decoration: blink;
-}
 #hanswehr        .navtable td div, #hw_toggle { background-color: #CAA; }
 #laneslexicon    .navtable td div, #ll_toggle { background-color: #ACA; }
 #laneslexiconsup .navtable td div, #ls_toggle { background-color: #AAC; }
 #hava            .navtable td div, #ha_toggle { background-color: #CCA; }
 /*
+#hw_load_status_line,#ll_load_status_line,#ls_load_status_line,#ha_load_status_line { 
+	color: white; background-color: navy; text-decoration: blink;
+}
 <a href='../0/hw-38-mobile.html'><div class='button'>&larr; [38] - prev page</div></a><br>
 <a href='../chapter_2.html'><div class='button'>&uarr; Chapter index</div></a><br>
 */
@@ -178,10 +178,12 @@ _gaq.push(['_trackPageview']);
 	<td> <a href='javascript:searchandgo()'><div class='button'>Search</div></a> </td>
 	<td> <a href='javascript:toggle_view()'> <div class='button'>Mobile</div> </a> </td>
 	<td> <a href='readme.html'> <div class='button'>About</div> </a> </td>
+	<td> <a href='javascript:toggle_settings()'> <div class='button'> &#009881; </div> </a> </td>
 </tr>
 </table>
 
 <!--
+	<img class='button' src=cog.png alt='Settings'> 
 	<td> <a href='javascript:toggle_width()'> <div class='button'>|&lt;-&gt;|</div> </a> </td>
 <tr>
 	<td> <a href='javascript:hw_prev()' id='a_prev'><div class='button'>&larr;</div></a> </td>
@@ -235,16 +237,17 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 
 <center>
 
-
-<a href='javascript:testing4()'><div class='button'>Testing</div></a>
-Choose the order in which you want the available books displayed:<br>
-<div id='settings'>
-<select id=setbook1></select><br>
-<select id=setbook2></select><br>
-<select id=setbook3></select><br>
-<select id=setbook4></select><br>
+<div id='settings_container'>
+	Choose the order in which you want the available books displayed:<br>
+	<div id='settings'>
+	<select id=setbook1></select><br>
+	<select id=setbook2></select><br>
+	<select id=setbook3></select><br>
+	<select id=setbook4></select><br>
+	<select id=setbook5></select><br>
+	</div>
+	<a href='javascript:save_settings()'><div class='button'>Save</div></a>
 </div>
-<a href='javascript:testing5()'><div class='button'>Save</div></a>
 
 <div id='all_books'>
 
@@ -260,6 +263,7 @@ Choose the order in which you want the available books displayed:<br>
 	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
 <div class='book_toggle' id='hw_toggle' onclick="javascript: hideme_show( this, 'hanswehr');"> Show Hans Wehr [_] </div>
 	<td> <a href="javascript:move_up( 'book_hw');"><div class='button'>^</div></a> </td>
+<span id='hw_load_status_line'><br>Loading . . .</span>
 -->
 <div id='HW'>
 <div class='book_toggle' id='hw_toggle' onclick="javascript:hide_book('HW', false);"> Show Hans Wehr [_] </div>
@@ -273,7 +277,6 @@ Choose the order in which you want the available books displayed:<br>
 </tr>
 </table>
 <span id='hw_status_line'></span>
-<span id='hw_load_status_line'><br>Loading . . .</span>
 <div class='red-gradient' id='hw_narrowview'>
 	<div class='column' id='div_hw_col1'>
 		<img id='hw_col1' onClick='javascript:searchandgo()'>
@@ -303,6 +306,7 @@ Choose the order in which you want the available books displayed:<br>
 	Content for Lane's Lexicon
 <div class='book_toggle' onclick="javascript: hide_show( 'laneslexicon', 'll_toggle');"> Hide Lane's Lexicon _ </div>
 	<td> <a href="javascript:move_up( 'book_ll');"><div class='button'>^</div></a> </td>
+<span id='ll_load_status_line'><br>Loading . . .</span>
 -->
 <div id='LL'>
 <div class='book_toggle' id='ll_toggle' onclick="javascript:hide_book('LL', false);"> Show Lane's Lexicon [_] </div>
@@ -316,7 +320,6 @@ Choose the order in which you want the available books displayed:<br>
 </tr>
 </table>
 <span id='ll_status_line'></span>
-<span id='ll_load_status_line'><br>Loading . . .</span>
 
 <div class='green-gradient' id='ll_narrowview'>
 	<div class='column'>
@@ -351,6 +354,7 @@ Choose the order in which you want the available books displayed:<br>
 	Content for Supplement of Lane's Lexicon
 <div class='book_toggle' onclick="javascript: hide_show( 'laneslexiconsup', 'ls_toggle');"> Hide Supplement _ </div>
 	<td> <a href="javascript:move_up( 'book_ls');"><div class='button'>^</div></a> </td>
+<span id='ls_load_status_line'><br>Loading . . .</span>
 -->
 <div id='LS'>
 <div class='book_toggle' id='ls_toggle' onclick="javascript:hide_book('LS', false);">
@@ -367,7 +371,6 @@ Show Supplement [_]
 </tr>
 </table>
 <span id='ls_status_line'></span>
-<span id='ls_load_status_line'><br>Loading . . .</span>
 
 <div class='blue-gradient' id='ls_narrowview'>
 	<div class='column'>
@@ -404,44 +407,77 @@ Show Supplement [_]
 	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
 <div class='book_toggle' id='hw_toggle' onclick="javascript: hideme_show( this, 'hanswehr');"> Show Hans Wehr [_] </div>
 	<td> <a href="javascript:move_up( 'book_ha');"><div class='button'>^</div></a> </td>
+		<span id='ha_load_status_line'><br>Loading . . .</span>
+		<span id='sg_load_status_line'><br>Loading . . .</span>
 -->
 <div id='HA'>
-<div class='book_toggle' id='ha_toggle' onclick="javascript:hide_book('HA', false);"> Show Hava [_] </div>
-<div id='hava'>
-<table class='navtable'>
-<tr>
-	<td> <a href='javascript:shift_page("HA", -1)' id='ha_a_prev2'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:ha_showindex()'><div class='button'>HA</div></a> </td>
-	<td> <a href="javascript:hide_book( 'HA', true);"><div class='button'>hide</div></a> </td>
-	<td> <a href='javascript:shift_page("HA", 1)' id='ha_a_next2'><div class='button'>&rarr;</div></a> </td>
-</tr>
-</table>
-<span id='ha_status_line'></span>
-<span id='ha_load_status_line'><br>Loading . . .</span>
-<div class='yellow-gradient' id='ha_narrowview'>
-	<div class='column' id='div_ha_col1'>
-		<img id='ha_col1' onClick='javascript:searchandgo()'>
+	<div class='book_toggle' id='ha_toggle' onclick="javascript:hide_book('HA', false);"> Show Hava [_] </div>
+	<div id='hava'>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("HA", -1)' id='ha_a_prev2'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:ha_showindex()'><div class='button'>HA</div></a> </td>
+			<td> <a href="javascript:hide_book( 'HA', true);"><div class='button'>hide</div></a> </td>
+			<td> <a href='javascript:shift_page("HA", 1)' id='ha_a_next2'><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+		<span id='ha_status_line'></span>
+		<div class='yellow-gradient' id='ha_narrowview'>
+			<div class='column' id='div_ha_col1'>
+				<img id='ha_col1' onClick='javascript:searchandgo()'>
+			</div>
+			<hr>
+			<div class='column' id='div_ha_col1'>
+				<img id='ha_col2' onClick='javascript:searchandgo()'>
+			</div>
+		</div>
+				
+		<div id='ha_wideview'>
+			<img id='ha_wideviewimg' onClick='javascript:searchandgo()'>
+		</div>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("HA", -1)'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:shift_page("HA", 1)' ><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
 	</div>
 	<hr>
-	<div class='column' id='div_ha_col1'>
-		<img id='ha_col2' onClick='javascript:searchandgo()'>
-	</div>
-			
-</div>
-		
-<div id='ha_wideview'>
-	<img id='ha_wideviewimg' onClick='javascript:searchandgo()'>
-</div>
-<table class='navtable'>
-<tr>
-	<td> <a href='javascript:shift_page("HA", -1)'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:shift_page("HA", 1)' ><div class='button'>&rarr;</div></a> </td>
-</tr>
-</table>
 </div>
 
-<hr>
-<hr>
+<div id='SG'>
+	<div class='book_toggle' id='sg_toggle' onclick="javascript:hide_book('SG', false);"> Show Steingass [_] </div>
+	<div id='steingass'>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("SG", -1)' id='sg_a_prev2'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:sg_showindex()'><div class='button'>SG</div></a> </td>
+			<td> <a href="javascript:hide_book( 'SG', true);"><div class='button'>hide</div></a> </td>
+			<td> <a href='javascript:shift_page("SG", 1)' id='sg_a_next2'><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+		<span id='sg_status_line'></span>
+		<div class='yellow-gradient' id='sg_narrowview'>
+			<div class='column' id='div_sg_col1'>
+				<img id='sg_col1' onClick='javascript:searchandgo()'>
+			</div>
+			<hr>
+			<div class='column' id='div_sg_col1'>
+				<img id='sg_col2' onClick='javascript:searchandgo()'>
+			</div>
+		</div>
+				
+		<div id='sg_wideview'>
+			<img id='sg_wideviewimg' onClick='javascript:searchandgo()'>
+		</div>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("SG", -1)'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:shift_page("SG", 1)' ><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+	</div>
+	<hr>
 </div>
 
 <!--
@@ -503,6 +539,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="aa-ll-index.js?000"></script>
 <!-- Data for Hava -->
 <script type="text/javascript" src="aa-ha-index.js?000"></script>
+<script type="text/javascript" src="aa-sg-index.js?001"></script>
 <!--
 <script type="text/javascript" src="aa-ll-data.js"></script>
 <script type="text/javascript" src="aa-ls-data.js"></script>
@@ -515,16 +552,18 @@ var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw_offset = 19;
 var ha_offset = 21;
+var sg_offset = 20;
 //var total_pages = 1129;
-var initial_book_order = "HA,LL,LS,HW";
-var aa_book_order = "HA,LL,LS,HW";
-var starting_hash = "#HW=19,LL=1_38,LS=3,HA=21";
+var initial_book_order = "SG,HA,LL,LS,HW";
+var aa_book_order = "SG,HA,LL,LS,HW";
+var starting_hash = "#HW=19,LL=1_38,LS=3,HA=21,SG=20";
 var cur_hw_page = 19, req_hw_page = 19;
 var cur_ll_page = 38, req_ll_page = 38;
 var cur_ll_vol = 1, req_ll_vol = 1;
 var cur_ls_page = 3, req_ls_page = 3;
 var cur_ha_page = 20, req_ha_page = 20;
-var hw_hide = false, ll_hide = false, ls_hide = false, ha_hide = false;
+var cur_sg_page = 20, req_sg_page = 20;
+var hw_hide = false, ll_hide = false, ls_hide = false, ha_hide = false, sg_hide = false;
 var toggle_view_auto = 1;
 var toggle_view_mode;
 var last_input = "";
@@ -618,6 +657,11 @@ function hide_book( book, should_hide) {
 		if ( should_hide) hide_show( 'hava', 'ha_toggle');
 		else              hide_show( 'ha_toggle', 'hava');
 	}
+	if ( book == "SG") { 
+		ha_hide = should_hide;
+		if ( should_hide) hide_show( 'steingass', 'sg_toggle');
+		else              hide_show( 'sg_toggle', 'steingass');
+	}
 	// Save this state in the hash
 	build_hash();
 /*	
@@ -679,11 +723,13 @@ function set_hash( s) {
 function build_hash() {
 	var new_hash = "#HW=" + req_hw_page
 		+ ",LL=" + req_ll_vol + "_" + req_ll_page
-		+ ",LS=" + req_ls_page + ",HA=" + req_ha_page;
+		+ ",LS=" + req_ls_page + ",HA=" + req_ha_page
+		+ ",SG=" + req_sg_page;
 	if ( hw_hide) new_hash += ",HW_HIDE";
 	if ( ll_hide) new_hash += ",LL_HIDE";
 	if ( ls_hide) new_hash += ",LS_HIDE";
 	if ( ha_hide) new_hash += ",HA_HIDE";
+	if ( sg_hide) new_hash += ",SG_HIDE";
 	window.location.hash = new_hash;
 	setCookie( "aa_last_hash", window.location.hash, 365);
 }
@@ -701,6 +747,7 @@ function set_title() {
 			if ( id == "book_hw" && ! hw_hide) add_text = "HW: " + hw_p[cur_hw_page];
 			if ( id == "book_ll" && ! ll_hide) add_text = "LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)];
 			if ( id == "book_ls" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
+			if ( id == "book_sg" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
 			if ( add_text != "") 
 				if ( title != "") title += " / " + add_text;
 				else title = add_text;
@@ -735,6 +782,7 @@ function parse_hash() {
 					if ( book == "SEARCH" || book == "search" ) { searchandgo(); }
 					if ( book == "HW") { req_hw_page = cur_hw_page = parseInt(page); }
 					if ( book == "HA") { req_ha_page = cur_ha_page = parseInt(page); }
+					if ( book == "SG") { req_sg_page = cur_sg_page = parseInt(page); }
 					if ( book == "LL") {
 		  			var cgi_vol_page = keyValuePair[1].split('_');
 			  		//debug( cgi_vol_page);
@@ -744,6 +792,7 @@ function parse_hash() {
 					if ( book == "LS") { req_ls_page = cur_ls_page = parseInt(page); }
 					if ( book == "HW_HIDE" && ! hw_hide ) { hw_hide = true; hide_show( 'hanswehr', 'hw_toggle'); }
 					if ( book == "HA_HIDE" && ! ha_hide ) { ha_hide = true; hide_show( 'hava', 'ha_toggle'); }
+					if ( book == "SG_HIDE" && ! sg_hide ) { sg_hide = true; hide_show( 'steingass', 'sg_toggle'); }
 					if ( book == "LL_HIDE" && ! ll_hide ) { ll_hide = true; hide_show( 'laneslexicon', 'll_toggle'); }
 					if ( book == "LS_HIDE" && ! ls_hide ) { ls_hide = true; hide_show( 'laneslexiconsup', 'ls_toggle'); }
 	    } 
@@ -769,6 +818,11 @@ function shift_page( book, offset) {
 		req_ha_page = cur_ha_page + offset;
 		//scroll_to_id( 'hanswehr');
 		$(window).scrollTop( $("#hava").offset().top);
+	}
+	if ( book == "SG") { 
+		req_sg_page = cur_sg_page + offset;
+		//scroll_to_id( 'steswehr');
+		$(window).scrollTop( $("#steingass").offset().top);
 	}
 	if ( book == "LL") {
 		var req_ll = ll_validate_vol_page( cur_ll_vol, cur_ll_page + offset);
@@ -816,8 +870,10 @@ function visible_book_shift( offset) {
 	else if ( percentVisible("#laneslexicon") > 50) shift_page( 'LL', offset);
 	else if ( percentVisible("#laneslexiconsup") > 50) shift_page( 'LS', offset);
 	else if ( percentVisible("#hava") > 50) shift_page( 'HA', offset);
+	else if ( percentVisible("#steingass") > 50) shift_page( 'SG', offset);
 }
 
+/*
 $("#hw_col1").load(function () {
 	if ( $("#hw_wideviewimg").height() < 10) 
 		document.getElementById("hw_load_status_line").innerHTML = "This page is empty.";
@@ -842,7 +898,6 @@ $("#ls_col1").load(function () {
 	else 
 		document.getElementById("ls_load_status_line").innerHTML = "";
 });
-/*
 $("#ll_col1").error(function () {
 	document.getElementById("ll_load_status_line").innerHTML = "Please try later, image being regenerated soon";
 });
@@ -857,7 +912,7 @@ function display_images() {
 	//document.getElementById("ll-narrow").src = ll_get_img_url( cur_ll_vol, cur_ll_page);
 
 	if ( ! hw_hide) {	
-		document.getElementById("hw_load_status_line").innerHTML = "<br>Loading . . .";
+		//document.getElementById("hw_load_status_line").innerHTML = "<br>Loading . . .";
 		var hw_img_url = hw_get_img_url( cur_hw_page);
 		document.getElementById("hw_col1").src = 
 			document.getElementById("hw_col2").src = 
@@ -871,7 +926,7 @@ function display_images() {
 	}
 
 	if ( ! ha_hide) {	
-		document.getElementById("ha_load_status_line").innerHTML = "<br>Loading . . .";
+		//document.getElementById("ha_load_status_line").innerHTML = "<br>Loading . . .";
 		var ha_img_url = ha_get_img_url( cur_ha_page);
 		document.getElementById("ha_col1").src = 
 			document.getElementById("ha_col2").src = 
@@ -884,8 +939,22 @@ function display_images() {
 			;
 	}
 
+	if ( ! sg_hide) {	
+		//document.getElementById("sg_load_status_line").innerHTML = "<br>Loading . . .";
+		var sg_img_url = sg_get_img_url( cur_sg_page);
+		document.getElementById("sg_col1").src = 
+			document.getElementById("sg_col2").src = 
+			document.getElementById("sg_wideviewimg").src = sg_img_url;
+		document.getElementById("sg_status_line").innerHTML = 
+			" <b>" + sg[cur_sg_page] + "</b> | " +
+			"Steingass, page " + (cur_sg_page-sg_offset+1) + 
+			" <small>(of " + (sg.length-1-sg_offset) + ") " +
+			"</small>"
+			;
+	}
+
 	if ( ! ll_hide) {	
-		document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
+		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
 		var ll_img_url = ll_get_img_url( cur_ll_vol, cur_ll_page);
 		document.getElementById("ll_col1").src = 
 			document.getElementById("ll_col2").src = 
@@ -901,7 +970,7 @@ function display_images() {
 	}
 
 	if ( ! ls_hide) {	
-		document.getElementById("ls_load_status_line").innerHTML = "<br>Loading . . .";
+		//document.getElementById("ls_load_status_line").innerHTML = "<br>Loading . . .";
 		var ls_img_url = ls_get_img_url( cur_ls_page);
 		document.getElementById("ls_col1").src = 
 			document.getElementById("ls_col2").src = 
@@ -948,12 +1017,14 @@ function first_page_load() {
 		//debug( aa_last_hash);
 		if ( isUndefined(aa_last_hash) || aa_last_hash == "") {
 			window.location.hash = starting_hash;
-			toggle_about();
+			//toggle_about();
 			//parse_hash();
 		} else {
 			window.location.hash = aa_last_hash;
 		}
 	} else parse_hash();
+
+	init_settings();
 }
 
 function set_book_order() {
@@ -971,19 +1042,21 @@ function set_book_order() {
 	setCookie('aa_book_order', aa_book_order, 365);
 }
 
-function testing4() {
-	var itemval = '<option value="HW">Hans Wehr (3rd print)</option>'
+function init_settings() {
+	var itemval = 
+		  '<option value="HW">Hans Wehr (3rd print)</option>'
+		+ '<option value="SG">Steingass</option>'
 		+ '<option value="LL">Lane\'s Lexicon</option>'
 		+ '<option value="LS">Lane\'s Lexicon supplement</option>'
 		+ '<option value="HA">Hava</option>';
 	/*
 		+ '<option value="HW4">Hans Wehr (4th print)</option>'
-		+ '<option value="SG">Steingass</option>'
 	*/
 	$("#setbook1").append(itemval);
 	$("#setbook2").append(itemval);
 	$("#setbook3").append(itemval);
 	$("#setbook4").append(itemval);
+	$("#setbook5").append(itemval);
 	var book_array = aa_book_order.split(',');
 	for ( i = book_array.length - 1; i >= 0; i--) {
 		$("#setbook"+i).val(book_array[i]);
@@ -1064,6 +1137,8 @@ function showchap( chap) {
 function toggle_view() {
 	toggle_view_auto = 0;
 	if (toggle == 1) {
+		document.getElementById("sg_narrowview").style['display'] = 'none';
+		document.getElementById("sg_wideview").style['display'] = 'block';
 		document.getElementById("ha_narrowview").style['display'] = 'none';
 		document.getElementById("ha_wideview").style['display'] = 'block';
 		document.getElementById("hw_narrowview").style['display'] = 'none';
@@ -1076,6 +1151,8 @@ function toggle_view() {
 		toggle_view_mode = 1;
 		toggle = 2;
 	} else {
+		document.getElementById("sg_narrowview").style['display'] = 'block';
+		document.getElementById("sg_wideview").style['display']   = 'none';
 		document.getElementById("ha_narrowview").style['display'] = 'block';
 		document.getElementById("ha_wideview").style['display']   = 'none';
 		document.getElementById("hw_narrowview").style['display'] = 'block';
@@ -1161,6 +1238,10 @@ function page_load() {
 }
 */
 
+function toggle_settings() {
+		$('#settings_container').toggle('fast');
+}
+
 function toggle_about() {
 		//alert('showing about');
 		//document.getElementById('about').style['display'] = 'block';
@@ -1228,6 +1309,7 @@ function do_search( input) {
 	search = search.replace(/y/g,"ي");
 	//alert( "Searching for: " + search);
 	// Headers 
+	req_sg_page = binarySearch( sg, search, 0);
 	req_ha_page = binarySearch( ha_p, search, 0);
 	// Fudge was set to -1, but this often leads to the wrong page
 	req_hw_page = binarySearch( hw_p, search, 0);
