@@ -4,9 +4,9 @@
 body { width: 100%; background-color: #DDD; }
 #chapters_index, #chapter_contents, table.navtable { width: 100%; }
 #chapter_contents { font-family: Simplified Arabic; }
-table.navtable td { min-width: 20%; }
 body, div { margin: 0; padding: 0; }
 /*
+table.navtable td { min-width: 10%; }
 a { color: black; text-decoration: none; }
 */
 .navtable a { color: black; text-decoration: none; }
@@ -34,8 +34,6 @@ a { color: black; text-decoration: none; }
 
 hr { margin: 5px; }
 
-#about { margin: 2%; font-family: Arial; }
-	
 .column_indicator { width: 100% }
 .column_indicator td { margin: 2; padding: 2; background-color: gray; }
 .act  { background-color: blue; }
@@ -85,28 +83,7 @@ hr { margin: 5px; }
 }
 
 /*
-	padding-top: 10px; padding-bottom: 10px; 
-.button td {	height: 100%; }
-	.index_table td { border-left: 1 solid black; }
-	border-top: 2 solid    white; 
-	border-left: 2 solid   white; 
-	border-right: 2 solid  gray; 
-	border-bottom: 2 solid gray; 
-*/
-
-/*
-	top: 100%;
-image = 663x1064
-	left: 0px;
-	position: absolute;
-	background-image: url('hw-39-final-web_cropped.gif');
-	width: 663px;
-  background: white url('hw-39-final-web_cropped.gif') no-repeat scroll left top; 
-	background-image: url('hw-39-final-web_cropped.gif');
-	height: 300px;
-	top: -50px;
 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>  
-#hanswehr_toggle, #hanswehr { border: 1px solid black; }
 */
 
 .column {
@@ -144,18 +121,15 @@ image = 663x1064
 	left: -185%;
 	right: 100%;
 }
-#about { display: none; }
+#steingass       .navtable td div, #sg_toggle { background-color: #ACC; }
 #hanswehr        .navtable td div, #hw_toggle { background-color: #CAA; }
 #laneslexicon    .navtable td div, #ll_toggle { background-color: #ACA; }
 #laneslexiconsup .navtable td div, #ls_toggle { background-color: #AAC; }
 #hava            .navtable td div, #ha_toggle { background-color: #CCA; }
+
 /*
-#hw_load_status_line,#ll_load_status_line,#ls_load_status_line,#ha_load_status_line { 
-	color: white; background-color: navy; text-decoration: blink;
-}
-<a href='../0/hw-38-mobile.html'><div class='button'>&larr; [38] - prev page</div></a><br>
-<a href='../chapter_2.html'><div class='button'>&uarr; Chapter index</div></a><br>
 */
+
 </style>
 <!-- Google Analytics stuff: -->
 <script type="text/javascript">
@@ -175,54 +149,20 @@ _gaq.push(['_trackPageview']);
 
 <table class='navtable'>
 <tr>
-	<td> <a href='javascript:searchandgo()'><div class='button'>Search</div></a> </td>
-	<td> <a href='javascript:toggle_view()'> <div class='button'>Mobile</div> </a> </td>
-	<td> <a href='readme.html'> <div class='button'>About</div> </a> </td>
-	<td> <a href='javascript:toggle_settings()'> <div class='button'> &#009881; </div> </a> </td>
+	<td><a href='javascript:toggle_settings()' class='button'>&#009881;</a></td>
+	<td><a href='readme.html' class='button'>About</a></td>
+	<td><a href='javascript:toggle_view()' class='button'>Mobile</a></td>
+	<td><a href='javascript:searchandgo()' class='button'>Search</a></td>
 </tr>
 </table>
 
 <!--
-	<img class='button' src=cog.png alt='Settings'> 
-	<td> <a href='javascript:toggle_width()'> <div class='button'>|&lt;-&gt;|</div> </a> </td>
-<tr>
-	<td> <a href='javascript:hw_prev()' id='a_prev'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:showindex()'><div class='button'>index</div></a> </td>
-	<td> <a href='javascript:hw_next()' id='a_next'><div class='button'>&rarr;</div></a> </td>
-</tr>
-	<td> <a href='javascript:zoom_out()'> <div class='button'>-</div> </a> </td>
-	<td> <a href='javascript:zoom_in()'> <div class='button'>+</div> </a> </td>
-	Search root letters:
-	<input type=text id='search' maxlength='4'>
-	<input type=submit onClick='javascript:searchandgo()' value='Go'>
-<a href='../0/hw-38-mobile.html'><div class='button'>&lt; [38] - previous page</div></a><br>
-<a href='../chapter_2.html'><div class='button'>&lt;- Chapter index</div></a><br>
-<a href='javascript:toggle_view()'><div class='button'>Toggle</div></a><br>
-
-<div id='chaplist'>
-	<input type=submit onClick='javascript:showindex(5)' value='1'>
-	<input type=submit onClick='javascript:showchap(6)' value='2'>
-</div>
-<a href="#HW=786,LL=7_123,LS=30,HA=456">click here 1st</a>
-<a href='javascript:testing123()'><div class='button'>Testing</div></a>
 <hr>
 <a href="http://ejtaal.net/donate/" >
 <div style='margin: 1%; width: 100%; height: 5%; color: white; background-color: navy; border: 1 solid white;'>
 <center>
 ::: Please donate if you like this page, click here :::
 </center>
-</div>
-</a>
-<div id='settings'>
-Book display order:<br>
-<ol>
-	<li> <input type=select>
-		<select id=book1>
-			<option>1
-			<option>2
-			<option>3
-			<option>4
-		</select>
 </div>
 -->
 <center>
@@ -254,18 +194,6 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 <div id='all_books'>
 
 <!--
-<div id=chapters_index>
-</div>
-
-<div id=chapter_contents>
-</div>
-
-	Content for Hans Wehr
-<div class='book_toggle' onclick="javascript: hide_show( 'hanswehr', 'hw_toggle');"> Hide Hans Wehr _ </div>
-	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
-<div class='book_toggle' id='hw_toggle' onclick="javascript: hideme_show( this, 'hanswehr');"> Show Hans Wehr [_] </div>
-	<td> <a href="javascript:move_up( 'book_hw');"><div class='button'>^</div></a> </td>
-<span id='hw_load_status_line'><br>Loading . . .</span>
 -->
 <div id='HW'>
 <div class='book_toggle' id='hw_toggle' onclick="javascript:hide_book('HW', false);"> Show Hans Wehr [_] </div>
@@ -305,10 +233,6 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 <hr>
 </div>
 <!--
-	Content for Lane's Lexicon
-<div class='book_toggle' onclick="javascript: hide_show( 'laneslexicon', 'll_toggle');"> Hide Lane's Lexicon _ </div>
-	<td> <a href="javascript:move_up( 'book_ll');"><div class='button'>^</div></a> </td>
-<span id='ll_load_status_line'><br>Loading . . .</span>
 -->
 <div id='LL'>
 <div class='book_toggle' id='ll_toggle' onclick="javascript:hide_book('LL', false);"> Show Lane's Lexicon [_] </div>
@@ -353,10 +277,6 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 <hr>
 </div>
 <!--
-	Content for Supplement of Lane's Lexicon
-<div class='book_toggle' onclick="javascript: hide_show( 'laneslexiconsup', 'ls_toggle');"> Hide Supplement _ </div>
-	<td> <a href="javascript:move_up( 'book_ls');"><div class='button'>^</div></a> </td>
-<span id='ls_load_status_line'><br>Loading . . .</span>
 -->
 <div id='LS'>
 <div class='book_toggle' id='ls_toggle' onclick="javascript:hide_book('LS', false);">
@@ -404,13 +324,6 @@ Show Supplement [_]
 </div>
 
 <!--
-	Content for Hava
-<div class='book_toggle' onclick="javascript: hide_show( 'hanswehr', 'hw_toggle');"> Hide Hans Wehr _ </div>
-	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
-<div class='book_toggle' id='hw_toggle' onclick="javascript: hideme_show( this, 'hanswehr');"> Show Hans Wehr [_] </div>
-	<td> <a href="javascript:move_up( 'book_ha');"><div class='button'>^</div></a> </td>
-		<span id='ha_load_status_line'><br>Loading . . .</span>
-		<span id='sg_load_status_line'><br>Loading . . .</span>
 -->
 <div id='HA'>
 	<div class='book_toggle' id='ha_toggle' onclick="javascript:hide_book('HA', false);"> Show Hava [_] </div>
@@ -483,10 +396,6 @@ Show Supplement [_]
 </div>
 
 <!--
-
-<div id='SG'>
-SG
-</div>
 <div id='ML'>
 ML
 </div>
@@ -504,28 +413,14 @@ HW4
 </div>
 
 <!--
-            "<td><div $td_class>&nbsp;</div></td>", FILE_APPEND);
-        }
-        file_put_contents( "$mobile_dir/$mobile_html_file",
-          "</tr></table>
-<img id='col2' src='hw-39-final-web_cropped.gif'>
-<table class='column_indicator'><tr><td><div class="act">&nbsp;</div></td><td><div >&nbsp;</div></td></tr></table>
-<img src='hw-39-1of2.gif'><br>
-<table class='column_indicator'><tr><td><div >&nbsp;</div></td><td><div class="act">&nbsp;</div></td></tr></table>
-<img src='hw-39-2of2.gif'><br>
-<a href='../0/hw-40-mobile.html'><div class='button'>next page - [40] &gt;</div></a><br>
-<tr>
-	<td> <a href='javascript:hw_prev()' id='a_prev2'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:showindex()'><div class='button'>index</div></a> </td>
-	<td> <a href='javascript:hw_next()' id='a_next2'><div class='button'>&rarr;</div></a> </td>
-</tr>
 -->
 <hr>
 <table class='navtable'>
 <tr>
-	<td> <a href='javascript:toggle_about()'> <div class='button'>about</div> </a> </td>
-	<td> <a href='javascript:toggle_view()'> <div class='button'>view</div> </a> </td>
-	<td> <a href='javascript:searchandgo()'><div class='button'>search</div></a> </td>
+	<td><a href='javascript:toggle_settings()' class='button'>&#009881;</a></td>
+	<td><a href='readme.html' class='button'>About</a></td>
+	<td><a href='javascript:toggle_view()' class='button'>Mobile</a></td>
+	<td><a href='javascript:searchandgo()' class='button'>Search</a></td>
 </tr>
 </table>
 
@@ -574,47 +469,7 @@ var searched_word = "";
 // Setup shortcuts:
 shortcut.add("F",function() { searchandgo(); });
 shortcut.add("V",function() { toggle_view(); });
-// Figure out where the obj object is on the screen by adding
-// up all the offsets for all the containing parent objects
 
-/*
-function FindPosition(obj) {
- 
- // Assign the obj object to a temp variable
- var tmpObj = obj;
- 
- // Get the offsets for the current object
- var obj_left = tmpObj.offsetLeft;
- var obj_top = tmpObj.offsetTop;
- 
- // If the current object has a parent (ie contained in a table, div, etc..)
- if (tmpObj.offsetParent) {
- 
-  // Loop through all the parents and add up their offsets
-  // The while loop will end when no more parents exist and a null is returned
-  while (tmpObj = tmpObj.offsetParent) {
-   obj_left += tmpObj.offsetLeft;
-   obj_top += tmpObj.offsetTop;
-  }
- }
- return [obj_left , obj_top];
-}
-
-function scroll_to_id( objectid){
-	// The following script illustrates how it would be used:
-	// Get reference to element which has the ID of "Home"
-	var Item = document.getElementById( objectid);
-	 
-	// Find current position of the MenuItem object
-	var curr_pos = FindPosition(Item);
-	var curr_left = curr_pos[0];
-	var curr_top = curr_pos[1];
-	window.scroll( 0, curr_top);
-
-}
-*/
-
-// Use the above to rework the prev/next shortcuts in a generic way
 shortcut.add("Z",function() { visible_book_shift( -1); });
 shortcut.add("D",function() { visible_book_shift( -1); });
 shortcut.add("Left",function() { visible_book_shift( -1); });
@@ -660,33 +515,12 @@ function hide_book( book, should_hide) {
 		else              hide_show( 'ha_toggle', 'hava');
 	}
 	if ( book == "SG") { 
-		ha_hide = should_hide;
+		sg_hide = should_hide;
 		if ( should_hide) hide_show( 'steingass', 'sg_toggle');
 		else              hide_show( 'sg_toggle', 'steingass');
 	}
 	// Save this state in the hash
 	build_hash();
-/*	
-	if ( book == "LL") {
-		var cgi_vol_page = keyValuePair[1].split('_');
-		//debug( cgi_vol_page);
-		req_ll_vol = cur_ll_vol = parseInt(cgi_vol_page[0]);
-		req_ll_page = cur_ll_page = parseInt(cgi_vol_page[1]);
-	}
-	if ( book == "LS") { req_ls_page = cur_ls_page = parseInt(page); }
-	
-<div class='book_toggle' onclick="javascript: hide_show( 'hanswehr', 'hw_toggle');"> Hide Hans Wehr _ </div>
-	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
-	<td> <a href="javascript:hide_show( 'hanswehr', 'hw_toggle');"><div class='button'>_</div></a> </td>
-<div class='book_toggle' onclick="javascript: hide_show( 'laneslexicon', 'll_toggle');"> Hide Lane's Lexicon _ </div>
-	<td> <a href="javascript:hide_show( 'laneslexicon', 'll_toggle');"><div class='button'>_</div></a> </td>
-	<td> <a href="javascript:hide_show( 'laneslexicon', 'll_toggle');"><div class='button'>_</div></a> </td>
-<div class='book_toggle' onclick="javascript: hide_show( 'laneslexiconsup', 'ls_toggle');"> Hide Supplement _ </div>
-	<td> <a href="javascript:hide_show( 'laneslexiconsup', 'ls_toggle');"><div class='button'>_</div></a> </td>
-	<td> <a href="javascript:hide_show( 'laneslexiconsup', 'ls_toggle');"><div class='button'>_</div></a> </td>
-function hide_show( hideobj, showobj) {
-		hide_show( 'laneslexiconsup', 'ls_toggle');
-*/
 
 }
 
@@ -745,22 +579,15 @@ function set_title() {
 			var id = $(this).attr('id');
 	 		//debug( id);
 			var add_text = "";
-			if ( id == "book_ha" && ! ha_hide) add_text = "HA: " + ha_p[cur_ha_page];
-			if ( id == "book_hw" && ! hw_hide) add_text = "HW: " + hw_p[cur_hw_page];
-			if ( id == "book_ll" && ! ll_hide) add_text = "LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)];
-			if ( id == "book_ls" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
-			if ( id == "book_sg" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
+			if ( id == "HA" && ! ha_hide) add_text = "HA: " + ha_p[cur_ha_page];
+			if ( id == "HW" && ! hw_hide) add_text = "HW: " + hw_p[cur_hw_page];
+			if ( id == "LL" && ! ll_hide) add_text = "LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)];
+			if ( id == "LS" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
+			if ( id == "SG" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
 			if ( add_text != "") 
 				if ( title != "") title += " / " + add_text;
 				else title = add_text;
 		});
-		/*
-		title = 
-		 "HW: " + hw_p[cur_hw_page] + 
-		" / LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)] +
-		" / LS: " + ls_p[cur_ls_page];
-		" / HA: " + ls_p[cur_ls_page];
-		*/
 	}
 	else title = "Search: " + searched_word;
 	if (title != "") title += " - ";
@@ -875,38 +702,6 @@ function visible_book_shift( offset) {
 	else if ( percentVisible("#steingass") > 50) shift_page( 'SG', offset);
 }
 
-/*
-$("#hw_col1").load(function () {
-	if ( $("#hw_wideviewimg").height() < 10) 
-		document.getElementById("hw_load_status_line").innerHTML = "This page is empty.";
-	else 
-		document.getElementById("hw_load_status_line").innerHTML = "";
-});
-$("#ha_col1").load(function () {
-	if ( $("#ha_wideviewimg").height() < 10) 
-		document.getElementById("ha_load_status_line").innerHTML = "This page is empty.";
-	else 
-		document.getElementById("ha_load_status_line").innerHTML = "";
-});
-$("#ll_col1").load(function () {
-	if ( $("#ll_wideviewimg").height() < 10) 
-		document.getElementById("ll_load_status_line").innerHTML = "This page is empty.";
-	else 
-		document.getElementById("ll_load_status_line").innerHTML = "";
-});
-$("#ls_col1").load(function () {
-	if ( $("#ls_wideviewimg").height() < 10) 
-		document.getElementById("ls_load_status_line").innerHTML = "This page is empty.";
-	else 
-		document.getElementById("ls_load_status_line").innerHTML = "";
-});
-$("#ll_col1").error(function () {
-	document.getElementById("ll_load_status_line").innerHTML = "Please try later, image being regenerated soon";
-});
-$("#ls_col1").error(function () {
-	document.getElementById("ls_load_status_line").innerHTML = "Please try later, image being regenerated soon";
-});
-*/
 
 function display_images() {
 	//ll_display_page( page);
@@ -1182,80 +977,15 @@ $(window).hashchange( function(){
 })
 
 /*
-TODO
-window.onhashchange = handle_hash_change;
-function handle_hash_change() {
-	//alert( "hash change!!!(), hash.substring(1) = " + self.document.location.hash.substring(1) + ", hash = " + self.document.location.hash + ".");
-	wanted_page = self.document.location.hash.substring(1);
-	if ( typeof(wanted_page) != "undefined" && wanted_page != null && wanted_page > 0) {
-		load_imgs( wanted_page);
-	}
-}
-*/
-/*
-TODO
-// Page load is called once all the way at the bottom
-function page_load() {
-	//alert( document.documentElement.clientWidth);
-	//alert( "page load(), hash.substring(1) = " + self.document.location.hash.substring(1) + ", hash = " + self.document.location.hash + ".");
-	*/
-	/*
-	var last_pagetoggle_view_mode = getCookie("toggle_view_mode");
-	var toggle_view_auto = getCookie("toggle_view_auto");
-	if ( toggle_view_mode != null && toggle_view_mode != "" &&
-		toggle_view_auto != null && toggle_view_auto != "") {
-		//alert( "toggle_view_mode = " + toggle_view_mode);
-		//alert( "toggle_view_auto = " + toggle_view_auto);
-		toggle = toggle_view_mode;
-	} else {
-	}
-	*/
-		// Do autodetection of wide/column mode view
-		/*
-	if ( document.documentElement.clientWidth < 750){ toggle = 2; } 
-	else { toggle = 1; }
-	toggle_view();
-	
-	//document.getElementById("narrowview").style['display'] = 'none';
-	var last_page = getCookie("last_page");
-	//alert( last_page);
-	//alert( self.document.location.hash.substring(1));
-	//self.document.location.hash = 'blahdieblah';
-	wanted_page = self.document.location.hash.substring(1);
-	if ( typeof(wanted_page) != "undefined" && wanted_page != null && wanted_page > 0) {
-		//alert("wanted page = " + wanted_page);
-		self.document.location.hash = wanted_page;
-	} else if ( last_page != null && last_page != "" && last_page > 0) {
-		//alert(2);
-		self.document.location.hash = last_page;
-	} else {
-		//alert(3);
-		// This is most likely the first visit? Show about then.
-		//self.document.location.hash = start_page;
-		load_imgs( start_page);
-		toggle_about();
-	}
-
-	// Call it here as it won't get triggered for wanted page
-	// or when page gets loaded from cache after browser restart
-	handle_hash_change();
-}
 */
 
 function toggle_settings() {
 		$('#settings_container').toggle('fast');
 }
 
-function toggle_about() {
-		//alert('showing about');
-		//document.getElementById('about').style['display'] = 'block';
-		$('#about').toggle('fast');
-}
-
 
 function searchandgo() {
 	//var search = document.getElementById('search').value;
-	hide_id('about');
 	var input = prompt( "Enter root letters in english or arabic to search (see About section)", last_input);
 	do_search( input);
 }
@@ -1337,30 +1067,13 @@ function do_search( input) {
 
 	build_hash();
 	//parse_hash();
-
 	
-	/*
-	//self.document.location.hash = target_page;
-	//var target_page = binarySearch(items, search) + offset;
-	Hans Wehr - chapter <em class='small_button'><a href='javascript:showcurchap()'>" +
-		chapters[getchap(page_num)][0] +
-		"</a></em> - page " + page_num + " : " +
-		"<strong>" + items[page_num-offset] + "</strong>";
-	*/
-	//load_imgs( target_page);
-	//var target_url  = String(Math.floor(target_page/100)) + "/hw-" + String(target_page) + "-mobile.html";
-	//window.location = target_url;
-		
 }
-
-function hw_prev() { window.location = document.getElementById("a_prev").href; }
-function hw_next() { window.location = document.getElementById("a_next").href; }
 
 function load_imgs( page_num) {
 	if ( page_num < 0 ) { page_num = 0; }
 	if ( page_num > total_pages ) { page_num = total_pages - 1; }
 	//alert( page_num);
-	document.getElementById("about").style['display'] = 'none';
 	setCookie( "last_page", page_num, 31);
 	document.getElementById("chapters_index").innerHTML = '';
 	document.getElementById("chapter_contents").innerHTML = '';
@@ -1487,35 +1200,6 @@ first_page_load();
 
 //==========================================================
 /* The javascript graveyard:
-
-// Works, but not needed anymore
-function queryString( key )
-{
-    var re = new RegExp( "[?&]" + key + "=([^&$]*)", "i" );
-    var offset = location.search.search( re );
-    if ( offset == -1 ) return null;
-    return RegExp.$1;
-}
-
-
-function hw_next() { load_imgs( parseInt(cur_page)+1) }
-function hw_prev() { load_imgs( parseInt(cur_page)-1) }
-function go( page)
-{
-	// Or pop it onto the history stack?
-	self.document.location.hash = page;
-	load_imgs( page);
-}
-alert( unescape(self.document.location.hash.substring(1)));
-
-which img we want:
-unescape(self.document.location.hash.substring(1))
-
-
-var imgs = document.getElementsByTagName("img"); 
-for (var i = 0, l = imgs.length; i < l; i++) { 
-	imgs[i].src ="hw-40-final-web_cropped.gif"; //img[i].src is the reference to the image. 
-}
 */
 
 </script>
