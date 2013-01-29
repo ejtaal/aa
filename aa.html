@@ -195,7 +195,7 @@ _gaq.push(['_trackPageview']);
 <small>
 <span id='statusbar'></span>
 <span id='searchbar'></span>
-Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
+<span id='version'></span> | Viewing mode: <em><span id='currentmode'></span></em>.
 </small>
 <div id=debug>
 </div>
@@ -895,6 +895,7 @@ function init_settings() {
 		var j = i + 1;
 		$("#setbook"+j).val(book_array[i]);
 	}
+	$("#version").append(title_text);
 }
 
 function save_settings() {
@@ -984,16 +985,15 @@ function toggle_fitwidth() {
 
 function set_fitwidth() {
 	if ( toggle_view_mode == 1) {
+		var mw = '';
 	  if ( fitwidth == false) {
 			$("#currentmode").html('full width');
 		} else { 
+			mw = '99%';
 			$("#currentmode").html('fit width');
 		}
  		$('.wideview').each(function(index) {
-        if ( fitwidth == false) 
-					$(this).css('max-width', '');
-				else
-					$(this).css('max-width', '100%');
+				$(this).css('max-width', mw);
     });
 	}
 }
@@ -1054,7 +1054,7 @@ function toggle_settings() {
 function searchandgo() {
 	//var search = document.getElementById('search').value;
 	var input = prompt( "Enter root letters in english or arabic to search (see About section)", last_input);
-	if ( isUndefined( input))w
+	if ( isUndefined( input))
 		do_search( input);
 }
 
