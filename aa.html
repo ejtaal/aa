@@ -19,7 +19,10 @@ a { color: black; text-decoration: none; }
 	}
 .book_toggle { 
 	width: 100%; background-color: silver;
-	font-size: x-large; text-align: right; 
+	font-size: x-large; 
+	/*
+	text-align: right; 
+	*/
 	padding-top: 1px; padding-bottom: 1px; 
 	}
 .button { 
@@ -69,6 +72,22 @@ hr { margin: 5px; }
 	background-image:    -moz-linear-gradient(top,rgb(90,90,0),rgb(255,255,0));
 	background-image:     -ms-linear-gradient(top,rgb(90,90,0),rgb(255,255,0));
 	background-image:      -o-linear-gradient(top,rgb(90,90,0),rgb(255,255,0));
+}
+
+.teal-gradient {
+	margin: 2px;
+	background-image: -webkit-linear-gradient(top,rgb(0,90,90),rgb(0,255,255));
+	background-image:    -moz-linear-gradient(top,rgb(0,90,90),rgb(0,255,255));
+	background-image:     -ms-linear-gradient(top,rgb(0,90,90),rgb(0,255,255));
+	background-image:      -o-linear-gradient(top,rgb(0,90,90),rgb(0,255,255));
+}
+
+.purple-gradient {
+	margin: 2px;
+	background-image: -webkit-linear-gradient(top,rgb(90,0,90),rgb(255,0,255));
+	background-image:    -moz-linear-gradient(top,rgb(90,0,90),rgb(255,0,255));
+	background-image:     -ms-linear-gradient(top,rgb(90,0,90),rgb(255,0,255));
+	background-image:      -o-linear-gradient(top,rgb(90,0,90),rgb(255,0,255));
 }
 
 .rainbow {
@@ -121,11 +140,16 @@ hr { margin: 5px; }
 	left: -185%;
 	right: 100%;
 }
-#steingass       .navtable td div, #sg_toggle { background-color: #ACC; }
-#hanswehr        .navtable td div, #hw_toggle { background-color: #CAA; }
-#laneslexicon    .navtable td div, #ll_toggle { background-color: #ACA; }
-#laneslexiconsup .navtable td div, #ls_toggle { background-color: #AAC; }
-#hava            .navtable td div, #ha_toggle { background-color: #CCA; }
+#steingass       .navtable td div, #sg_toggle, #sg_status_line { background-color: #ACC; }
+#hanswehr        .navtable td div, #hw_toggle, #hw_status_line { background-color: #CAA; }
+#laneslexicon    .navtable td div, #ll_toggle, #ll_status_line { background-color: #ACA; }
+#laneslexiconsup .navtable td div, #ls_toggle, #ls_status_line { background-color: #AAC; }
+#hava            .navtable td div, #ha_toggle, #ha_status_line { background-color: #CCA; }
+#sg_wideviewimg { border: 3px solid #ACC; }
+#hw_wideviewimg { border: 3px solid #CAA; }
+#ll_wideviewimg { border: 3px solid #ACA; }
+#ls_wideviewimg { border: 3px solid #AAC; }
+#ha_wideviewimg { border: 3px solid #CCA; }
 
 /*
 */
@@ -149,14 +173,16 @@ _gaq.push(['_trackPageview']);
 
 <table class='navtable'>
 <tr>
-	<td><a href='javascript:toggle_settings()' class='button'>&#009881;</a></td>
-	<td><a href='readme.html' class='button'>About</a></td>
-	<td><a href='javascript:toggle_view()' class='button'>Mobile</a></td>
-	<td><a href='javascript:searchandgo()' class='button'>Search</a></td>
+	<td><a href='javascript:toggle_settings()' title='Settings menu'><div class='button' ><span style='border-top: 3px solid black; border-bottom: 3px solid black;'><b>&mdash;</b></span></div></a></td>
+	<td><a href='readme.html' title='More information about this website'><div class='button'>About</div></a></td>
+	<td><a href='javascript:toggle_view()' title='Toggle between mobile (column view) and desktop (full page) view'><div class='button'>Mobile</div></a></td>
+	<td><a href='javascript:toggle_fitwidth()' title='Toggle to have pages fit to your browser window'><div class='button'>|&larr;&rarr;|</div></a></td>
+	<td><a href='javascript:searchandgo()' title='Lookup root letters'><div class='button'>Search</div></a></td>
 </tr>
 </table>
 
 <!--
+ &plusmn;
 <hr>
 <a href="http://ejtaal.net/donate/" >
 <div style='margin: 1%; width: 100%; height: 5%; color: white; background-color: navy; border: 1 solid white;'>
@@ -206,7 +232,7 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 	<td> <a href='javascript:shift_page("HW", 1)' id='hw_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
-<span id='hw_status_line'></span>
+<span class='status_line' id='hw_status_line'></span>
 <div class='red-gradient' id='hw_narrowview'>
 	<div class='column' id='div_hw_col1'>
 		<img id='hw_col1' onClick='javascript:searchandgo()'>
@@ -219,7 +245,7 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 </div>
 		
 <div id='hw_wideview'>
-	<img id='hw_wideviewimg' onClick='javascript:searchandgo()'>
+	<img class='wideview' id='hw_wideviewimg' onClick='javascript:searchandgo()'>
 </div>
 <table class='navtable'>
 <tr>
@@ -245,7 +271,7 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 	<td> <a href='javascript:shift_page("LL", 1)' id='ll_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
-<span id='ll_status_line'></span>
+<span class='status_line' id='ll_status_line'></span>
 
 <div class='green-gradient' id='ll_narrowview'>
 	<div class='column'>
@@ -263,7 +289,7 @@ Arabic Almanac | Viewing mode: <em><span id='currentmode'></span></em>.
 </div>
 		
 <div id='ll_wideview'>
-	<img id='ll_wideviewimg' onClick='javascript:searchandgo()'>
+	<img class='wideview' id='ll_wideviewimg' onClick='javascript:searchandgo()'>
 </div>
 <table class='navtable'>
 <tr>
@@ -292,7 +318,7 @@ Show Supplement [_]
 	<td> <a href='javascript:shift_page("LS", 1)' id='ls_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
-<span id='ls_status_line'></span>
+<span class='status_line' id='ls_status_line'></span>
 
 <div class='blue-gradient' id='ls_narrowview'>
 	<div class='column'>
@@ -310,7 +336,7 @@ Show Supplement [_]
 </div>
 		
 <div id='ls_wideview'>
-	<img id='ls_wideviewimg' onClick='javascript:searchandgo()'>
+	<img class='wideview' id='ls_wideviewimg' onClick='javascript:searchandgo()'>
 </div>
 <table class='navtable'>
 <tr>
@@ -336,7 +362,7 @@ Show Supplement [_]
 			<td> <a href='javascript:shift_page("HA", 1)' id='ha_a_next2'><div class='button'>&rarr;</div></a> </td>
 		</tr>
 		</table>
-		<span id='ha_status_line'></span>
+		<span class='status_line' id='ha_status_line'></span>
 		<div class='yellow-gradient' id='ha_narrowview'>
 			<div class='column' id='div_ha_col1'>
 				<img id='ha_col1' onClick='javascript:searchandgo()'>
@@ -348,7 +374,7 @@ Show Supplement [_]
 		</div>
 				
 		<div id='ha_wideview'>
-			<img id='ha_wideviewimg' onClick='javascript:searchandgo()'>
+			<img class='wideview' id='ha_wideviewimg' onClick='javascript:searchandgo()'>
 		</div>
 		<table class='navtable'>
 		<tr>
@@ -371,8 +397,8 @@ Show Supplement [_]
 			<td> <a href='javascript:shift_page("SG", 1)' id='sg_a_next2'><div class='button'>&rarr;</div></a> </td>
 		</tr>
 		</table>
-		<span id='sg_status_line'></span>
-		<div class='yellow-gradient' id='sg_narrowview'>
+		<span class='status_line' id='sg_status_line'></span>
+		<div class='teal-gradient' id='sg_narrowview'>
 			<div class='column' id='div_sg_col1'>
 				<img id='sg_col1' onClick='javascript:searchandgo()'>
 			</div>
@@ -383,7 +409,7 @@ Show Supplement [_]
 		</div>
 				
 		<div id='sg_wideview'>
-			<img id='sg_wideviewimg' onClick='javascript:searchandgo()'>
+			<img class='wideview' id='sg_wideviewimg' onClick='javascript:searchandgo()'>
 		</div>
 		<table class='navtable'>
 		<tr>
@@ -417,10 +443,11 @@ HW4
 <hr>
 <table class='navtable'>
 <tr>
-	<td><a href='javascript:toggle_settings()' class='button'>&#009881;</a></td>
-	<td><a href='readme.html' class='button'>About</a></td>
-	<td><a href='javascript:toggle_view()' class='button'>Mobile</a></td>
-	<td><a href='javascript:searchandgo()' class='button'>Search</a></td>
+	<td><a href='javascript:toggle_settings()' title='Settings menu'><div class='button' ><span style='border-top: 3px solid black; border-bottom: 3px solid black;'><b>&mdash;</b></span></div></a></td>
+	<td><a href='readme.html' title='More information about this website'><div class='button'>About</div></a></td>
+	<td><a href='javascript:toggle_view()' title='Toggle between mobile (column view) and desktop (full page) view'><div class='button'>Mobile</div></a></td>
+	<td><a href='javascript:toggle_fitwidth()' title='Toggle to have pages fit to your browser window'><div class='button'>|&larr;&rarr;|</div></a></td>
+	<td><a href='javascript:searchandgo()' title='Lookup root letters'><div class='button'>Search</div></a></td>
 </tr>
 </table>
 
@@ -435,7 +462,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <!-- Data for Lane's Lexicon &  Supplement -->
 <script type="text/javascript" src="aa-ll-index.js?000"></script>
 <!-- Data for Hava -->
-<script type="text/javascript" src="aa-ha-index.js?000"></script>
+<script type="text/javascript" src="aa-ha-index.js?001"></script>
 <script type="text/javascript" src="aa-sg-index.js?001"></script>
 <!--
 <script type="text/javascript" src="aa-ll-data.js"></script>
@@ -463,6 +490,7 @@ var cur_sg_page = 20, req_sg_page = 20;
 var hw_hide = false, ll_hide = false, ls_hide = false, ha_hide = false, sg_hide = false;
 var toggle_view_auto = 1;
 var toggle_view_mode;
+var fitwidth = false;
 var last_input = "";
 var searched_word = "";
 
@@ -477,6 +505,8 @@ shortcut.add("X",function() { visible_book_shift( 1); });
 shortcut.add("G",function() { visible_book_shift( 1); });
 shortcut.add("Right",function() { visible_book_shift( 1); });
 shortcut.add("P",function() { testing123(); });
+shortcut.add("W",function() { toggle_fitwidth(); });
+
 
 function move_up( id) {
 	var content = document.getElementById(id);
@@ -820,7 +850,13 @@ function first_page_load() {
 			window.location.hash = aa_last_hash;
 		}
 	} else parse_hash();
+		
+	var aa_fitwidth = getCookie("aa_fitwidth");
+	if ( ! isUndefined(aa_fitwidth)) {
+		fitwidth = aa_fitwidth;
+	}
 
+	set_fitwidth();
 	init_settings();
 }
 
@@ -933,7 +969,37 @@ function showchap( chap) {
 }
 
 
+function toggle_fitwidth() {
+
+	if ( toggle_view_mode == 1) {
+	  if ( fitwidth == false) {
+			fitwidth = true;
+		} else { 
+			fitwidth = false;
+		}
+	}
+	setCookie('aa_fitwidth', fitwidth, 365);
+	set_fitwidth();
+}
+
+function set_fitwidth() {
+	if ( toggle_view_mode == 1) {
+	  if ( fitwidth == false) {
+			$("#currentmode").html('full width');
+		} else { 
+			$("#currentmode").html('fit width');
+		}
+ 		$('.wideview').each(function(index) {
+        if ( fitwidth == false) 
+					$(this).css('max-width', '');
+				else
+					$(this).css('max-width', '100%');
+    });
+	}
+}
+
 function toggle_view() {
+	// TODO: JQuery-fy this silliness:
 	toggle_view_auto = 0;
 	if (toggle == 1) {
 		document.getElementById("sg_narrowview").style['display'] = 'none';
@@ -967,6 +1033,7 @@ function toggle_view() {
 
 	//setCookie( "toggle_view_auto", toggle_view_auto, 365);
 	setCookie( "aa_last_view_mode", toggle_view_mode, 365);
+	set_fitwidth();
 }
 
 // Bind the event.
@@ -987,7 +1054,8 @@ function toggle_settings() {
 function searchandgo() {
 	//var search = document.getElementById('search').value;
 	var input = prompt( "Enter root letters in english or arabic to search (see About section)", last_input);
-	do_search( input);
+	if ( isUndefined( input))w
+		do_search( input);
 }
 
 function do_search( input) {
