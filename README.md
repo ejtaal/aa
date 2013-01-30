@@ -1,84 +1,24 @@
-Please read below for the latest news, planned updates and more background information on the Arabic Almanac website.
+Please read below for the latest news, planned updates and more background information on the Arabic Almanac website which can be found [here](http://ejtaal.net/m/aa).
 
 Request for help!
 =================
 
-I hope to include/update the following dictionaries soon:
+I hope to include the following dictionaries soon:
 
-- 4th print of Hans Wehr 
-- Kazimirski, a popular Arabic -> French dictionary ( [Vol. 1](http://archive.org/details/dictionnairearab01bibeuoft), [Vol. 2](http://archive.org/details/dictionnairearab02bibeuoft) )
-- Misbah ul Lughat for the benefit of Urdu speakers (The print available at 
+- Arabic -> English:
+	- Brill Dictionary of Quranic Usage ( [1](http://archive.org/details/ArabicEnglishDictionaryQuranicUsage) )
+	- A dictionary and glossary of the Quran by John Penrice ([1](http://archive.org/details/adictionaryandg00penrgoog) )
+	- 4th print of Hans Wehr (Currently the 3rd print is used)
+- Arabic -> French:
+	- Kazimirski, a popular Arabic -> French dictionary ( [Vol. 1](http://archive.org/details/dictionnairearab01bibeuoft), [Vol. 2](http://archive.org/details/dictionnairearab02bibeuoft) )
+- Arabic -> Urdu:
+	- al Qamoos al Waheed ( [1](http://archive.org/details/Alqamoos-Ul-Waheed) )
+	- Misbah ul Lughat (The prints available at: [1](http://archive.org/details/MisbahUlLughat_part1) [2](http://archive.org/details/MisbahUlLughat_part22)
+ [3](http://archive.org/details/MisbahUlLughat-com)
+[4](http://archive.org/details/misbah-ul-lughat)
+however are unfortunately not usable, anyone know of a better copy?)
 
-http://archive.org/details/MisbahUlLughat_part1
-http://archive.org/details/MisbahUlLughat_part22
-http://archive.org/details/MisbahUlLughat-com
-http://archive.org/details/misbah-ul-lughat
-
-
- 
-
-however is unfortunately not usable, anyone know of a better copy?)
-- "The student's Arabic-English dictionary", by Steingass, similar to Hans Wehr but more useful for classical arabic words.
-
-For all these books I would need an index of page headers for it to be included in this website. How could you help? I would need a list of the last root used on every page of the book. You could provide this in any way you wish, a spreadsheet probably being the easiest. If a number of people can contribute we can share the workload.
-
-Contact me at ejtaal@gmail.com if you could help with any of the above.
-
-About the Arabic Almanac
-========================
-
-Arabic Almanac, a HTML/JavaScript app for both desktop and mobile use that allows looking up Arabic roots in Hans Wehr, Lane's Lexicon and Hava simultaniously (and Kazirmirski and Misbah ul Lughat soon inshallah). Additionally, you may download the entire contents
-to your hard disk or smart phone's sd card, for fast offline usage. Read below for more information on downloading and installing it.
-
-How to use
-==========
-Click on the search button and enter the arabic root you would like to look up. You may use roman (english) letters incase you don't have an arabic keyboard. The letters will be replaced according to the following table:
-
-<pre>
-Double letters:
-th -> "ث"       gh -> "غ"
-kh -> "خ"       sh -> "ش"
-dh -> "ذ"
-
-Different cases:
-d -> "د"        t -> "ت"
-D -> "ض"        T -> "ط"
-z -> "ز"        h -> "ه"
-Z -> "ظ"        H -> "ح"
-s -> "س"
-S -> "ص"
-
-All other "normal" letters:
-a -> "ا"        q -> "ق"   
-b -> "ب"        k -> "ك"
-j -> "ج"        l -> "ل"
-7 -> "ح"        m -> "م"
-r -> "ر"        n -> "ن"
-E, e or 3 -> "ع"   w -> "و"
-f -> "ف"        y -> "ي"
-v -> "ث"
-</pre>
-
-There are also some keyboard shortcuts you can use:
-
-<pre>
-search (find): f
-switch between column and full page view: v
-The following keys only apply for the book you're currently looking at:
-back 1 page: left arrow, d or z
-forward 1 page: right arrow, g or x
-</pre>
-
-Starting points:
-================
-
-Here are some links to get you started:
-
-- [Prefaces](./#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE)
-- [Morphology](./#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
-- [Abbreviations](./#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE)
-- [First page of content](./#HW=19,LL=1_38,LS=3,HA=21)
-- [Lane's Lexicon Editor's preface and memoir (about 40 pages)](./#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE)
+In order to include a book I would need an index of the page headers. I have set up a page where you can input page headers easily, it has already been used successfully by several volunteers for completing the index of the Steingass book. Contact me at ejtaal@gmail.com for more details.
 
 Latest news
 ===========
@@ -97,6 +37,11 @@ Latest news
 	- Improved configuration settings
 	- Toggle for making pages fit to browser width
 -->
+- version 2.0 - 30/1/2013
+	- Included "The student's Arabic-English dictionary", by Steingass, similar to Hans Wehr but more useful for classical arabic words. Thanks to some very helpful volunteers I was able to include it very quickly.
+	- New settings dialog (click the little gear icon top right) which allows you to re-order the books.
+	- A new button on top allows you to fit large pages to the window. You can also use the button 'w' to toggle this on and off.
+
 - version 1.8 - 14/12/2012
 	- Improved index for Hans Wehr (3rd print), about 60% done, not sure if it will be completed as looking into using the 4th print
 	- Site is now hosted at Memset.com, hopefully this will allow for faster and more stable server  :)
@@ -140,6 +85,90 @@ that you're looking at.<br>
 	- Loading text to inform of images that are loading<br>
 	- Lanes Supplement hides itself when nothing useful is found during a search.
 
+
+What is the Arabic Almanac?
+===========================
+
+It is a HTML/JavaScript app for both desktop and mobile use that allows looking up Arabic roots in Hans Wehr and Lane's Lexicon simultaniously. Other books are in the process of being prepared for inclusion.
+
+Additionally, you may download the entire contents
+to your hard disk or smart phone's sd card, for fast offline usage. Read below for more information on downloading and installing it.
+
+Books currently included
+========================
+
+HW: Hans Wehr
+-------------
+
+Started around WW2 and amended a few times since then, it is a very concise dictionary listing some commonly found sayings. Its drawback is that is focuses more on the language as it is found in print today with all sorts of modern usages, making it difficult to find meanings intended in older texts.
+
+LL/LS: Lane's Lexicon + supplement
+----------------------------------
+
+This is a monumental work written in the 19th century, where the author has gone through dozens of arabic sources and compiled a lot of relevant examples for each root, from Quran, Hadeeth, poetry and proverbs. It is extremely verbose which sometimes makes it difficult to find what the word you're looking for. The main work only goes uptil the letter qaf, and the supplement written after the author's death relies on his notes and is therefore unfortunately lacking. Still extremely useful nonetheless. In this website the supplement will close and open automatically for you depending on whether you search for a root before or after the letter qaf respectively.
+
+
+SG: Steingass
+-------------
+This dictionary seems to fill the gap between Hans Wehr and Lane's Lexicon in that it was also written in the 19th century and also focuses on classical meanings. See for example the translation of 'to plough' under IV of the root thwr (tha wow ra) which is not in Wehr but is present in the lexicon. [Biography of the author](http://en.wikipedia.org/wiki/Francis_Joseph_Steingass)
+
+Hava
+----
+A very basic dictionary focusing on some more classical meanings.
+
+
+How to use
+==========
+Click on the search button and enter the arabic root you would like to look up. You may use roman (english) letters incase you don't have an arabic keyboard. The letters will be replaced according to the following table:
+
+<pre>
+Double letters:
+th -> "ث"       gh -> "غ"
+kh -> "خ"       sh -> "ش"
+dh -> "ذ"
+
+Different cases:
+d -> "د"        t -> "ت"
+D -> "ض"        T -> "ط"
+z -> "ز"        h -> "ه"
+Z -> "ظ"        H -> "ح"
+s -> "س"
+S -> "ص"
+
+All other "normal" letters:
+a -> "ا"        q -> "ق"   
+b -> "ب"        k -> "ك"
+j -> "ج"        l -> "ل"
+7 -> "ح"        m -> "م"
+r -> "ر"        n -> "ن"
+E, e or 3 -> "ع"   w -> "و"
+f -> "ف"        y -> "ي"
+v -> "ث"
+</pre>
+
+There are also some keyboard shortcuts you can use:
+
+<pre>
+search (find): f
+switch between column and full page view: v
+make pages fit to window: w
+
+The following keys only apply for the book you're currently looking at:
+back 1 page: left arrow, d or z
+forward 1 page: right arrow, g or x
+</pre>
+
+Starting points:
+================
+
+Here are some links to get you started:
+
+- [Prefaces](./#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE)
+- [Morphology](./#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
+- [Abbreviations](./#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE)
+- [First page of content](./#HW=19,LL=1_38,LS=3,HA=21)
+- [Lane's Lexicon Editor's preface and memoir (about 40 pages)](./#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE)
+
 Browser support
 ===============
 
@@ -177,6 +206,8 @@ You can now download the entire website and install it for instance on your phon
 or your desktop PC for super fast access.<br>
 Download link: 
 
+(This is still the old version and version 2.0 is to be available soon).
+
 - **Main download site @ archive.org:** [Arabic_Almanac.zip](http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac.zip)
 - <small>Secondary backup site: [here](../Arabic_Almanac.zip)</small>
 
@@ -189,20 +220,23 @@ work :)
 
 TODO
 ====
-- Make a more user friendly settings area, which let's you easily select which books to display and in which order.
 - Add more dictionaries...
 - Improve roman -> arabic letters substitution (make it more like yamli)
 
 Sources and acknowledgements
 ============================
 
-This project would not have been possible without the initial help of certain people, namely:
+This project would not have been possible without the initial help of certain very helpful people, namely:
 
-The search facility for both Hans Wehr (3rd print) & Hava
+The indexes for both Hans Wehr (3rd print) & Hava
 has been made possible by using data generously provided by a fan of this website.
 
-The search facility for Lanes Lexicon and suggestions for including the supplement
+The index for Lanes Lexicon and suggestions for including the supplement
 has been made possible by using data generously provided by Abdul Hafiz (<a class=small_button href='mailto:ahlimbada at yahoo.co.uk'>contact</a>).
+
+The index for Steingass has been provided by some very helpful Malaysian students of Arabic.
+
+Jazakum Allahu khair :)
 
 Software used:
 
@@ -215,3 +249,6 @@ Contact
 - Project hosted at: [GitHub](https://github.com/ejtaal/aa)
 
 &copy; 2013 by Abdurahman Erik Taal 
+
+License: GNU GPL v3.
+
