@@ -30,12 +30,7 @@ Latest news
 
 	- Updated Hans Wehr (4th print)
 	- Misbah Lughat
-	- Steingass's Student's Arabic - English Dictionary
-
 	Features:
-	
-	- Improved configuration settings
-	- Toggle for making pages fit to browser width
 -->
 - version 2.0 - 30/1/2013
 	- Included "The student's Arabic-English dictionary", by Steingass, similar to Hans Wehr but more useful for classical arabic words. Thanks to some very helpful volunteers I was able to include it very quickly.
@@ -163,11 +158,11 @@ Starting points:
 
 Here are some links to get you started:
 
-- [Prefaces](./#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE)
+- [Prefaces](./#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6)
 - [Morphology](./#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
 - [Abbreviations](./#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE)
-- [First page of content](./#HW=19,LL=1_38,LS=3,HA=21)
-- [Lane's Lexicon Editor's preface and memoir (about 40 pages)](./#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE)
+- [First page of content](./#HW=19,LL=1_38,LS=3,HA=21,SG=20)
+- [Lane's Lexicon Editor's preface and memoir (about 40 pages)](./#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE)
 
 Browser support
 ===============
