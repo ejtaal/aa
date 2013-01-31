@@ -480,7 +480,7 @@ var ha_offset = 21;
 var sg_offset = 20;
 //var total_pages = 1129;
 var initial_book_order = "SG,HA,LL,LS,HW";
-var aa_book_order = "SG,HA,LL,LS,HW";
+var aa_book_order = "HW,SG,LL,LS,HA";
 var starting_hash = "#HW=19,LL=1_38,LS=3,HA=21,SG=20";
 var cur_hw_page = 19, req_hw_page = 19;
 var cur_ll_page = 38, req_ll_page = 38;
@@ -867,9 +867,13 @@ function set_book_order() {
 		//debug( book_array[i]);
 		if ( book_array[i] != "" ) {
 			//debug( book_array[i]);
-			var content = document.getElementById(book_array[i]);
-			var parent = content.parentNode;
-			parent.insertBefore(content, parent.firstChild);
+			// Check if it exists (using .length seems the way to do this), 
+			// as user may have data from the previous version in their cookie
+			if ( $('#'+book_array[i]).length > 0 ) {
+				var content = document.getElementById(book_array[i]);
+				var parent = content.parentNode;
+				parent.insertBefore(content, parent.firstChild);
+			}
 			//debug( book_array[i]);
 		}
 	}
@@ -1055,7 +1059,7 @@ function toggle_settings() {
 function searchandgo() {
 	//var search = document.getElementById('search').value;
 	var input = prompt( "Enter root letters in english or arabic to search (see About section)", last_input);
-	if ( isUndefined( input))
+	if ( ! isUndefined( input))
 		do_search( input);
 }
 
