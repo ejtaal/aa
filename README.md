@@ -39,7 +39,7 @@ Latest news
 
 - version 1.8 - 14/12/2012
 	- Improved index for Hans Wehr (3rd print), about 60% done, not sure if it will be completed as looking into using the 4th print
-	- Site is now hosted at Memset.com, hopefully this will allow for faster and more stable server  :)
+	- Site is now hosted at Memset.com, hopefully this will allow for faster access and improved reliability :)
 
 - Version 1.7 - 19/7/2012
 	- Updated images of Hava book to scans that Ahmad Sheikh had prepared.
@@ -178,8 +178,8 @@ Arabic Almanac:
 |Opera Mini              |No             |This site relies heavily on JavaScript, which Opera Mini doesn't support very well. Some things may work, |but most of it won't.|
 |Google Chrome           |Yes            |Seems to work ok.|
 |Firefox (desktop)       |Yes            |Seems to work ok.|
-|Firefox mobile          |?              |I can't test with this and have not received any reports from users.|
-|Android default browser |Mostly         |Seems to fail on certain minor aspects of the website|
+|Firefox mobile (beta)   |Yes            |Confirmed as working.|
+|Android default browser |Yes            |Seems to work ok now.|
 |Internet Explorer 7/8/9 |Yes            |Seems to work ok now.|
 +------------------------+---------------+--------------
 </pre>
@@ -201,12 +201,10 @@ You can now download the entire website and install it for instance on your phon
 or your desktop PC for super fast access.<br>
 Download link: 
 
-(This is still the old version and version 2.0 is to be available soon).
+- **Main download site @ archive.org:** [Arabic_Almanac_v2.0.zip](http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac_v2.0.zip)
+- <small>Secondary backup site: [here](../Arabic_Almanac_v2.0.zip)</small>
 
-- **Main download site @ archive.org:** [Arabic_Almanac.zip](http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac.zip)
-- <small>Secondary backup site: [here](../Arabic_Almanac.zip)</small>
-
-The size is about 615 MB. The zip file contains a folder named "aa" which you should place somewhere on your
+The size is about 687 MB. The zip file contains a folder named "aa" which you should place somewhere on your
 PC's drive or on your phone's SD card. For desktops you should then be able to do "File->Open" and select
 the index.html file within the "aa" folder. On smart phones & tablets I recommend
 using the free Opera browser (the full one, not the Mini) to go the following url:
