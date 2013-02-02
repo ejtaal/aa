@@ -158,11 +158,11 @@ Starting points:
 
 Here are some links to get you started:
 
-- [Prefaces](./#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6)
-- [Morphology](./#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
-- [Abbreviations](./#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE)
-- [First page of content](./#HW=19,LL=1_38,LS=3,HA=21,SG=20)
-- [Lane's Lexicon Editor's preface and memoir (about 40 pages)](./#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE)
+- [Prefaces](aa.html#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6)
+- [Morphology](aa.html#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE)
+- [Abbreviations](aa.html#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE)
+- [First page of content](aa.html#HW=19,LL=1_38,LS=3,HA=21,SG=20)
+- [Lane's Lexicon Editor's preface and memoir (about 40 pages)](aa.html#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE)
 
 Browser support
 ===============
