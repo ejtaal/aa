@@ -1068,6 +1068,7 @@ function do_search( input) {
 	last_input = input;
 	// TODO: converting all forms of alif and hamza                                             
 	// (ء, آ, أ, ؤ, إ, ئ, ا) to a single character ء
+	// أكل
 	// Here's a funny hamza, what is it?
 	// ha_p[25]="ءدب";
 	// The same should be done for both forms of yaa (ي, ى)
@@ -1077,7 +1078,9 @@ function do_search( input) {
 	search = search.replace(//gi,"");
 	*/
 	// Normalize alifs and yas, not sure if this is right yet?
-	search = search.replace(/[ﺀﺀﺁﺃﺅﺇﺉ]/g,"ا");
+	// The first character (hamza above alif) is different from the second one, different code page?
+	// From android: ء ٱ آ إ
+	search = search.replace(/[إآٱأءﺀﺀﺁﺃﺅﺇﺉ]/g,"ا");
 	search = search.replace(/[ﻯ]/g,"ي");
 	// Firstly the letters that take IMHO 2 letters to transliterate
 	search = search.replace(/th/g,"ث");
@@ -1097,6 +1100,7 @@ function do_search( input) {
 	search = search.replace(/h/g,"ه");
 	search = search.replace(/H/g,"ح");
 	// Not much iktilaaf over these I guess:
+	search = search.replace(/x/g,"خ");
 	search = search.replace(/v/g,"ث");
 	search = search.replace(/a/g,"ا");
 	search = search.replace(/b/g,"ب");
