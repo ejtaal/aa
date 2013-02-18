@@ -1,9 +1,20 @@
-hw4[0]="aaa"
-hw4[1]="bbb"
-hw4[2]="c"
-hw4[3]="b"
-hw4[4]="c"
-hw4[5]="d"
+function hw4_get_img_url ( page) {
+	if ( page < 1) page = 1;
+	if ( page > hw4.length - 1) page = hw4.length - 1;
+	cur_hw4_page = page;
+	var p = page;
+	var prefixed_page = p;
+	if ( p < 10) prefixed_page = "00" + p;
+	else if ( p < 100) prefixed_page = "0" + p;
+	return "hw4/" + Math.floor(page/100) + "/hw4-" + prefixed_page + ".png";
+}
+
+hw4[0]=""
+hw4[1]=""
+hw4[2]=""
+hw4[3]=""
+hw4[4]=""
+hw4[5]=""
 hw4[6]=""
 hw4[7]=""
 hw4[8]=""
@@ -1312,6 +1323,8 @@ hw4[1310]="يم"
 hw4[1311]="ينع"
 hw4[1312]="يوم"
 hw4[1313]="يونيو"
+/*
 hw4[1314]=""
 hw4[1315]=""
 hw4[1316]=""
+*/
