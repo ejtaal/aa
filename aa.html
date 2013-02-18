@@ -1079,7 +1079,8 @@ function do_search( input) {
 	*/
 	// Normalize alifs and yas, not sure if this is right yet?
 	// The first character (hamza above alif) is different from the second one, different code page?
-	search = search.replace(/[أﺀﺀﺁﺃﺅﺇﺉ]/g,"ا");
+	// From android: ء ٱ آ إ
+	search = search.replace(/[إآٱأءﺀﺀﺁﺃﺅﺇﺉ]/g,"ا");
 	search = search.replace(/[ﻯ]/g,"ي");
 	// Firstly the letters that take IMHO 2 letters to transliterate
 	search = search.replace(/th/g,"ث");
@@ -1099,6 +1100,7 @@ function do_search( input) {
 	search = search.replace(/h/g,"ه");
 	search = search.replace(/H/g,"ح");
 	// Not much iktilaaf over these I guess:
+	search = search.replace(/x/g,"خ");
 	search = search.replace(/v/g,"ث");
 	search = search.replace(/a/g,"ا");
 	search = search.replace(/b/g,"ب");
