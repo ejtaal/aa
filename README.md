@@ -23,18 +23,12 @@ In order to include a book I would need an index of the page headers. I have set
 Latest news
 ===========
 
-<!--
-- (Planned) Version 2.0 beta - _/_/2013 (inshallah)
+- version 3.0 - x/2/2013
+	- Version bump due to having added 3 new books.
 
-	Inclusion of the following books:
-
-	- Updated Hans Wehr (4th print)
-	- Misbah Lughat
-	Features:
--->
 - version 2.0 - 30/1/2013
 	- Included "The student's Arabic-English dictionary", by Steingass, similar to Hans Wehr but more useful for classical arabic words. Thanks to some very helpful volunteers I was able to include it very quickly.
-	- New settings dialog (click the little gear icon top right) which allows you to re-order the books.
+	- New settings dialog (click the 3 line menu on the top left) which allows you to re-order the books.
 	- A new button on top allows you to fit large pages to the window. You can also use the button 'w' to toggle this on and off.
 
 - version 1.8 - 14/12/2012
