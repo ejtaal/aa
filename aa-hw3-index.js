@@ -1,4 +1,4 @@
-function hw_get_img_url ( page) {
+function hw3_get_img_url ( page) {
 	if ( page < 1) page = 1;
 	if ( page > hw3.length - 1) page = hw3.length - 1;
 	cur_hw_page = page;

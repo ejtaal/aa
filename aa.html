@@ -111,7 +111,7 @@ hr { margin: 5px; }
 	overflow: hidden;
 }
 
-#settings_container,#hw3_toggle,#ll_toggle,#ls_toggle,#ha_toggle,#sg_toggle { display: none; }
+#settings_container,#hw3_toggle,#ll_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle { display: none; }
 
 #hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2 {
 	position: relative;
@@ -213,6 +213,9 @@ _gaq.push(['_trackPageview']);
 <div id='settings_container'>
 	<hr>
 	Choose the order in which you want the available books displayed:<br>
+	<div id='settings_2'>
+	</div>
+<!--
 	<div id='settings'>
 		<select id=setbook1></select><br>
 		<select id=setbook2></select><br>
@@ -220,6 +223,7 @@ _gaq.push(['_trackPageview']);
 		<select id=setbook4></select><br>
 		<select id=setbook5></select><br>
 	</div>
+-->
 	<a href='javascript:save_settings()'><div class='button'>Save</div></a>
 	<hr>
 </div>
@@ -229,18 +233,18 @@ _gaq.push(['_trackPageview']);
 <!--
 -->
 <div id='HW4'>
-<div class='book_toggle' id='hw3_toggle' onclick="javascript:hide_book('HW', false);"> Show Hans Wehr [_] </div>
+<div class='book_toggle' id='hw4_toggle' onclick="javascript:hide_book('HW4', false);"> Show Hans Wehr 4 [_] </div>
 <div id='hanswehr4'>
 <table class='navtable'>
 <tr>
-	<td> <a href='javascript:shift_page("HW4", -1)' id='hw3_a_prev2'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:hw4_showindex()'><div class='button'>HW</div></a> </td>
-	<td> <a href="javascript:hide_book( 'HW', true);"><div class='button'>hide</div></a> </td>
+	<td> <a href='javascript:shift_page("HW4", -1)' id='hw4_a_prev2'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:hw4_showindex()'><div class='button'>HW4</div></a> </td>
+	<td> <a href="javascript:hide_book( 'HW4', true);"><div class='button'>hide</div></a> </td>
 	<td> <a href='javascript:shift_page("HW4", 1)' id='hw4_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
 <span class='status_line' id='hw4_status_line'></span>
-<div class='red-gradient' id='hw4_narrowview'>
+<div class='red-gradient narrowview' id='hw4_narrowview'>
 	<div class='column' id='div_hw4_col1'>
 		<img id='hw4_col1' onClick='javascript:searchandgo()'>
 	</div>
@@ -261,25 +265,23 @@ _gaq.push(['_trackPageview']);
 </tr>
 </table>
 </div>
-
-<hr>
 <hr>
 </div>
 <!--
 -->
 <div id='HW3'>
-<div class='book_toggle' id='hw3_toggle' onclick="javascript:hide_book('HW', false);"> Show Hans Wehr [_] </div>
+<div class='book_toggle' id='hw3_toggle' onclick="javascript:hide_book('HW', false);"> Show Hans Wehr 3 [_] </div>
 <div id='hanswehr3'>
 <table class='navtable'>
 <tr>
 	<td> <a href='javascript:shift_page("HW3", -1)' id='hw3_a_prev2'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:hw3_showindex()'><div class='button'>HW</div></a> </td>
-	<td> <a href="javascript:hide_book( 'HW', true);"><div class='button'>hide</div></a> </td>
+	<td> <a href='javascript:hw3_showindex()'><div class='button'>HW3</div></a> </td>
+	<td> <a href="javascript:hide_book( 'HW3', true);"><div class='button'>hide</div></a> </td>
 	<td> <a href='javascript:shift_page("HW3", 1)' id='hw3_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
 </table>
 <span class='status_line' id='hw3_status_line'></span>
-<div class='red-gradient' id='hw3_narrowview'>
+<div class='red-gradient narrowview' id='hw3_narrowview'>
 	<div class='column' id='div_hw3_col1'>
 		<img id='hw3_col1' onClick='javascript:searchandgo()'>
 	</div>
@@ -300,8 +302,6 @@ _gaq.push(['_trackPageview']);
 </tr>
 </table>
 </div>
-
-<hr>
 <hr>
 </div>
 <!--
@@ -319,7 +319,7 @@ _gaq.push(['_trackPageview']);
 </table>
 <span class='status_line' id='ll_status_line'></span>
 
-<div class='green-gradient' id='ll_narrowview'>
+<div class='green-gradient narrowview' id='ll_narrowview'>
 	<div class='column'>
 		<img id='ll_col1' onClick='javascript:searchandgo()'>
 	</div>
@@ -344,10 +344,10 @@ _gaq.push(['_trackPageview']);
 </tr>
 </table>
 </div>
-
-<hr>
 <hr>
 </div>
+
+
 <!--
 -->
 <div id='LS'>
@@ -366,7 +366,7 @@ Show Supplement [_]
 </table>
 <span class='status_line' id='ls_status_line'></span>
 
-<div class='blue-gradient' id='ls_narrowview'>
+<div class='blue-gradient narrowview' id='ls_narrowview'>
 	<div class='column'>
 		<img id='ls_col1' onClick='javascript:searchandgo()'>
 	</div>
@@ -392,7 +392,6 @@ Show Supplement [_]
 </table>
 </div>
 <hr>
-<hr>
 </div>
 
 <!--
@@ -409,7 +408,7 @@ Show Supplement [_]
 		</tr>
 		</table>
 		<span class='status_line' id='ha_status_line'></span>
-		<div class='yellow-gradient' id='ha_narrowview'>
+		<div class='yellow-gradient narrowview' id='ha_narrowview'>
 			<div class='column' id='div_ha_col1'>
 				<img id='ha_col1' onClick='javascript:searchandgo()'>
 			</div>
@@ -444,7 +443,7 @@ Show Supplement [_]
 		</tr>
 		</table>
 		<span class='status_line' id='sg_status_line'></span>
-		<div class='teal-gradient' id='sg_narrowview'>
+		<div class='teal-gradient narrowview' id='sg_narrowview'>
 			<div class='column' id='div_sg_col1'>
 				<img id='sg_col1' onClick='javascript:searchandgo()'>
 			</div>
@@ -520,7 +519,7 @@ Show Supplement [_]
 		</tr>
 		</table>
 		<span class='status_line' id='pr_status_line'></span>
-		<div class='teal-gradient' id='pr_narrowview'>
+		<div class='teal-gradient narrowview' id='pr_narrowview'>
 			<div class='column' id='div_pr_col1'>
 				<img id='pr_col1' onClick='javascript:searchandgo()'>
 			</div>
@@ -544,17 +543,6 @@ Show Supplement [_]
 </div>
 
 <!--
-<div id='ML'>
-ML
-</div>
-<div id='KA'>
-KA
-</div>
-
-<div id='HW4'>
-HW4
-</div>
-
 -->
 
 <!-- end of div all_books -->
@@ -580,12 +568,15 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="jslib/jquery.ba-hashchange.min.js"></script>
 <script type="text/javascript" src="jslib/shortcut.js"></script>
 <!-- Data for Hans Wehr -->
-<script type="text/javascript" src="aa-hw3-index.js?000"></script>
+<script type="text/javascript" src="aa-hw3-index.js?001"></script>
+<script type="text/javascript" src="aa-hw4-index.js?001"></script>
 <!-- Data for Lane's Lexicon &  Supplement -->
 <script type="text/javascript" src="aa-ll-index.js?000"></script>
 <!-- Data for Hava -->
 <script type="text/javascript" src="aa-ha-index.js?001"></script>
 <script type="text/javascript" src="aa-sg-index.js?001"></script>
+<script type="text/javascript" src="aa-br-index.js?002"></script>
+<script type="text/javascript" src="aa-pr-index.js?001"></script>
 <!--
 <script type="text/javascript" src="aa-ll-data.js"></script>
 <script type="text/javascript" src="aa-ls-data.js"></script>
@@ -593,23 +584,29 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script>
 
 // Some global vars that we need:
-var version = "2.0";
+var version = "3.0";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
+var hw4_offset = 14;
 var hw3_offset = 19;
 var ha_offset = 21;
 var sg_offset = 20;
+var br_offset = 26;
+var pr_offset = 9;
 //var total_pages = 1129;
-var initial_book_order = "SG,HA,LL,LS,HW";
-var aa_book_order = "HW,SG,LL,LS,HA";
-var starting_hash = "#HW=19,LL=1_38,LS=3,HA=21,SG=20";
+var initial_book_order = "SG,HA,LL,LS,HW4,BR,PR,HW3";
+var aa_book_order = "SG,HA,LL,LS,HW4,BR,PR,HW3";
+var starting_hash = "#HW4=14,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9";
 var cur_hw3_page = 19, req_hw3_page = 19;
-var cur_ll_page = 38, req_ll_page = 38;
+var cur_hw4_page = 14, req_hw4_page = 14;
+var cur_br_page = 26, req_br_page = 26;
+var cur_pr_page = 9, req_pr_page = 9;
 var cur_ll_vol = 1, req_ll_vol = 1;
 var cur_ls_page = 3, req_ls_page = 3;
 var cur_ha_page = 20, req_ha_page = 20;
 var cur_sg_page = 20, req_sg_page = 20;
-var hw3_hide = false, ll_hide = false, ls_hide = false, ha_hide = false, sg_hide = false;
+var hw4_hide = false, br_hide = false, pr_hide = false, hw3_hide = false, 
+	ll_hide = false, ls_hide = false, ha_hide = false, sg_hide = false;
 var toggle_view_auto = 1;
 var toggle_view_mode;
 var fitwidth = false;
@@ -646,6 +643,11 @@ function move_up( id) {
 }
 
 function hide_book( book, should_hide) {
+	if ( book == "HW4") { 
+		hw4_hide = should_hide;
+		if ( should_hide) hide_show( 'hanswehr4', 'hw4_toggle');
+		else              hide_show( 'hw4_toggle', 'hanswehr4');
+	}
 	if ( book == "HW3") { 
 		hw3_hide = should_hide;
 		if ( should_hide) hide_show( 'hanswehr3', 'hw3_toggle');
@@ -670,6 +672,16 @@ function hide_book( book, should_hide) {
 		sg_hide = should_hide;
 		if ( should_hide) hide_show( 'steingass', 'sg_toggle');
 		else              hide_show( 'sg_toggle', 'steingass');
+	}
+	if ( book == "BR") { 
+		br_hide = should_hide;
+		if ( should_hide) hide_show( 'brill', 'br_toggle');
+		else              hide_show( 'br_toggle', 'brill');
+	}
+	if ( book == "PR") { 
+		pr_hide = should_hide;
+		if ( should_hide) hide_show( 'penrice', 'pr_toggle');
+		else              hide_show( 'pr_toggle', 'penrice');
 	}
 	// Save this state in the hash
 	build_hash();
@@ -709,15 +721,19 @@ function set_hash( s) {
 	setCookie( "aa_last_hash", window.location.hash, 365);
 }
 function build_hash() {
-	var new_hash = "#HW=" + req_hw3_page
+	var new_hash = "#HW4=" + req_hw4_page + ",HW3=" + req_hw3_page
 		+ ",LL=" + req_ll_vol + "_" + req_ll_page
 		+ ",LS=" + req_ls_page + ",HA=" + req_ha_page
-		+ ",SG=" + req_sg_page;
-	if ( hw3_hide) new_hash += ",HW_HIDE";
+		+ ",SG=" + req_sg_page + ",BR=" + req_br_page
+		+ ",PR=" + req_pr_page;
+	if ( hw4_hide) new_hash += ",HW4_HIDE";
+	if ( hw3_hide) new_hash += ",HW3_HIDE";
 	if ( ll_hide) new_hash += ",LL_HIDE";
 	if ( ls_hide) new_hash += ",LS_HIDE";
 	if ( ha_hide) new_hash += ",HA_HIDE";
 	if ( sg_hide) new_hash += ",SG_HIDE";
+	if ( br_hide) new_hash += ",BR_HIDE";
+	if ( pr_hide) new_hash += ",PR_HIDE";
 	window.location.hash = new_hash;
 	setCookie( "aa_last_hash", window.location.hash, 365);
 }
@@ -732,10 +748,13 @@ function set_title() {
 	 		//debug( id);
 			var add_text = "";
 			if ( id == "HA" && ! ha_hide) add_text = "HA: " + ha_p[cur_ha_page];
-			if ( id == "HW3" && ! hw3_hide) add_text = "HW: " + hw3[cur_hw3_page];
+			if ( id == "HW3" && ! hw3_hide) add_text = "HW3: " + hw3[cur_hw3_page];
+			if ( id == "HW4" && ! hw4_hide) add_text = "HW4: " + hw4[cur_hw4_page];
 			if ( id == "LL" && ! ll_hide) add_text = "LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)];
 			if ( id == "LS" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
 			if ( id == "SG" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
+			if ( id == "BR" && ! br_hide) add_text = "BR: " + sg[cur_br_page];
+			if ( id == "PR" && ! pr_hide) add_text = "PR: " + sg[cur_pr_page];
 			if ( add_text != "") 
 				if ( title != "") title += " / " + add_text;
 				else title = add_text;
@@ -762,8 +781,11 @@ function parse_hash() {
 					if ( book == "Q" || book == "q" ) { do_search(page); }
 					if ( book == "SEARCH" || book == "search" ) { searchandgo(); }
 					if ( book == "HW3") { req_hw3_page = cur_hw3_page = parseInt(page); }
+					if ( book == "HW4") { req_hw4_page = cur_hw4_page = parseInt(page); }
 					if ( book == "HA") { req_ha_page = cur_ha_page = parseInt(page); }
 					if ( book == "SG") { req_sg_page = cur_sg_page = parseInt(page); }
+					if ( book == "BR") { req_br_page = cur_br_page = parseInt(page); }
+					if ( book == "PR") { req_pr_page = cur_pr_page = parseInt(page); }
 					if ( book == "LL") {
 		  			var cgi_vol_page = keyValuePair[1].split('_');
 			  		//debug( cgi_vol_page);
@@ -771,11 +793,14 @@ function parse_hash() {
 						req_ll_page = cur_ll_page = parseInt(cgi_vol_page[1]);
 					}
 					if ( book == "LS") { req_ls_page = cur_ls_page = parseInt(page); }
+					if ( book == "HW4_HIDE" && ! hw4_hide ) { hw4_hide = true; hide_show( 'hanswehr4', 'hw4_toggle'); }
 					if ( book == "HW3_HIDE" && ! hw3_hide ) { hw3_hide = true; hide_show( 'hanswehr3', 'hw3_toggle'); }
 					if ( book == "HA_HIDE" && ! ha_hide ) { ha_hide = true; hide_show( 'hava', 'ha_toggle'); }
 					if ( book == "SG_HIDE" && ! sg_hide ) { sg_hide = true; hide_show( 'steingass', 'sg_toggle'); }
 					if ( book == "LL_HIDE" && ! ll_hide ) { ll_hide = true; hide_show( 'laneslexicon', 'll_toggle'); }
 					if ( book == "LS_HIDE" && ! ls_hide ) { ls_hide = true; hide_show( 'laneslexiconsup', 'ls_toggle'); }
+					if ( book == "BR_HIDE" && ! br_hide ) { br_hide = true; hide_show( 'brill', 'br_toggle'); }
+					if ( book == "PR_HIDE" && ! pr_hide ) { pr_hide = true; hide_show( 'penrice', 'pr_toggle'); }
 	    } 
 	} 
 	else { 
@@ -790,31 +815,38 @@ function parse_hash() {
 
 function shift_page( book, offset) {
 	hide_id('about');
+	if ( book == "HW4") { 
+		req_hw4_page = cur_hw4_page + offset;
+		$(window).scrollTop( $("#hanswehr4").offset().top);
+	}
 	if ( book == "HW3") { 
 		req_hw3_page = cur_hw3_page + offset;
-		//scroll_to_id( 'hanswehr3');
 		$(window).scrollTop( $("#hanswehr3").offset().top);
 	}
 	if ( book == "HA") { 
 		req_ha_page = cur_ha_page + offset;
-		//scroll_to_id( 'hanswehr');
 		$(window).scrollTop( $("#hava").offset().top);
 	}
 	if ( book == "SG") { 
 		req_sg_page = cur_sg_page + offset;
-		//scroll_to_id( 'steswehr');
 		$(window).scrollTop( $("#steingass").offset().top);
+	}
+	if ( book == "BR") { 
+		req_br_page = cur_br_page + offset;
+		$(window).scrollTop( $("#brill").offset().top);
+	}
+	if ( book == "PR") { 
+		req_pr_page = cur_pr_page + offset;
+		$(window).scrollTop( $("#penrice").offset().top);
 	}
 	if ( book == "LL") {
 		var req_ll = ll_validate_vol_page( cur_ll_vol, cur_ll_page + offset);
 		req_ll_vol = req_ll[0];
 		req_ll_page = req_ll[1];
-		//scroll_to_id( 'laneslexicon');
 		$(window).scrollTop( $("#laneslexicon").offset().top);
 	}
 	if ( book == "LS") { 
 		req_ls_page = cur_ls_page + offset;
-		//scroll_to_id( 'hanswehr');
 		$(window).scrollTop( $("#laneslexiconsup").offset().top);
 	}
 	//debug( book + cur_ll_vol + "_" + req_ll_page);
@@ -848,10 +880,13 @@ function percentVisible( elem)
 
 function visible_book_shift( offset) {
 	if ( percentVisible("#hanswehr3") > 50) shift_page( 'HW3', offset);
+	else if ( percentVisible("#hanswehr4") > 50) shift_page( 'HW4', offset);
 	else if ( percentVisible("#laneslexicon") > 50) shift_page( 'LL', offset);
 	else if ( percentVisible("#laneslexiconsup") > 50) shift_page( 'LS', offset);
 	else if ( percentVisible("#hava") > 50) shift_page( 'HA', offset);
 	else if ( percentVisible("#steingass") > 50) shift_page( 'SG', offset);
+	else if ( percentVisible("#brill") > 50) shift_page( 'BR', offset);
+	else if ( percentVisible("#penrice") > 50) shift_page( 'PR', offset);
 }
 
 
@@ -859,6 +894,20 @@ function display_images() {
 	//ll_display_page( page);
 	//debug ( ll_get_img_url( page));
 	//document.getElementById("ll-narrow").src = ll_get_img_url( cur_ll_vol, cur_ll_page);
+
+	if ( ! hw4_hide) {	
+		//document.getElementById("hw4_load_status_line").innerHTML = "<br>Loading . . .";
+		var hw4_img_url = hw4_get_img_url( cur_hw4_page);
+		document.getElementById("hw4_col1").src = 
+			document.getElementById("hw4_col2").src = 
+			document.getElementById("hw4_wideviewimg").src = hw4_img_url;
+		document.getElementById("hw4_status_line").innerHTML = 
+			" <b>" + hw4[cur_hw4_page] + "</b> | " +
+			"Hans Wehr (4), page " + (cur_hw4_page-hw4_offset+1) + 
+			" <small>(of " + (hw4.length-1-hw4_offset) + ") " +
+			"</small>"
+			;
+	}
 
 	if ( ! hw3_hide) {	
 		//document.getElementById("hw3_load_status_line").innerHTML = "<br>Loading . . .";
@@ -868,8 +917,8 @@ function display_images() {
 			document.getElementById("hw3_wideviewimg").src = hw3_img_url;
 		document.getElementById("hw3_status_line").innerHTML = 
 			" <b>" + hw3[cur_hw3_page] + "</b> | " +
-			"Hans Wehr, page " + (cur_hw3_page-hw3_offset+1) + 
-			" <small>(of " + (hw3_p.length-1-hw3_offset) + ") " +
+			"Hans Wehr (3), page " + (cur_hw3_page-hw3_offset+1) + 
+			" <small>(of " + (hw3.length-1-hw3_offset) + ") " +
 			"</small>"
 			;
 	}
@@ -898,6 +947,37 @@ function display_images() {
 			" <b>" + sg[cur_sg_page] + "</b> | " +
 			"Steingass, page " + (cur_sg_page-sg_offset+1) + 
 			" <small>(of " + (sg.length-1-sg_offset) + ") " +
+			"</small>"
+			;
+	}
+
+	if ( ! br_hide) {	
+		//document.getElementById("br_load_status_line").innerHTML = "<br>Loading . . .";
+		var br_img_url = br_get_img_url( cur_br_page);
+		// Brill doesn't have columns
+		/*
+		document.getElementById("br_col1").src = 
+			document.getElementById("br_col2").src = 
+		*/
+			document.getElementById("br_wideviewimg").src = br_img_url;
+		document.getElementById("br_status_line").innerHTML = 
+			" <b>" + br[cur_br_page] + "</b> | " +
+			"Brill, page " + (cur_br_page-br_offset+1) + 
+			" <small>(of " + (br.length-1-br_offset) + ") " +
+			"</small>"
+			;
+	}
+
+	if ( ! pr_hide) {	
+		//document.getElementById("pr_load_status_line").innerHTML = "<br>Loading . . .";
+		var pr_img_url = pr_get_img_url( cur_pr_page);
+		document.getElementById("pr_col1").src = 
+			document.getElementById("pr_col2").src = 
+			document.getElementById("pr_wideviewimg").src = pr_img_url;
+		document.getElementById("pr_status_line").innerHTML = 
+			" <b>" + pr[cur_pr_page] + "</b> | " +
+			"Penrice, page " + (cur_pr_page-pr_offset+1) + 
+			" <small>(of " + (pr.length-1-pr_offset) + ") " +
 			"</small>"
 			;
 	}
@@ -951,7 +1031,7 @@ function first_page_load() {
 	// first sort out the book order
 	var saved_book_order = getCookie('aa_book_order');
 	//alert('test');
-	//debug('aa_book_order in cookie = ' + saved_book_order);
+	debug('aa_book_order in cookie = ' + saved_book_order);
 	if ( isUndefined(saved_book_order) && saved_book_order != "")
 		aa_book_order = initial_book_order;
 	else
@@ -1002,35 +1082,42 @@ function set_book_order() {
 }
 
 function init_settings() {
-	var itemval = 
-		  '<option value="HW3">Hans Wehr (3rd print)</option>'
-		+ '<option value="SG">Steingass</option>'
-		+ '<option value="LL">Lane\'s Lexicon</option>'
-		+ '<option value="LS">Lane\'s Lexicon supplement</option>'
-		+ '<option value="HA">Hava</option>';
-		+ '<option value="HW4">Hans Wehr (4th print)</option>'
-		+ '<option value="BR">Brill</option>'
-		+ '<option value="PR">Penrice</option>'
-	$("#setbook1").append(itemval);
-	$("#setbook2").append(itemval);
-	$("#setbook3").append(itemval);
-	$("#setbook4").append(itemval);
-	$("#setbook5").append(itemval);
-	$("#setbook6").append(itemval);
-	$("#setbook7").append(itemval);
-	$("#setbook8").append(itemval);
+	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3"];
+	var table_html = "<table><tr>\n";
+	for (var row = 0; row <= available_books.length; row++) {
+		//var rowpp = row + 1;
+		for (var book = 0 ; book < available_books.length; book++) {
+			//var bookpp = book + 1;
+			if (book == 0) {
+				table_html += "<tr>";
+				if (row == 0) table_html += "<td>Available books:";
+				else  table_html += "<td>Book " + row;
+			}
+
+			if (row == 0) {
+				table_html += "<th><b>" + available_books[book] + "</b>";
+			} else {
+				table_html += "<td><input type='radio' name='setbook" + row + "' value='" + available_books[book] + "'>";
+			}
+		}
+	}
+	table_html += "</table>";
+	//console.debug(table_html);
+	$("#settings_2").html(table_html);
+
 	var book_array = aa_book_order.split(',');
 	for ( i = book_array.length - 1; i >= 0; i--) {
 		var j = i + 1;
-		$("#setbook"+j).val(book_array[i]);
+		$("input[name=setbook"+j+"][value=" + book_array[i] + "]").prop('checked', true);
 	}
 	$("#version").append(title_text);
 }
 
 function save_settings() {
 	var new_book_order = "";
-	for ( i = 1; i <= 7; i++ ) new_book_order += $("#setbook"+i).val() + ',';
-	new_book_order += $("#setbook8").val();
+	for ( i = 1; i <= 7; i++ ) new_book_order += $('input[name = "setbook' + i + '"]:checked').val() + ',';
+	new_book_order += $('input[name = "setbook8"]:checked').val();
+	//new_book_order += $("#setbook8").val();
 	//debug(new_book_order);
 	aa_book_order = new_book_order;
 	set_book_order();
@@ -1131,6 +1218,10 @@ function toggle_view() {
 	// TODO: JQuery-fy this silliness:
 	toggle_view_auto = 0;
 	if (toggle == 1) {
+		$(".narrowview").hide();
+		$(".wideview").show();
+		$("#br_wideview").css('max-width', '');
+		/*
 		document.getElementById("sg_narrowview").style['display'] = 'none';
 		document.getElementById("sg_wideview").style['display'] = 'block';
 		document.getElementById("ha_narrowview").style['display'] = 'none';
@@ -1142,9 +1233,14 @@ function toggle_view() {
 		document.getElementById("ls_narrowview").style['display'] = 'none';
 		document.getElementById("ls_wideview").style['display'] = 'block';
 		document.getElementById("currentmode").innerHTML = 'full page width';
+		*/
 		toggle_view_mode = 1;
 		toggle = 2;
 	} else {
+		$(".narrowview").show();
+		$(".wideview").hide();
+		$("#br_wideview").css('max-width', '99%');
+		/*
 		document.getElementById("sg_narrowview").style['display'] = 'block';
 		document.getElementById("sg_wideview").style['display']   = 'none';
 		document.getElementById("ha_narrowview").style['display'] = 'block';
@@ -1156,6 +1252,7 @@ function toggle_view() {
 		document.getElementById("ls_narrowview").style['display'] = 'block';
 		document.getElementById("ls_wideview").style['display']   = 'none';
 		document.getElementById("currentmode").innerHTML = 'single column';
+		*/
 		toggle = 1;
 		toggle_view_mode = 2;
 	}
@@ -1245,9 +1342,12 @@ function do_search( input) {
 	//alert( "Searching for: " + search);
 	// Headers 
 	req_sg_page = binarySearch( sg, search, 0);
+	req_br_page = binarySearch( br, search, 0);
+	req_pr_page = binarySearch( pr, search, 0);
 	req_ha_page = binarySearch( ha_p, search, 0);
 	// Fudge was set to -1, but this often leads to the wrong page
-	req_hw3_page = binarySearch( hw3_p, search, 0);
+	req_hw3_page = binarySearch( hw3, search, 0);
+	req_hw4_page = binarySearch( hw4, search, 0);
 	req_ll = get_ll_volume_page( binarySearch( ll_p, search, -1));
 	req_ll_vol = req_ll[0];
 	req_ll_page = req_ll[1];
