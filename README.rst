@@ -4,42 +4,6 @@ Please read below for the latest news, planned updates and more
 background information on the Arabic Almanac website which can be found
 `here <http://ejtaal.net/m/aa>`_.
 
-Request for help!
-=================
-
-I hope to include the following dictionaries soon:
-
--  Arabic -> English:
-
-   -  Brill Dictionary of Quranic Usage (
-      `1 <http://archive.org/details/ArabicEnglishDictionaryQuranicUsage>`_
-      )
-   -  A dictionary and glossary of the Quran by John Penrice
-      (`1 <http://archive.org/details/adictionaryandg00penrgoog>`_ )
-   -  4th print of Hans Wehr (Currently the 3rd print is used)
-
--  Arabic -> French:
-
-   -  Kazimirski, a popular Arabic -> French dictionary ( `Vol.
-      1 <http://archive.org/details/dictionnairearab01bibeuoft>`_, `Vol.
-      2 <http://archive.org/details/dictionnairearab02bibeuoft>`_ )
-
--  Arabic -> Urdu:
-
-   -  al Qamoos al Waheed (
-      `1 <http://archive.org/details/Alqamoos-Ul-Waheed>`_ )
-   -  Misbah ul Lughat (The prints available at:
-      `1 <http://archive.org/details/MisbahUlLughat_part1>`_
-      `2 <http://archive.org/details/MisbahUlLughat_part22>`_
-      `3 <http://archive.org/details/MisbahUlLughat-com>`_
-      `4 <http://archive.org/details/misbah-ul-lughat>`_ however are
-      unfortunately not usable, anyone know of a better copy?)
-
-In order to include a book I would need an index of the page headers. I
-have set up a page where you can input page headers easily, it has
-already been used successfully by several volunteers for completing the
-index of the Steingass book. Contact me at ejtaal@gmail.com for more
-details.
 
 Latest news
 ===========
@@ -239,7 +203,7 @@ There are also some keyboard shortcuts you can use:
 Starting points:
 ================
 
-Here are some links to get you started:
+Here are some links to get you started (TODO: include links for BR and PR):
 
 -  `Prefaces <aa.html#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6>`_
 -  `Morphology <aa.html#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE>`_
@@ -308,10 +272,39 @@ Mini) to go the following url:
 `file://localhost/sdcard <file://localhost/sdcard>`_, then locate the
 "aa" folder and click on index.html, and hopefully it should work :)
 
-TODO
-====
+Future plans
+============
 
--  Add more dictionaries...
+Request for help:
+I hope to include the following dictionaries in the future:
+
+-  Arabic -> English:
+
+   - No dictionaries requested at present
+
+-  Arabic -> French:
+
+   -  Kazimirski, a popular Arabic -> French dictionary ( `Vol.
+      1 <http://archive.org/details/dictionnairearab01bibeuoft>`_, `Vol.
+      2 <http://archive.org/details/dictionnairearab02bibeuoft>`_ )
+
+-  Arabic -> Urdu:
+
+   -  al Qamoos al Waheed (
+      `1 <http://archive.org/details/Alqamoos-Ul-Waheed>`_ )
+   -  Misbah ul Lughat (The prints available at:
+      `1 <http://archive.org/details/MisbahUlLughat_part1>`_
+      `2 <http://archive.org/details/MisbahUlLughat_part22>`_
+      `3 <http://archive.org/details/MisbahUlLughat-com>`_
+      `4 <http://archive.org/details/misbah-ul-lughat>`_ however are
+      unfortunately not usable, anyone know of a better copy?)
+
+In order to include a book I would need an index of the page headers. I
+have set up a page where you can input page headers easily, it has
+already been used successfully by several volunteers for completing the
+index of the Steingass book. Contact me at ejtaal@gmail.com for more
+details.
+
 -  Improve roman -> arabic letters substitution (make it more like
    yamli)
 
