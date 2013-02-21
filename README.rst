@@ -44,9 +44,12 @@ details.
 Latest news
 ===========
 
--  version 3.0 - x/2/2013
+-  version 3.0 - 21/2/2013
 
-   -  Version bump due to having added 3 new books.
+   -  Thanks to brother Abd Shomad, I've been able to add the following 3
+      new books: 4th print of Hans Wehr (finally), and the Quranic dictionaries by Brill and Penrice.
+   - New way of selecting book order in the settings menu (3 bar button on top left)
+   - other minor fixes and updates
 
 -  version 2.0 - 30/1/2013
 
@@ -286,6 +289,8 @@ data! Watch your internet usage allowance!
 Download for offline use
 ========================
 
+**Download is still for version 2.0, version 3.0 will follow soon**
+
 You can now download the entire website and install it for instance on
 your phone's SD card or your desktop PC for super fast access. Download
 link:
@@ -326,12 +331,15 @@ has been made possible by using data generously provided by Abdul Hafiz
 The index for Steingass has been provided by some very helpful Malaysian
 students of Arabic.
 
+The index for the 4th print of Hans Wehr, Brill and Penrice have been provided by Abd Shomad.
+
 Jazakum Allahu khair :)
 
 Software used:
 
 -  scantailor, a useful tool to prepare the image files of the books
 -  ImageMagick, an image processing tool
+-  ReText, documentation editor
 
 Contact
 =======
