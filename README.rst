@@ -183,7 +183,7 @@ table:
    r -> "ر"        n -> "ن"
    E, e or 3 -> "ع"   w -> "و"
    f -> "ف"        y -> "ي"
-   v -> "ث"
+   v -> "ث"        x -> "خ"
    </pre>
 
 There are also some keyboard shortcuts you can use:
