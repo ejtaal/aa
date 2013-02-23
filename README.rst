@@ -8,7 +8,7 @@ background information on the Arabic Almanac website which can be found
 Latest news
 ===========
 
--  version 3.0 - 21/2/2013
+-  version 3.0 - 25/2/2013
 
    -  Thanks to brother Abd Shomad, I've been able to add the following 3
       new books: 4th print of Hans Wehr (finally), and the Quranic dictionaries by Brill and Penrice.
@@ -120,7 +120,7 @@ LL/LS: Lane's Lexicon + supplement
 This is a monumental work written in the 19th century, where the author
 has gone through dozens of arabic sources and compiled a lot of relevant
 examples for each root, from Quran, Hadeeth, poetry and proverbs. It is
-extremely verbose which sometimes makes it difficult to find what the
+extremely verbose which sometimes makes it difficult to find the
 word you're looking for. The main work only goes uptil the letter qaf,
 and the supplement written after the author's death relies on his notes
 and is therefore unfortunately lacking. Still extremely useful
