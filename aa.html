@@ -77,7 +77,8 @@ hr { margin: 5px; }
 }
 
 #settings_container,#hw3_toggle,#ll_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle { display: none; }
-#settings_2 td { border-bottom: solid black 1px; }
+#settings_container { border: solid white 5px; }
+#settings_2 td { border-bottom: solid white 1px; }
 
 #hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2 {
 	position: relative;
@@ -194,13 +195,13 @@ _gaq.push(['_trackPageview']);
 
 <center>
 
-<div id='settings_container' style="border: solid black 5px">
+<div id='settings_container'>
 	<b>Settings</b><br>
 	
 	Choose the order in which you want the available books displayed:<br>
 	<div id='settings_2'>
 	</div>
-	If you're unsure, here are some presets you can use:
+	You can also choose from these presets:
 	<table><tr>
 	<td>
 	<a href="javascript:set_order_preset('quran')"><div class='button'>Quran</div></a>
