@@ -164,7 +164,7 @@ _gaq.push(['_trackPageview']);
 
 <table class='navtable'>
 <tr>
-	<td><a href='javascript:toggle_settings()' title='Settings menu'><div class='button' ><span style='border-top: 3px solid black; border-bottom: 3px solid black;'><b>&mdash;</b></span></div></a></td>
+	<td><a href='javascript:toggle_settings()' title='Settings menu'><div class='button' ><span style='border-top: 3px solid black; border-bottom: 3px solid black;'><b>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;</b></span></div></a></td>
 	<td><a href='readme.html' title='More information about this website'><div class='button'>About</div></a></td>
 	<td><a href='javascript:toggle_view()' title='Toggle between mobile (column view) and desktop (full page) view'><div class='button'>Mobile</div></a></td>
 	<td><a href='javascript:toggle_fitwidth()' title='Toggle to have pages fit to your browser window'><div class='button'>|&larr;&rarr;|</div></a></td>
@@ -1086,8 +1086,8 @@ function init_settings() {
 			//var bookpp = book + 1;
 			if (book == 0) {
 				table_html += "<tr>";
-				if (row == 0) table_html += "<td>Available books:";
-				else  table_html += "<td>Book " + row;
+				if (row == 0) table_html += "<td>";
+				else  table_html += "<td>" + row;
 			}
 
 			if (row == 0) {
