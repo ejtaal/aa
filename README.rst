@@ -1,8 +1,9 @@
-.. contents::
 
 Please read below for the latest news, planned updates and more
-background information on the Arabic Almanac website which can be found
-`here <http://ejtaal.net/m/aa>`_.
+background information on the Arabic Almanac website which can be found here:
+`http://ejtaal.net/m/aa <http://ejtaal.net/m/aa>`_.
+
+.. contents::
 
 
 Latest news
