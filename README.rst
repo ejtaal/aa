@@ -201,6 +201,11 @@ There are also some keyboard shortcuts you can use:
    forward 1 page: right arrow, g or x
    </pre>
 
+Click on the 3 bar button on the top left to bring up a menu which allows you to change the order in which the books are displayed.
+
+If you hide a book its images are not loaded during new searches, so this will improve the load time for the books that you do want to view.
+
+
 Starting points:
 ================
 
@@ -248,30 +253,26 @@ always change the view manually with the 'View' button.
 
    <p>
 
-Warning! With all books visible a single page may take up to 500k of
-data! Watch your internet usage allowance!
+Warning! With all books visible a single search may load up to 1 MB of images! Watch your internet usage allowance!
 
 Download for offline use
 ========================
-
-**Download is still for version 2.0, version 3.0 will follow soon**
 
 You can now download the entire website and install it for instance on
 your phone's SD card or your desktop PC for super fast access. Download
 link:
 
 -  **Main download site @ archive.org:**
-   `Arabic\_Almanac\_v2.0.zip <http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac_v2.0.zip>`_
--  Secondary backup site: `here <../Arabic_Almanac_v2.0.zip>`_\ 
+   `Arabic\_Almanac\_v3.0.zip <http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac_v3.0.zip>`_
+-  Secondary backup site: `here <../Arabic_Almanac_v3.0.zip>`_\ 
 
-The size is about 687 MB. The zip file contains a folder named "aa"
+The size is about 815 MB. The zip file contains a folder named "aa"
 which you should place somewhere on your PC's drive or on your phone's
 SD card. For desktops you should then be able to do "File->Open" and
 select the index.html file within the "aa" folder. On smart phones &
-tablets I recommend using the free Opera browser (the full one, not the
-Mini) to go the following url:
+tablets there are 2 ways you could try to get it installed: 1) Install the free Opera browser (the full one, not the Mini) to go the following url:
 `file://localhost/sdcard <file://localhost/sdcard>`_, then locate the
-"aa" folder and click on index.html, and hopefully it should work :)
+"aa" folder and click on index.html or 2) Install the free Astro file manager and navigate to the aa folder that you've extracted from the zip file onto the sdcard. Tap the index.html file and it will either open in your default browser or you can choose any of the installed browser to open the file. Once in your browser you can bookmark it for quick access.
 
 Future plans
 ============
@@ -281,7 +282,7 @@ I hope to include the following dictionaries in the future:
 
 -  Arabic -> English:
 
-   - No dictionaries requested at present
+   - Mustansir Mir - Dictionary of Quranic Terms + Coherence + Verbal Idioms ( `link <http://archive.org/details/MustansirMir-DictionaryOfQuranicTermsCoherenceVerbalIdioms>`_ )
 
 -  Arabic -> French:
 
