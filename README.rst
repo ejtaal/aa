@@ -9,6 +9,9 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
+-  version 3.1 - 28/3/2013
+   - 2 minor fixes: 1) Fix hanging with downloaded version (it was trying to contact Google analytics which is pointless when you're offline) and 2) Clear images when doing a new search so that you can see the new image being downloaded.
+
 -  version 3.0 - 25/2/2013
 
    -  Thanks to brother Abd Shomad, I've been able to add the following 3
