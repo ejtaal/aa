@@ -582,7 +582,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script>
 
 // Some global vars that we need:
-var version = "3.0";
+var version = "3.1";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
@@ -893,10 +893,18 @@ function display_images() {
 	//ll_display_page( page);
 	//debug ( ll_get_img_url( page));
 	//document.getElementById("ll-narrow").src = ll_get_img_url( cur_ll_vol, cur_ll_page);
+	// TODO: jQuery-fy the stuff below
 
 	if ( ! hw4_hide) {	
 		//document.getElementById("hw4_load_status_line").innerHTML = "<br>Loading . . .";
 		var hw4_img_url = hw4_get_img_url( cur_hw4_page);
+		// Clear image if it's being changed so it's clearer to user that a new imagine
+		// is being downloaded
+		if ( $("#hw4_col1").attr('src') != hw4_img_url) {
+			$("#hw4_col1").attr('src', '');
+			$("#hw4_col2").attr('src', '');
+			$("#hw4_wideviewimg").attr('src', '');
+		}
 		document.getElementById("hw4_col1").src = 
 			document.getElementById("hw4_col2").src = 
 			document.getElementById("hw4_wideviewimg").src = hw4_img_url;
@@ -911,6 +919,11 @@ function display_images() {
 	if ( ! hw3_hide) {	
 		//document.getElementById("hw3_load_status_line").innerHTML = "<br>Loading . . .";
 		var hw3_img_url = hw3_get_img_url( cur_hw3_page);
+		if ( $("#hw3_col1").attr('src') != hw3_img_url) {
+			$("#hw3_col1").attr('src', '');
+			$("#hw3_col2").attr('src', '');
+			$("#hw3_wideviewimg").attr('src', '');
+		}
 		document.getElementById("hw3_col1").src = 
 			document.getElementById("hw3_col2").src = 
 			document.getElementById("hw3_wideviewimg").src = hw3_img_url;
@@ -925,6 +938,11 @@ function display_images() {
 	if ( ! ha_hide) {	
 		//document.getElementById("ha_load_status_line").innerHTML = "<br>Loading . . .";
 		var ha_img_url = ha_get_img_url( cur_ha_page);
+		if ( $("#ha_col1").attr('src') != ha_img_url) {
+			$("#ha_col1").attr('src', '');
+			$("#ha_col2").attr('src', '');
+			$("#ha_wideviewimg").attr('src', '');
+		}
 		document.getElementById("ha_col1").src = 
 			document.getElementById("ha_col2").src = 
 			document.getElementById("ha_wideviewimg").src = ha_img_url;
@@ -939,6 +957,11 @@ function display_images() {
 	if ( ! sg_hide) {	
 		//document.getElementById("sg_load_status_line").innerHTML = "<br>Loading . . .";
 		var sg_img_url = sg_get_img_url( cur_sg_page);
+		if ( $("#sg_col1").attr('src') != sg_img_url) {
+			$("#sg_col1").attr('src', '');
+			$("#sg_col2").attr('src', '');
+			$("#sg_wideviewimg").attr('src', '');
+		}
 		document.getElementById("sg_col1").src = 
 			document.getElementById("sg_col2").src = 
 			document.getElementById("sg_wideviewimg").src = sg_img_url;
@@ -954,6 +977,9 @@ function display_images() {
 		//document.getElementById("br_load_status_line").innerHTML = "<br>Loading . . .";
 		var br_img_url = br_get_img_url( cur_br_page);
 		// Brill doesn't have columns
+		if ( $("#br_wideviewimg").attr('src') != br_img_url) {
+			$("#br_wideviewimg").attr('src', '');
+		}
 		/*
 		document.getElementById("br_col1").src = 
 			document.getElementById("br_col2").src = 
@@ -970,6 +996,11 @@ function display_images() {
 	if ( ! pr_hide) {	
 		//document.getElementById("pr_load_status_line").innerHTML = "<br>Loading . . .";
 		var pr_img_url = pr_get_img_url( cur_pr_page);
+		if ( $("#pr_col1").attr('src') != pr_img_url) {
+			$("#pr_col1").attr('src', '');
+			$("#pr_col2").attr('src', '');
+			$("#pr_wideviewimg").attr('src', '');
+		}
 		document.getElementById("pr_col1").src = 
 			document.getElementById("pr_col2").src = 
 			document.getElementById("pr_wideviewimg").src = pr_img_url;
@@ -984,6 +1015,11 @@ function display_images() {
 	if ( ! ll_hide) {	
 		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
 		var ll_img_url = ll_get_img_url( cur_ll_vol, cur_ll_page);
+		if ( $("#ll_col1").attr('src') != ll_img_url) {
+			$("#ll_col1").attr('src', '');
+			$("#ll_col2").attr('src', '');
+			$("#ll_wideviewimg").attr('src', '');
+		}
 		document.getElementById("ll_col1").src = 
 			document.getElementById("ll_col2").src = 
 			document.getElementById("ll_col3").src = 
@@ -1000,6 +1036,11 @@ function display_images() {
 	if ( ! ls_hide) {	
 		//document.getElementById("ls_load_status_line").innerHTML = "<br>Loading . . .";
 		var ls_img_url = ls_get_img_url( cur_ls_page);
+		if ( $("#ls_col1").attr('src') != ls_img_url) {
+			$("#ls_col1").attr('src', '');
+			$("#ls_col2").attr('src', '');
+			$("#ls_wideviewimg").attr('src', '');
+		}
 		document.getElementById("ls_col1").src = 
 			document.getElementById("ls_col2").src = 
 			document.getElementById("ls_col3").src = 
