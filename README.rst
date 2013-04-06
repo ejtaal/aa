@@ -1,4 +1,4 @@
-
+﻿
 Please read below for the latest news, planned updates and more
 background information on the Arabic Almanac website which can be found here:
 `http://ejtaal.net/m/aa <http://ejtaal.net/m/aa>`_.
@@ -8,6 +8,9 @@ background information on the Arabic Almanac website which can be found here:
 
 Latest news
 ===========
+
+-  version 3.2 - 6/4/2013
+   -  Included Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
 
 -  version 3.1 - 28/3/2013
    - 2 minor fixes: 1) Fix hanging with downloaded version (it was trying to contact Google analytics which is pointless when you're offline) and 2) Clear images when doing a new search so that you can see the new image being downloaded.
