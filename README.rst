@@ -9,6 +9,9 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
+-  version 3.3 - 13/4/2013
+   -  Included Verbal Idioms Of The Holy Quran by Mustansir Mir.
+
 -  version 3.2 - 6/4/2013
    -  Included Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
 
