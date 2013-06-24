@@ -1,4 +1,4 @@
-<html><head><title>Arabic Almanac</title>
+﻿<html><head><title>Arabic Almanac</title>
 <link rel="shortcut icon" href="aa.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <style>
@@ -80,15 +80,19 @@ hr { margin: 5px; }
 #settings_container { border: solid white 5px; }
 #settings_2 td { border-bottom: solid white 1px; }
 
-#hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2,#aan_col1,#aan_col2,#vi_col1,#vi_col2 {
+#hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2,#aan_col1,#aan_col2 {
 	position: relative;
 	width: 200%;
+}
+#aan_col1 {
+	width: 250%; /* fix for AAN */ 
+	left: -25%;
 }
 #ha_col2 {
 	left: 0%;
 }
 
-#hw4_col2,#pr_col2,#hw3_col2,#ha_col1,#sg_col2,#aan_col2,#vi_col2 {
+#hw4_col2,#pr_col2,#hw3_col2,#ha_col1,#sg_col2,#aan_col2 {
 	right: 100%;
 }
 
@@ -110,21 +114,21 @@ hr { margin: 5px; }
 }
 #penrice         .navtable td div, #pr_toggle,  .PR_color , #pr_status_line  { background-color: orchid; }
 #brill           .navtable td div, #br_toggle,  .BR_color , #br_status_line  { background-color: magenta; }
+#aanadwi         .navtable td div, #aan_toggle, .AAN_color, #aan_status_line { background-color: azure; }
+#verbalidioms    .navtable td div, #vi_toggle,  .VI_color,  #vi_status_line  { background-color: violet; }
 #steingass       .navtable td div, #sg_toggle,  .SG_color , #sg_status_line  { background-color: turquoise; }
 #hanswehr3       .navtable td div, #hw3_toggle, .HW3_color, #hw3_status_line { background-color: coral; }
 #hanswehr4       .navtable td div, #hw4_toggle, .HW4_color, #hw4_status_line { background-color: salmon; }
-#aanadwi         .navtable td div, #aan_toggle, .AAN_color, #aan_status_line { background-color: azure; }
-#verbalidioms    .navtable td div, #vi_toggle,  .VI_color,  #vi_status_line  { background-color: violet; }
 #laneslexicon    .navtable td div, #ll_toggle,  .LL_color , #ll_status_line  { background-color: lawngreen; }
 #laneslexiconsup .navtable td div, #ls_toggle,  .LS_color , #ls_status_line  { background-color: palegreen; }
 #hava            .navtable td div, #ha_toggle,  .HA_color , #ha_status_line  { background-color: gold; }
 #pr_wideviewimg  { border: 3px solid orchid; }
 #br_wideviewimg  { border: 3px solid magenta; }
+#aan_wideviewimg { border: 3px solid azure; }
+#vi_wideviewimg  { border: 3px solid violet; }
 #sg_wideviewimg  { border: 3px solid turquoise; }
 #hw3_wideviewimg { border: 3px solid coral; }
 #hw4_wideviewimg { border: 3px solid salmon; }
-#aan_wideviewimg { border: 3px solid azure; }
-#vi_wideviewimg  { border: 3px solid violet; }
 #ll_wideviewimg  { border: 3px solid lawngreen; }
 #ls_wideviewimg  { border: 3px solid palegreen; }
 #ha_wideviewimg  { border: 3px solid gold; }
@@ -564,6 +568,7 @@ Show Supplement [_]
 </table>
 <span class='status_line' id='vi_status_line'></span>
 <div class='VI_color narrowview' id='vi_narrowview'>
+
 	<div class='column' id='div_vi_col1'>
 		<img id='vi_col1' onClick='javascript:searchandgo()'>
 	</div>
@@ -575,7 +580,7 @@ Show Supplement [_]
 </div>
 		
 <div id='vi_wideview'>
-	<img class='wideview' id='vi_wideviewimg' onClick='javascript:searchandgo()'>
+	<img id='vi_wideviewimg' onClick='javascript:searchandgo()'>
 </div>
 <table class='navtable'>
 <tr>
@@ -674,8 +679,8 @@ var version = "3.1";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
-var aan_offset = 14; // TODO: What is the value? 
-var vi_offset = 14; // TODO: What is the value? 
+var aan_offset = 1; // TODO: What is the value? 
+var vi_offset = 1; // TODO: What is the value? 
 var hw3_offset = 19;
 var ha_offset = 21;
 var sg_offset = 20;
@@ -687,8 +692,8 @@ var aa_book_order = initial_book_order;
 var starting_hash = "#HW4=14,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,AAN=14,VI=14"; // TODO: What is the value? 
 var cur_hw3_page = 19, req_hw3_page = 19;
 var cur_hw4_page = 14, req_hw4_page = 14;
-var cur_aan_page = 14, req_aan_page = 14; // TODO: What is the value?
-var cur_vi_page = 14, req_vi_page = 14; // TODO: What is the value?
+var cur_aan_page = 1, req_aan_page = 1; // TODO: What is the value?
+var cur_vi_page = 1, req_vi_page = 1; // TODO: What is the value?
 var cur_br_page = 26, req_br_page = 26;
 var cur_pr_page = 9, req_pr_page = 9;
 var cur_ll_page = 38, req_ll_page = 38;
@@ -860,8 +865,8 @@ function set_title() {
 			if ( id == "LL" && ! ll_hide) add_text = "LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)];
 			if ( id == "LS" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
 			if ( id == "SG" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
-			if ( id == "BR" && ! br_hide) add_text = "BR: " + sg[cur_br_page];
-			if ( id == "PR" && ! pr_hide) add_text = "PR: " + sg[cur_pr_page];
+			if ( id == "BR" && ! br_hide) add_text = "BR: " + br[cur_br_page];
+			if ( id == "PR" && ! pr_hide) add_text = "PR: " + pr[cur_pr_page];
 			if ( add_text != "") 
 				if ( title != "") title += " / " + add_text;
 				else title = add_text;
@@ -1041,15 +1046,14 @@ function display_images() {
 	if ( ! vi_hide) {	
 		//document.getElementById("vi_load_status_line").innerHTML = "<br>Loading . . .";
 		var vi_img_url = vi_get_img_url( cur_vi_page);
-		// Clear image if it's being changed so it's clearer to user that a new imagine
-		// is being downloaded
-		if ( $("#vi_col1").attr('src') != vi_img_url) {
-			$("#vi_col1").attr('src', '');
-			$("#vi_col2").attr('src', '');
+		// VI doesn't have columns
+		if ( $("#vi_wideviewimg").attr('src') != vi_img_url) {
 			$("#vi_wideviewimg").attr('src', '');
 		}
+		/* // VI doesn't have columns
 		document.getElementById("vi_col1").src = 
 			document.getElementById("vi_col2").src = 
+		*/
 			document.getElementById("vi_wideviewimg").src = vi_img_url;
 		document.getElementById("vi_status_line").innerHTML = 
 			" <b>" + vi[cur_vi_page] + "</b> | " +
@@ -1324,7 +1328,7 @@ function update_settings_order( order_toset) {
 
 function set_order_preset( preset_requested) {
 	var new_book_order = initial_book_order;
-	if ( preset_requested == "quran")  new_book_order = "BR,PR,AAN,VI,LL,LS,SG,HW4,HA,HW3";
+	if ( preset_requested == "quran")  new_book_order = "BR,SG,HW4,PR,AAN,VI,LL,LS,HA,HW3";
 	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,HW3,AAN,VI";
 	if ( preset_requested == "dev") new_book_order = "VI,AAN,HW4,SG,LL,LS,HA,BR,PR,HW3";
 	// Default is above already
@@ -1442,6 +1446,7 @@ function toggle_view() {
 		$(".narrowview").hide();
 		$(".wideview").show();
 		$("#br_wideviewimg").css('max-width', '');
+		$("#vi_wideviewimg").css('max-width', '');
 		$("#currentmode").html("Desktop (full page)");
 		toggle_view_mode = 1;
 		toggle = 2;
@@ -1449,6 +1454,7 @@ function toggle_view() {
 		$(".narrowview").show();
 		$(".wideview").hide();
 		$("#br_wideviewimg").css('max-width', '99%');
+		$("#vi_wideviewimg").css('max-width', '99%');
 		$("#currentmode").html("Mobile (column)");
 		toggle = 1;
 		toggle_view_mode = 2;
