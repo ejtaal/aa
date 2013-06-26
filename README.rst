@@ -161,6 +161,20 @@ HA: Hava
 
 A very basic dictionary focusing on some more classical meanings.
 
+AAN: Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi
+------------------------------------------------------------
+
+An extremely useful dictionary of the words in the Qur'an, compiled on the basis of their three-letter roots, allowing one to infer the meanings of almost all the different Qur'anic words by recognizing their root meaning. Examples of uses of the words in the Qur'an are also presented.
+
+The Compiler: Dr. Abdullah Abbas Al-Nadwi is a graduate of the Nadwatul Ulema and an MA &PhD in Linguistic Philosophy, He is advisor to the Rabitah al-Alam al-Islamiyyah, Makkah, Member of the Liguistic Society Cambride and Professor at Umm al-Qura University Makkah. 
+
+VI: Verbal Idoms of the Quraan by Mustansir Mir
+-----------------------------------------------
+
+An idiom is a phrase where the words together have a different meaning to the literal dictionary meaning of the words. For example, in English there are thousands, e.g. "a little bird told me", "a penny for your thoughts", "a picture is worth a thousand words", "add fuel to the fire" etc.
+Similarly, in Arabic there are also thousands. The Quran uses several hundred, thus to truly understand and study The Quran, it is very important to be able to identify, study and understand its idiomatic expressions. This book does just that. It is a very unique study (I have not come across another book that does the same in English). It is a simple list and reference for The Quran's idiomatic usage. This book is recommended for anyone wishing to undertake a deeper and more accurate study of The Quran.
+
+
 How to use
 ==========
 
