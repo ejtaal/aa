@@ -1,4 +1,4 @@
-function aan_get_img_url ( page) {
+﻿function aan_get_img_url ( page) {
 	if ( page < 1) page=1;
 	if ( page > aan.length - 1) page=aan.length - 1;
 	cur_aan_page=page;
@@ -7,6 +7,7 @@ function aan_get_img_url ( page) {
 	if ( p < 10) prefixed_page="0" + p;
 	if ( p < 100) prefixed_page="00" + p;
 	else if ( p < 1000) prefixed_page="0" + p;
+	// alert(prefixed_page); 
 	return "aan/" + Math.floor(page/100) + "/aan-" + prefixed_page + ".png";
 }
 
@@ -52,7 +53,7 @@ aan[36]="اذى"
 aan[37]="ارم"
 aan[38]="اسس"
 aan[39]="اشر"
-aan[40]="فك"
+aan[40]="افك"
 aan[41]="اكل"
 aan[42]="الف"
 aan[43]="الو"
@@ -674,9 +675,9 @@ aan[658]="نزع"
 aan[659]="نزغ"
 aan[660]="نزل"
 aan[661]="نزل"
-aan[662]="نسخ"
+aan[662]="نسخ" // OK
 aan[663]="نسل"
-aan[664]="نسي"
+aan[664]="نسي" // OK
 aan[665]="نشر"
 aan[666]="نصب"
 aan[667]="نصح"
@@ -686,7 +687,7 @@ aan[670]="نضد"
 aan[671]="نظر"
 aan[672]="نظر"
 aan[673]="نظر"
-aan[674]="نعم"
+aan[674]="نعم" // OK
 aan[675]="نفد"
 aan[676]="نفر"
 aan[677]="نفس"
@@ -705,7 +706,7 @@ aan[689]="نوش"
 aan[690]="نيل"
 aan[691]="نيل"
 aan[692]="هتي"
-aan[693]="هجر"
+aan[693]="هجر" // OK 
 aan[694]="هدم"
 aan[695]="هدي"
 aan[696]="هدي"
@@ -768,6 +769,7 @@ aan[752]="يسر"
 aan[753]="يقن"
 aan[754]="يمن"
 aan[755]="يون"
+/* 
 aan[756]=""
 aan[757]=""
 aan[758]=""
@@ -910,3 +912,4 @@ aan[894]=""
 aan[895]=""
 aan[896]=""
 aan[897]=""
+*/ 
