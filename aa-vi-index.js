@@ -1,4 +1,4 @@
-function vi_get_img_url ( page) {
+﻿function vi_get_img_url ( page) {
 	if ( page < 1) page=1;
 	if ( page > vi.length - 1) page=vi.length - 1;
 	cur_vi_page=page;
@@ -12,6 +12,7 @@ function vi_get_img_url ( page) {
 
 var vi=[];
 
+/* 
 vi[0] = ""
 vi[1] = ""
 vi[2] = ""
@@ -63,6 +64,7 @@ vi[47] = ""
 vi[48] = ""
 vi[49] = ""
 vi[50] = ""
+*/ 
 vi[51] = "اب"
 vi[52] = "ات"
 vi[53] = "ات"
@@ -409,11 +411,13 @@ vi[393] = "ولي"
 vi[394] = "ولي"
 vi[395] = "وهن"
 vi[396] = "وهن"
-vi[397] = "ومم"
-vi[398] = "ومم"
+vi[397] = "يمم"
+/* 
+vi[398] = "يمم"
 vi[399] = ""
 vi[400] = ""
 vi[401] = ""
 vi[402] = ""
 vi[403] = ""
 vi[404] = ""
+*/ 
