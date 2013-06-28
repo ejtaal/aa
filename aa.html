@@ -675,6 +675,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script>
 
 // Some global vars that we need:
+var debugmode = false; 
 var version = "3.1";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
@@ -1224,7 +1225,7 @@ function display_images() {
 }
 
 function debug( text) {
-	document.getElementById("debug").innerHTML += "<br> [" + text + "] ";
+	if(debugmode) { document.getElementById("debug").innerHTML += "<br> [" + text + "] "; } 
 }
 
 // http://constc.blogspot.com/2008/07/undeclared-undefined-null-in-javascript.html
