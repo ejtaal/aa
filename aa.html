@@ -580,7 +580,7 @@ Show Supplement [_]
 </div>
 		
 <div id='vi_wideview'>
-	<img id='vi_wideviewimg' onClick='javascript:searchandgo()'>
+	<img class='wideview' id='vi_wideviewimg' onClick='javascript:searchandgo()'>
 </div>
 <table class='navtable'>
 <tr>
@@ -1670,8 +1670,10 @@ function binarySearch(items, value, exact_match_fudge){
         middle      = Math.floor((stopIndex + startIndex)/2),
 				retval = 0;
 
-    while(items[middle] != value && startIndex < stopIndex){
-
+    loop_count = 0;
+    while(items[middle] != value && startIndex < stopIndex && loop_count < 100){
+        debug(middle+'='+items[middle]); 
+        loop_count++; // abd shomad: Temporary countermeasure to prevent endless looping (due to index is not defined). 
         //adjust search area
         if (value < items[middle]){
             stopIndex = middle - 1;
