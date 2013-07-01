@@ -9,8 +9,6 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
--  version 3.4 - 30/6/2013
-   -  Included Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
 -  version 3.3 - 13/4/2013
    -  Included Verbal Idioms Of The Holy Quran by Mustansir Mir.
 
@@ -176,11 +174,6 @@ VI: Verbal Idoms of the Quraan by Mustansir Mir
 An idiom is a phrase where the words together have a different meaning to the literal dictionary meaning of the words. For example, in English there are thousands, e.g. "a little bird told me", "a penny for your thoughts", "a picture is worth a thousand words", "add fuel to the fire" etc.
 Similarly, in Arabic there are also thousands. The Quran uses several hundred, thus to truly understand and study The Quran, it is very important to be able to identify, study and understand its idiomatic expressions. This book does just that. It is a very unique study (I have not come across another book that does the same in English). It is a simple list and reference for The Quran's idiomatic usage. This book is recommended for anyone wishing to undertake a deeper and more accurate study of The Quran.
 
-MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A *)
----------------------------------------------------------------
-Caution: This dictionary was written by a Qadiani / Ahmadiyah *)
-However, the dictionary is very useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
-
 How to use
 ==========
 
@@ -238,14 +231,14 @@ If you hide a book its images are not loaded during new searches, so this will i
 Starting points:
 ================
 
-Here are some links to get you started (TODO: include links for BR and PR):
+Here are some links to get you started (TODO: Remaining morphology links for SG, BR, PR, HW4, AAN, VI):
 
--  `Prefaces <aa.html#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6>`_
--  `Morphology <aa.html#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE>`_
--  `Abbreviations <aa.html#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE>`_
--  `First page of content <aa.html#HW=19,LL=1_38,LS=3,HA=21,SG=20>`_
+-  `Prefaces <aa.html#HW3=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6,BR=7,PR=8,HW4=4,AAN=6,VI=17>`_
+-  `Morphology <aa.html#HW3=13,LL=1_29,LS=2,HA=19,LS_HIDE>`_
+-  `Abbreviations <aa.html#HW3=16,LL=1_30,LS=2,HA=20,LS_HIDE,SG=18,BR=25,PR_HIDE,HW4=12,AAN=12,VI=13>`_
+-  `First page of content <aa.html#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=27,PR=10,HW4=14,AAN=24,VI=51>`_
 -  `Lane's Lexicon Editor's preface and memoir (about 40
-   pages) <aa.html#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE>`_
+   pages) <aa.html#HW3=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE,BR_HIDE,PR_HIDE,HW4_HIDE,AAN_HIDE,VI_HIDE>`_
 
 Browser support
 ===============
@@ -311,7 +304,8 @@ I hope to include the following dictionaries in the future:
 
 -  Arabic -> English:
 
-   - Mustansir Mir - Dictionary of Quranic Terms + Coherence + Verbal Idioms ( `link <http://archive.org/details/MustansirMir-DictionaryOfQuranicTermsCoherenceVerbalIdioms>`_ )
+   - Mustansir Mir - Dictionary of Quranic Terms + Coherence + Verbal Idioms ( `link <http://archive.org/details/MustansirMir-DictionaryOfQuranicTermsCoherenceVerbalIdioms>`_ ) (Status: DONE for Verbal Idioms, Next: Dictionary of Quranic Terms)
+   - Al-Mawrid - by Dr. Roohi Baalbaki
 
 -  Arabic -> French:
 

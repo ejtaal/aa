@@ -3,10 +3,15 @@
 	if ( page > aan.length - 1) page=aan.length - 1;
 	cur_aan_page=page;
 	var p=page;
+	/* 
 	var prefixed_page=p;
 	if ( p < 10) prefixed_page="0" + p;
 	if ( p < 100) prefixed_page="00" + p;
 	else if ( p < 1000) prefixed_page="0" + p;
+	*/
+  var str = "" + p;
+  var pad = "0000";
+  prefixed_page = pad.substring(0, pad.length - str.length) + str;
 	// alert(prefixed_page); 
 	return "aan/" + Math.floor(page/100) + "/aan-" + prefixed_page + ".png";
 }

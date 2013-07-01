@@ -3,10 +3,15 @@ function hw4_get_img_url ( page) {
 	if ( page > hw4.length - 1) page = hw4.length - 1;
 	cur_hw4_page = page;
 	var p = page;
+	/* 
 	var prefixed_page = p;
 	if ( p < 10) prefixed_page = "0" + p;
 	if ( p < 100) prefixed_page = "00" + p;
 	else if ( p < 1000) prefixed_page = "0" + p;
+	*/ 
+  var str = "" + p;
+  var pad = "0000";
+  prefixed_page = pad.substring(0, pad.length - str.length) + str;
 	return "hw4/" + Math.floor(page/100) + "/hw4-" + prefixed_page + ".png";
 }
 

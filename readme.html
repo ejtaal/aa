@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/" />
-<title></title>
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<title></title>
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 7056 2011-06-17 10:50:48Z milde $
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -77,7 +77,7 @@ div.tip p.admonition-title {
 
 div.attention p.admonition-title, div.caution p.admonition-title,
 div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title {
+div.warning p.admonition-title, .code .error {
   color: red ;
   font-weight: bold ;
   font-family: sans-serif }
@@ -249,9 +249,18 @@ pre.address {
   margin-top: 0 ;
   font: inherit }
 
-pre.literal-block, pre.doctest-block, pre.math {
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
   margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
 
 span.classifier {
   font-family: sans-serif ;
@@ -304,6 +313,21 @@ table.docutils th.field-name, table.docinfo th.docinfo-name {
   white-space: nowrap ;
   padding-left: 0 }
 
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
 h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
 h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
   font-size: 100% }
@@ -311,12 +335,12 @@ h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
 ul.auto-toc {
   list-style-type: none }
 
-</style>
+</style>
 </head>
 <body>
-<div class="document">
-
-
+<div class="document">
+
+
 <p>Please read below for the latest news, planned updates and more
 background information on the Arabic Almanac website which can be found here:
 <a class="reference external" href="http://ejtaal.net/m/aa">http://ejtaal.net/m/aa</a>.</p>
@@ -332,28 +356,29 @@ background information on the Arabic Almanac website which can be found here:
 <li><a class="reference internal" href="#br-brill" id="id12">BR: Brill</a></li>
 <li><a class="reference internal" href="#pr-penrice" id="id13">PR: Penrice</a></li>
 <li><a class="reference internal" href="#ha-hava" id="id14">HA: Hava</a></li>
+<li><a class="reference internal" href="#aan-vocabulary-of-the-holy-quran-by-dr-abdullah-abbas-nadwi" id="id15">AAN: Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi</a></li>
+<li><a class="reference internal" href="#vi-verbal-idoms-of-the-quraan-by-mustansir-mir" id="id16">VI: Verbal Idoms of the Quraan by Mustansir Mir</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#how-to-use" id="id15">How to use</a></li>
-<li><a class="reference internal" href="#starting-points" id="id16">Starting points:</a></li>
-<li><a class="reference internal" href="#browser-support" id="id17">Browser support</a><ul>
-<li><a class="reference internal" href="#should-work-on-most-smart-phones-tablets" id="id18">Should work on most smart phones &amp; tablets!</a></li>
+<li><a class="reference internal" href="#how-to-use" id="id17">How to use</a></li>
+<li><a class="reference internal" href="#starting-points" id="id18">Starting points:</a></li>
+<li><a class="reference internal" href="#browser-support" id="id19">Browser support</a><ul>
+<li><a class="reference internal" href="#should-work-on-most-smart-phones-tablets" id="id20">Should work on most smart phones &amp; tablets!</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#download-for-offline-use" id="id19">Download for offline use</a></li>
-<li><a class="reference internal" href="#future-plans" id="id20">Future plans</a></li>
-<li><a class="reference internal" href="#sources-and-acknowledgements" id="id21">Sources and acknowledgements</a></li>
-<li><a class="reference internal" href="#contact" id="id22">Contact</a></li>
+<li><a class="reference internal" href="#download-for-offline-use" id="id21">Download for offline use</a></li>
+<li><a class="reference internal" href="#future-plans" id="id22">Future plans</a></li>
+<li><a class="reference internal" href="#sources-and-acknowledgements" id="id23">Sources and acknowledgements</a></li>
+<li><a class="reference internal" href="#contact" id="id24">Contact</a></li>
 </ul>
 </div>
 <div class="section" id="latest-news">
 <h1><a class="toc-backref" href="#id6">Latest news</a></h1>
 <ul class="simple">
 <li>version 3.3 - 13/4/2013
-   -  Included Verbal Idioms Of The Holy Quran by Mustansir Mir.
+-  Included Verbal Idioms Of The Holy Quran by Mustansir Mir.</li>
 <li>version 3.2 - 6/4/2013
-   -  Included Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
-</li>
+-  Included Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.</li>
 <li>version 3.1 - 28/3/2013
 - 2 minor fixes: 1) Fix hanging with downloaded version (it was trying to contact Google analytics which is pointless when you're offline) and 2) Clear images when doing a new search so that you can see the new image being downloaded.</li>
 <li>version 3.0 - 25/2/2013<ul>
@@ -494,9 +519,19 @@ author</a></p>
 <h2><a class="toc-backref" href="#id14">HA: Hava</a></h2>
 <p>A very basic dictionary focusing on some more classical meanings.</p>
 </div>
+<div class="section" id="aan-vocabulary-of-the-holy-quran-by-dr-abdullah-abbas-nadwi">
+<h2><a class="toc-backref" href="#id15">AAN: Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi</a></h2>
+<p>An extremely useful dictionary of the words in the Qur'an, compiled on the basis of their three-letter roots, allowing one to infer the meanings of almost all the different Qur'anic words by recognizing their root meaning. Examples of uses of the words in the Qur'an are also presented.</p>
+<p>The Compiler: Dr. Abdullah Abbas Al-Nadwi is a graduate of the Nadwatul Ulema and an MA &amp;PhD in Linguistic Philosophy, He is advisor to the Rabitah al-Alam al-Islamiyyah, Makkah, Member of the Liguistic Society Cambride and Professor at Umm al-Qura University Makkah.</p>
+</div>
+<div class="section" id="vi-verbal-idoms-of-the-quraan-by-mustansir-mir">
+<h2><a class="toc-backref" href="#id16">VI: Verbal Idoms of the Quraan by Mustansir Mir</a></h2>
+<p>An idiom is a phrase where the words together have a different meaning to the literal dictionary meaning of the words. For example, in English there are thousands, e.g. &quot;a little bird told me&quot;, &quot;a penny for your thoughts&quot;, &quot;a picture is worth a thousand words&quot;, &quot;add fuel to the fire&quot; etc.
+Similarly, in Arabic there are also thousands. The Quran uses several hundred, thus to truly understand and study The Quran, it is very important to be able to identify, study and understand its idiomatic expressions. This book does just that. It is a very unique study (I have not come across another book that does the same in English). It is a simple list and reference for The Quran's idiomatic usage. This book is recommended for anyone wishing to undertake a deeper and more accurate study of The Quran.</p>
+</div>
 </div>
 <div class="section" id="how-to-use">
-<h1><a class="toc-backref" href="#id15">How to use</a></h1>
+<h1><a class="toc-backref" href="#id17">How to use</a></h1>
 <p>Click on the search button and enter the arabic root you would like to
 look up. You may use roman (english) letters incase you don't have an
 arabic keyboard. The letters will be replaced according to the following
@@ -537,19 +572,19 @@ forward 1 page: right arrow, g or x
 <p>If you hide a book its images are not loaded during new searches, so this will improve the load time for the books that you do want to view.</p>
 </div>
 <div class="section" id="starting-points">
-<h1><a class="toc-backref" href="#id16">Starting points:</a></h1>
-<p>Here are some links to get you started (TODO: include links for BR and PR):</p>
+<h1><a class="toc-backref" href="#id18">Starting points:</a></h1>
+<p>Here are some links to get you started (TODO: Remaining morphology links for SG, BR, PR, HW4, AAN, VI):</p>
 <ul class="simple">
-<li><a class="reference external" href="aa.html#HW=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6">Prefaces</a></li>
-<li><a class="reference external" href="aa.html#HW=13,LL=1_29,LS=2,HA=19,LS_HIDE">Morphology</a></li>
-<li><a class="reference external" href="aa.html#HW=16,LL=1_30,LS=2,HA=20,LS_HIDE">Abbreviations</a></li>
-<li><a class="reference external" href="aa.html#HW=19,LL=1_38,LS=3,HA=21,SG=20">First page of content</a></li>
-<li><a class="reference external" href="aa.html#HW=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE">Lane's Lexicon Editor's preface and memoir (about 40
+<li><a class="reference external" href="aa.html#HW3=5,LL=1_6,LS=2,HA=11,LS_HIDE,SG=6,BR=7,PR=8,HW4=4,AAN=6,VI=17">Prefaces</a></li>
+<li><a class="reference external" href="aa.html#HW3=13,LL=1_29,LS=2,HA=19,LS_HIDE">Morphology</a></li>
+<li><a class="reference external" href="aa.html#HW3=16,LL=1_30,LS=2,HA=20,LS_HIDE,SG=18,BR=25,PR_HIDE,HW4=12,AAN=12,VI=13">Abbreviations</a></li>
+<li><a class="reference external" href="aa.html#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=27,PR=10,HW4=14,AAN=24,VI=51">First page of content</a></li>
+<li><a class="reference external" href="aa.html#HW3=5,LL=5_5,LS=2,HA=11,HW_HIDE,LS_HIDE,HA_HIDE,SG_HIDE,BR_HIDE,PR_HIDE,HW4_HIDE,AAN_HIDE,VI_HIDE">Lane's Lexicon Editor's preface and memoir (about 40
 pages)</a></li>
 </ul>
 </div>
 <div class="section" id="browser-support">
-<h1><a class="toc-backref" href="#id17">Browser support</a></h1>
+<h1><a class="toc-backref" href="#id19">Browser support</a></h1>
 <p>This table aims to show which browsers support the current version of
 Arabic Almanac:</p>
 <pre>
@@ -565,7 +600,7 @@ Arabic Almanac:</p>
 |Internet Explorer 7/8/9 |Yes            |Seems to work ok now.|
 +------------------------+---------------+--------------
 </pre><div class="section" id="should-work-on-most-smart-phones-tablets">
-<h2><a class="toc-backref" href="#id18">Should work on most smart phones &amp; tablets!</a></h2>
+<h2><a class="toc-backref" href="#id20">Should work on most smart phones &amp; tablets!</a></h2>
 <p>Depending on your screen resolution it will decide upon first load to
 either use full width view or single column view mode, so that it should
 select full view when you use this page on a largish desktop/tablet
@@ -575,7 +610,7 @@ always change the view manually with the 'View' button.</p>
 </div>
 </div>
 <div class="section" id="download-for-offline-use">
-<h1><a class="toc-backref" href="#id19">Download for offline use</a></h1>
+<h1><a class="toc-backref" href="#id21">Download for offline use</a></h1>
 <p>You can now download the entire website and install it for instance on
 your phone's SD card or your desktop PC for super fast access. Download
 link:</p>
@@ -593,29 +628,39 @@ tablets there are 2 ways you could try to get it installed: 1) Install the free 
 &quot;aa&quot; folder and click on index.html or 2) Install the free Astro file manager and navigate to the aa folder that you've extracted from the zip file onto the sdcard. Tap the index.html file and it will either open in your default browser or you can choose any of the installed browser to open the file. Once in your browser you can bookmark it for quick access.</p>
 </div>
 <div class="section" id="future-plans">
-<h1><a class="toc-backref" href="#id20">Future plans</a></h1>
+<h1><a class="toc-backref" href="#id22">Future plans</a></h1>
 <p>Request for help:
 I hope to include the following dictionaries in the future:</p>
+<ul>
+<li><p class="first">Arabic -&gt; English:</p>
 <ul class="simple">
-<li>Arabic -&gt; English:<ul>
-<li>Mustansir Mir - Dictionary of Quranic Terms + Coherence + Verbal Idioms ( <a class="reference external" href="http://archive.org/details/MustansirMir-DictionaryOfQuranicTermsCoherenceVerbalIdioms">link</a> )</li>
+<li>Mustansir Mir - Dictionary of Quranic Terms + Coherence + Verbal Idioms ( <a class="reference external" href="http://archive.org/details/MustansirMir-DictionaryOfQuranicTermsCoherenceVerbalIdioms">link</a> ) (Status: DONE for Verbal Idioms, Next: Dictionary of Quranic Terms)</li>
+<li>Al-Mawrid - by Dr. Roohi Baalbaki</li>
 </ul>
 </li>
-<li>Arabic -&gt; French:<ul>
+<li><p class="first">Arabic -&gt; French:</p>
+<ul class="simple">
 <li>Kazimirski, a popular Arabic -&gt; French dictionary ( <a class="reference external" href="http://archive.org/details/dictionnairearab01bibeuoft">Vol.
 1</a>, <a class="reference external" href="http://archive.org/details/dictionnairearab02bibeuoft">Vol.
 2</a> )</li>
 </ul>
 </li>
-<li>Arabic -&gt; Urdu:<ul>
-<li>al Qamoos al Waheed (
-<a class="reference external" href="http://archive.org/details/Alqamoos-Ul-Waheed">1</a> )</li>
-<li>Misbah ul Lughat (The prints available at:
+<li><p class="first">Arabic -&gt; Urdu:</p>
+<ul>
+<li><p class="first">al Qamoos al Waheed (
+<a class="reference external" href="http://archive.org/details/Alqamoos-Ul-Waheed">1</a> )</p>
+</li>
+<li><div class="first system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">D:\Quran\Arabic Almanac - Quran Dictionary\aa-dev\readme.rst</tt>, line 300); <em><a href="#id2">backlink</a></em></p>
+<p>Duplicate explicit target name: &quot;1&quot;.</p>
+</div>
+<p>Misbah ul Lughat (The prints available at:
 <a class="reference external" href="http://archive.org/details/MisbahUlLughat_part1">1</a>
 <a class="reference external" href="http://archive.org/details/MisbahUlLughat_part22">2</a>
 <a class="reference external" href="http://archive.org/details/MisbahUlLughat-com">3</a>
 <a class="reference external" href="http://archive.org/details/misbah-ul-lughat">4</a> however are
-unfortunately not usable, anyone know of a better copy?)</li>
+unfortunately not usable, anyone know of a better copy?)</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -630,7 +675,7 @@ yamli)</li>
 </ul>
 </div>
 <div class="section" id="sources-and-acknowledgements">
-<h1><a class="toc-backref" href="#id21">Sources and acknowledgements</a></h1>
+<h1><a class="toc-backref" href="#id23">Sources and acknowledgements</a></h1>
 <p>This project would not have been possible without the initial help of
 certain very helpful people, namely:</p>
 <p>The indexes for both Hans Wehr (3rd print) &amp; Hava has been made possible
@@ -650,14 +695,14 @@ students of Arabic.</p>
 </ul>
 </div>
 <div class="section" id="contact">
-<h1><a class="toc-backref" href="#id22">Contact</a></h1>
+<h1><a class="toc-backref" href="#id24">Contact</a></h1>
 <ul class="simple">
 <li>My email: <a class="reference external" href="mailto:ejtaal&#64;gmail.com">ejtaal&#64;gmail.com</a></li>
 <li>Project hosted at: <a class="reference external" href="https://github.com/ejtaal/aa">GitHub</a></li>
 </ul>
 <p>© 2013 by Abdurahman Erik Taal</p>
 <p>License: GNU GPL v3.</p>
-</div>
+</div>
 </div>
 </body>
-</html>
+</html>
