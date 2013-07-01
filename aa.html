@@ -676,25 +676,25 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 
 // Some global vars that we need:
 var debugmode = false; 
-var version = "3.1";
+var version = "3.3";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
-var aan_offset = 24; // TODO: What is the value? 
-var vi_offset = 51; // TODO: What is the value? 
+var aan_offset = 24;
+var vi_offset = 51; 
 var hw3_offset = 19;
 var ha_offset = 21;
 var sg_offset = 20;
 var br_offset = 26;
 var pr_offset = 9;
 //var total_pages = 1129;
-var initial_book_order = "VI,AAN,HW4,LL,LS,SG,BR,PR,HA,HW3";
+var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,HW3"; // TODO: Br. Ejtaal to review the book order
 var aa_book_order = initial_book_order;
-var starting_hash = "#HW4=14,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,AAN=24,VI=51"; // TODO: What is the value? 
+var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,VI=51";
 var cur_hw3_page = 19, req_hw3_page = 19;
 var cur_hw4_page = 14, req_hw4_page = 14;
-var cur_aan_page = 24, req_aan_page = 24; // TODO: What is the value?
-var cur_vi_page = 51, req_vi_page = 51; // TODO: What is the value?
+var cur_aan_page = 24, req_aan_page = 24;
+var cur_vi_page = 51, req_vi_page = 51;
 var cur_br_page = 26, req_br_page = 26;
 var cur_pr_page = 9, req_pr_page = 9;
 var cur_ll_page = 38, req_ll_page = 38;
@@ -1329,9 +1329,9 @@ function update_settings_order( order_toset) {
 
 function set_order_preset( preset_requested) {
 	var new_book_order = initial_book_order;
-	if ( preset_requested == "quran")  new_book_order = "BR,SG,HW4,PR,AAN,VI,LL,LS,HA,HW3";
+	if ( preset_requested == "quran")  new_book_order = "BR,SG,AAN,HW4,PR,VI,LL,LS,HA,HW3";
 	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,HW3,AAN,VI";
-	if ( preset_requested == "dev") new_book_order = "VI,AAN,HW4,SG,LL,LS,HA,BR,PR,HW3";
+	if ( preset_requested == "dev") new_book_order = "VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
 	// Default is above already
 	// if ( preset_requested == "default")
 	update_settings_order( new_book_order);
