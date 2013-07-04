@@ -76,7 +76,7 @@ hr { margin: 5px; }
 	overflow: hidden;
 }
 
-#settings_container,#hw3_toggle,#ll_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#vi_toggle { display: none; }
+#settings_container,#hw3_toggle,#ll_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#vi_toggle,#mgf_toggle { display: none; }
 #settings_container { border: solid white 5px; }
 #settings_2 td { border-bottom: solid white 1px; }
 
@@ -84,10 +84,15 @@ hr { margin: 5px; }
 	position: relative;
 	width: 200%;
 }
+
 #aan_col1 {
-	width: 250%; /* fix for AAN */ 
-	left: -25%;
+	left: -2%; /* fix for AAN */ 
 }
+
+#aan_col2 {
+	width: 210%; /* fix for AAN */ 
+}
+
 #ha_col2 {
 	left: 0%;
 }
@@ -114,6 +119,7 @@ hr { margin: 5px; }
 }
 #penrice         .navtable td div, #pr_toggle,  .PR_color , #pr_status_line  { background-color: orchid; }
 #brill           .navtable td div, #br_toggle,  .BR_color , #br_status_line  { background-color: magenta; }
+#mgfarid         .navtable td div, #mgf_toggle, .MGF_color, #mgf_status_line { background-color: orange; }
 #aanadwi         .navtable td div, #aan_toggle, .AAN_color, #aan_status_line { background-color: azure; }
 #verbalidioms    .navtable td div, #vi_toggle,  .VI_color,  #vi_status_line  { background-color: violet; }
 #steingass       .navtable td div, #sg_toggle,  .SG_color , #sg_status_line  { background-color: turquoise; }
@@ -124,6 +130,7 @@ hr { margin: 5px; }
 #hava            .navtable td div, #ha_toggle,  .HA_color , #ha_status_line  { background-color: gold; }
 #pr_wideviewimg  { border: 3px solid orchid; }
 #br_wideviewimg  { border: 3px solid magenta; }
+#mgf_wideviewimg { border: 3px solid orange; }
 #aan_wideviewimg { border: 3px solid azure; }
 #vi_wideviewimg  { border: 3px solid violet; }
 #sg_wideviewimg  { border: 3px solid turquoise; }
@@ -135,6 +142,7 @@ hr { margin: 5px; }
 /*
 #penrice         .navtable td div, #pr_toggle,  .PR_color , #pr_status_line  { background-color: #EAF; }
 #brill           .navtable td div, #br_toggle,  .BR_color , #br_status_line  { background-color: #CAC; }
+#mgfarid         .navtable td div, #mgf_toggle, .MGF_color, #mgf_status_line { background-color: #CAC; }
 #steingass       .navtable td div, #sg_toggle,  .SG_color , #sg_status_line  { background-color: #ACC; }
 #hanswehr3       .navtable td div, #hw3_toggle, .HW3_color, #hw3_status_line { background-color: #A88; }
 #hanswehr4       .navtable td div, #hw4_toggle, .HW4_color, #hw4_status_line { background-color: #CAA; }
@@ -143,6 +151,7 @@ hr { margin: 5px; }
 #hava            .navtable td div, #ha_toggle,  .HA_color , #ha_status_line  { background-color: #CCA; }
 #pr_wideviewimg  { border: 3px solid #C8A; }
 #br_wideviewimg  { border: 3px solid #A0C; }
+#mgf_wideviewimg { border: 3px solid #A0C; }
 #sg_wideviewimg  { border: 3px solid #ACC; }
 #hw3_wideviewimg { border: 3px solid #CAA; }
 #hw4_wideviewimg { border: 3px solid #CA0; }
@@ -514,6 +523,44 @@ Show Supplement [_]
 	<hr>
 </div>
 
+<div id='MGF'>
+	<div class='book_toggle' id='mgf_toggle' onclick="javascript:hide_book('MGF', false);"> Show MG Farid [_] </div>
+	<div id='mgfarid'>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("MGF", -1)' id='mgf_a_prev2'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:mgf_showindex()'><div class='button'>MGF</div></a> </td>
+			<td> <a href="javascript:hide_book( 'MGF', true);"><div class='button'>hide</div></a> </td>
+			<td> <a href='javascript:shift_page("MGF", 1)' id='mgf_a_next2'><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+		<span class='status_line' id='mgf_status_line'></span>
+		<!-- MGF doesn't have columns, hence no narrowview -->
+		<!--
+		<div class='teal-gradient' id='mgf_narrowview'>
+			<div class='column' id='div_mgf_col1'>
+				<img id='mgf_col1' onClick='javascript:searchandgo()'>
+			</div>
+			<hr>
+			<div class='column' id='div_mgf_col1'>
+				<img id='mgf_col2' onClick='javascript:searchandgo()'>
+			</div>
+		</div>
+			<img class='wideview' id='mgf_wideviewimg' onClick='javascript:searchandgo()'>
+		-->		
+		<div id='mgf_wideview'>
+		<!-- MGF doesn't have columns, hence no wideview classed img either -->
+			<img id='mgf_wideviewimg' onClick='javascript:searchandgo()'>
+		</div>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("MGF", -1)'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:shift_page("MGF", 1)' ><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+	</div>
+	<hr>
+</div>
 
 <div id='PR'>
 	<div class='book_toggle' id='pr_toggle' onclick="javascript:hide_book('PR', false);"> Show Penrice [_] </div>
@@ -567,6 +614,8 @@ Show Supplement [_]
 </tr>
 </table>
 <span class='status_line' id='vi_status_line'></span>
+<!-- VI doesn't have columns, hence no narrowview -->
+		<!--
 <div class='VI_color narrowview' id='vi_narrowview'>
 
 	<div class='column' id='div_vi_col1'>
@@ -578,9 +627,10 @@ Show Supplement [_]
 	</div>
 			
 </div>
-		
+--> 		
 <div id='vi_wideview'>
-	<img class='wideview' id='vi_wideviewimg' onClick='javascript:searchandgo()'>
+		<!-- VI doesn't have columns, hence no wideview classed img either -->
+	<img id='vi_wideviewimg' onClick='javascript:searchandgo()'>
 </div>
 <table class='navtable'>
 <tr>
@@ -610,11 +660,11 @@ Show Supplement [_]
 <span class='status_line' id='aan_status_line'></span>
 <div class='AAN_color narrowview' id='aan_narrowview'>
 	<div class='column' id='div_aan_col1'>
-		<img id='aan_col1' onClick='javascript:searchandgo()'>
+		<img id='aan_col2' onClick='javascript:searchandgo()'>
 	</div>
 	<hr>
 	<div class='column' id='div_aan_col1'>
-		<img id='aan_col2' onClick='javascript:searchandgo()'>
+		<img id='aan_col1' onClick='javascript:searchandgo()'>
 	</div>
 			
 </div>
@@ -668,6 +718,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="aa-pr-index.js?003"></script>
 <script type="text/javascript" src="aa-aan-index.js?003"></script>
 <script type="text/javascript" src="aa-vi-index.js?003"></script>
+<script type="text/javascript" src="aa-mgf-index.js?003"></script>
 <!--
 <script type="text/javascript" src="aa-ll-data.js"></script>
 <script type="text/javascript" src="aa-ls-data.js"></script>
@@ -676,7 +727,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 
 // Some global vars that we need:
 var debugmode = false; 
-var version = "3.3";
+var version = "3.4";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
@@ -686,16 +737,18 @@ var hw3_offset = 19;
 var ha_offset = 21;
 var sg_offset = 20;
 var br_offset = 26;
+var mgf_offset = 33;
 var pr_offset = 9;
 //var total_pages = 1129;
-var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,HW3"; // TODO: Br. Ejtaal to review the book order
+var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,MGF,HW3"; // TODO: Br. Ejtaal to review the book order
 var aa_book_order = initial_book_order;
-var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,VI=51";
+var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,VI=51,MGF=33";
 var cur_hw3_page = 19, req_hw3_page = 19;
 var cur_hw4_page = 14, req_hw4_page = 14;
 var cur_aan_page = 24, req_aan_page = 24;
 var cur_vi_page = 51, req_vi_page = 51;
 var cur_br_page = 26, req_br_page = 26;
+var cur_mgf_page = 33, req_mgf_page = 33; 
 var cur_pr_page = 9, req_pr_page = 9;
 var cur_ll_page = 38, req_ll_page = 38;
 var cur_ll_vol = 1, req_ll_vol = 1;
@@ -703,7 +756,7 @@ var cur_ls_page = 3, req_ls_page = 3;
 var cur_ha_page = 20, req_ha_page = 20;
 var cur_sg_page = 20, req_sg_page = 20;
 var hw4_hide = false, br_hide = false, pr_hide = false, hw3_hide = false, 
-	ll_hide = false, ls_hide = false, ha_hide = false, sg_hide = false, aan_hide = false, vi_hide = false;
+	ll_hide = false, ls_hide = false, ha_hide = false, sg_hide = false, aan_hide = false, vi_hide = false, mgf_hide = false;
 var toggle_view_auto = 1;
 var toggle_view_mode;
 var fitwidth = false;
@@ -785,6 +838,11 @@ function hide_book( book, should_hide) {
 		if ( should_hide) hide_show( 'brill', 'br_toggle');
 		else              hide_show( 'br_toggle', 'brill');
 	}
+	if ( book == "MGF") { 
+		mgf_hide = should_hide;
+		if ( should_hide) hide_show( 'mgfarid', 'mgf_toggle');
+		else              hide_show( 'mgf_toggle', 'mgfarid');
+	}
 	if ( book == "PR") { 
 		pr_hide = should_hide;
 		if ( should_hide) hide_show( 'penrice', 'pr_toggle');
@@ -834,7 +892,8 @@ function build_hash() {
 		+ ",SG=" + req_sg_page + ",BR=" + req_br_page
 		+ ",PR=" + req_pr_page 
 		+ ",AAN=" + req_aan_page
-		+ ",VI=" + req_vi_page;
+		+ ",VI=" + req_vi_page
+		+ ",MGF=" + req_mgf_page;
 	if ( hw4_hide) new_hash += ",HW4_HIDE";
 	if ( vi_hide) new_hash += ",VI_HIDE";
 	if ( aan_hide) new_hash += ",AAN_HIDE";
@@ -844,6 +903,7 @@ function build_hash() {
 	if ( ha_hide) new_hash += ",HA_HIDE";
 	if ( sg_hide) new_hash += ",SG_HIDE";
 	if ( br_hide) new_hash += ",BR_HIDE";
+	if ( mgf_hide) new_hash += ",MGF_HIDE";
 	if ( pr_hide) new_hash += ",PR_HIDE";
 	window.location.hash = new_hash;
 	setCookie( "aa_last_hash", window.location.hash, 365);
@@ -867,6 +927,7 @@ function set_title() {
 			if ( id == "LS" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
 			if ( id == "SG" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
 			if ( id == "BR" && ! br_hide) add_text = "BR: " + br[cur_br_page];
+			if ( id == "MGF" && ! mgf_hide) add_text = "MGF: " + mgf[cur_mgf_page];
 			if ( id == "PR" && ! pr_hide) add_text = "PR: " + pr[cur_pr_page];
 			if ( add_text != "") 
 				if ( title != "") title += " / " + add_text;
@@ -900,6 +961,7 @@ function parse_hash() {
 					if ( book == "HA") { req_ha_page = cur_ha_page = parseInt(page); }
 					if ( book == "SG") { req_sg_page = cur_sg_page = parseInt(page); }
 					if ( book == "BR") { req_br_page = cur_br_page = parseInt(page); }
+					if ( book == "MGF") { req_mgf_page = cur_mgf_page = parseInt(page); }
 					if ( book == "PR") { req_pr_page = cur_pr_page = parseInt(page); }
 					if ( book == "LL") {
 		  			var cgi_vol_page = keyValuePair[1].split('_');
@@ -917,6 +979,7 @@ function parse_hash() {
 					if ( book == "LL_HIDE" && ! ll_hide ) { ll_hide = true; hide_show( 'laneslexicon', 'll_toggle'); }
 					if ( book == "LS_HIDE" && ! ls_hide ) { ls_hide = true; hide_show( 'laneslexiconsup', 'ls_toggle'); }
 					if ( book == "BR_HIDE" && ! br_hide ) { br_hide = true; hide_show( 'brill', 'br_toggle'); }
+					if ( book == "MGF_HIDE" && ! mgf_hide ) { mgf_hide = true; hide_show( 'mgfarid', 'mgf_toggle'); }
 					if ( book == "PR_HIDE" && ! pr_hide ) { pr_hide = true; hide_show( 'penrice', 'pr_toggle'); }
 	    } 
 	} 
@@ -959,6 +1022,10 @@ function shift_page( book, offset) {
 	if ( book == "BR") { 
 		req_br_page = cur_br_page + offset;
 		$(window).scrollTop( $("#brill").offset().top);
+	}
+	if ( book == "MGF") { 
+		req_mgf_page = cur_mgf_page + offset;
+		$(window).scrollTop( $("#mgfarid").offset().top);
 	}
 	if ( book == "PR") { 
 		req_pr_page = cur_pr_page + offset;
@@ -1013,6 +1080,7 @@ function visible_book_shift( offset) {
 	else if ( percentVisible("#hava") > 50) shift_page( 'HA', offset);
 	else if ( percentVisible("#steingass") > 50) shift_page( 'SG', offset);
 	else if ( percentVisible("#brill") > 50) shift_page( 'BR', offset);
+	else if ( percentVisible("#mgfarid") > 50) shift_page( 'MGF', offset);
 	else if ( percentVisible("#penrice") > 50) shift_page( 'PR', offset);
 }
 
@@ -1162,6 +1230,25 @@ function display_images() {
 			;
 	}
 
+	if ( ! mgf_hide) {	
+		//document.getElementById("mgf_load_status_line").innerHTML = "<br>Loading . . .";
+		var mgf_img_url = mgf_get_img_url( cur_mgf_page);
+		// MGF doesn't have columns
+		if ( $("#mgf_wideviewimg").attr('src') != mgf_img_url) {
+			$("#mgf_wideviewimg").attr('src', '');
+		}
+		/*
+		document.getElementById("mgf_col1").src = 
+			document.getElementById("mgf_col2").src = 
+		*/
+			document.getElementById("mgf_wideviewimg").src = mgf_img_url;
+		document.getElementById("mgf_status_line").innerHTML = 
+			" <b>" + mgf[cur_mgf_page] + "</b> | " +
+			"MG Farid, page " + (cur_mgf_page-mgf_offset+1) + 
+			" <small>(of " + (mgf.length-1-mgf_offset) + ") " +
+			"</small>"
+			;
+	}
 	if ( ! pr_hide) {	
 		//document.getElementById("pr_load_status_line").innerHTML = "<br>Loading . . .";
 		var pr_img_url = pr_get_img_url( cur_pr_page);
@@ -1291,7 +1378,7 @@ function set_book_order() {
 }
 
 function init_settings() {
-	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "VI"];
+	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "VI", "MGF"];
 	var table_html = "<table><tr>\n";
 	for (var row = 0; row <= available_books.length; row++) {
 		//var rowpp = row + 1;
@@ -1329,9 +1416,9 @@ function update_settings_order( order_toset) {
 
 function set_order_preset( preset_requested) {
 	var new_book_order = initial_book_order;
-	if ( preset_requested == "quran")  new_book_order = "BR,SG,AAN,HW4,PR,VI,LL,LS,HA,HW3";
-	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,HW3,AAN,VI";
-	if ( preset_requested == "dev") new_book_order = "VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
+	if ( preset_requested == "quran")  new_book_order = "BR,SG,AAN,MGF,HW4,PR,VI,LL,LS,HA,HW3";
+	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI";
+	if ( preset_requested == "dev") new_book_order = "MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
 	// Default is above already
 	// if ( preset_requested == "default")
 	update_settings_order( new_book_order);
@@ -1436,6 +1523,8 @@ function set_fitwidth() {
 				$(this).css('max-width', mw);
     });
 		$("#br_wideviewimg").css('max-width', mw);
+		$("#vi_wideviewimg").css('max-width', mw); // TODO: Need or not?
+		$("#mgf_wideviewimg").css('max-width', mw);// TODO: Need or not?
 		//debug("br_wideview: " + $("#br_wideview").css('max-width'));
 	}
 }
@@ -1447,6 +1536,7 @@ function toggle_view() {
 		$(".narrowview").hide();
 		$(".wideview").show();
 		$("#br_wideviewimg").css('max-width', '');
+		$("#mgf_wideviewimg").css('max-width', ''); // TODO: Need or not?
 		$("#vi_wideviewimg").css('max-width', '');
 		$("#currentmode").html("Desktop (full page)");
 		toggle_view_mode = 1;
@@ -1455,6 +1545,7 @@ function toggle_view() {
 		$(".narrowview").show();
 		$(".wideview").hide();
 		$("#br_wideviewimg").css('max-width', '99%');
+		$("#mgf_wideviewimg").css('max-width', '99%'); // TODO: Need or not?
 		$("#vi_wideviewimg").css('max-width', '99%');
 		$("#currentmode").html("Mobile (column)");
 		toggle = 1;
@@ -1543,10 +1634,11 @@ function do_search( input) {
 	search = search.replace(/n/g,"ن");
 	search = search.replace(/w/g,"و");
 	search = search.replace(/y/g,"ي");
-	//alert( "Searching for: " + search);
+	// debug( "Searching for: " + search);
 	// Headers 
 	req_sg_page = binarySearch( sg, search, 0);
 	req_br_page = binarySearch( br, search, 0);
+	req_mgf_page = binarySearch( mgf, search, 0);
 	req_pr_page = binarySearch( pr, search, 0);
 	req_ha_page = binarySearch( ha_p, search, 0);
 	// Fudge was set to -1, but this often leads to the wrong page
@@ -1664,6 +1756,7 @@ function binarySearch(items, value, exact_match_fudge){
 			exact_match_fudge = -1 means the one before
 		*/
 
+    // debug('items: ' + items + 'value: ' + value + 'exact_match_fudge: ' + exact_match_fudge); 
 		value = value.replace( /\s*/g, "");
 
     var startIndex  = 0,

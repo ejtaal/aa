@@ -9,6 +9,9 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
+-  version 3.4 - 30/6/2013
+   -  Included Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
+   
 -  version 3.3 - 13/4/2013
    -  Included Verbal Idioms Of The Holy Quran by Mustansir Mir.
 
@@ -173,6 +176,12 @@ VI: Verbal Idoms of the Quraan by Mustansir Mir
 
 An idiom is a phrase where the words together have a different meaning to the literal dictionary meaning of the words. For example, in English there are thousands, e.g. "a little bird told me", "a penny for your thoughts", "a picture is worth a thousand words", "add fuel to the fire" etc.
 Similarly, in Arabic there are also thousands. The Quran uses several hundred, thus to truly understand and study The Quran, it is very important to be able to identify, study and understand its idiomatic expressions. This book does just that. It is a very unique study (I have not come across another book that does the same in English). It is a simple list and reference for The Quran's idiomatic usage. This book is recommended for anyone wishing to undertake a deeper and more accurate study of The Quran.
+
+MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A
+------------------------------------------------------------
+Caution: This dictionary was written by a Qadiani / Ahmadiyah
+However, the dictionary is very useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
+
 
 How to use
 ==========
