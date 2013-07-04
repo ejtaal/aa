@@ -179,7 +179,7 @@ Similarly, in Arabic there are also thousands. The Quran uses several hundred, t
 
 MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A
 ------------------------------------------------------------
-Caution: This dictionary was written by a Qadiani / Ahmadiyah
+Caution: This dictionary was written by a Qadiani / Ahmadiyah.
 However, the dictionary is very useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
 
 
