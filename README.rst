@@ -9,6 +9,9 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
+-  version 3.5 - 6/7/2013
+   -  Included Urdu Qaamoos ul Waheed
+   
 -  version 3.4 - 30/6/2013
    -  Included Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
    
@@ -181,6 +184,10 @@ MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A
 ------------------------------------------------------------
 Caution: This dictionary was written by a Qadiani / Ahmadiyah.
 However, the dictionary is very useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
+
+UQW: Urdu Qaamoos ul Waheed
+------------------------------------------------------------
+One of the best Arabic - Urdu dictionary. 
 
 
 How to use
