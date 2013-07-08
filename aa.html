@@ -1695,9 +1695,12 @@ function do_search( input) {
 	// Firstly the letters that take IMHO 2 letters to transliterate
 	search = search.replace(/th/g,"ث");
 	search = search.replace(/gh/g,"غ");
+	search = search.replace(/[gG]/g,"غ");
 	search = search.replace(/kh/g,"خ");
 	search = search.replace(/sh/g,"ش");
+	search = search.replace(/\$/g,"ش");
 	search = search.replace(/dh/g,"ذ");
+	search = search.replace(/\*/g,"ذ");
 	// Hmm, make the following case insensitive and assign different letters to different cases:
 	search = search.replace(/d/g,"د");
 	search = search.replace(/D/g,"ض");
@@ -1710,24 +1713,23 @@ function do_search( input) {
 	search = search.replace(/h/g,"ه");
 	search = search.replace(/H/g,"ح");
 	// Not much iktilaaf over these I guess:
-	search = search.replace(/x/g,"خ");
-	search = search.replace(/v/g,"ث");
-	search = search.replace(/a/g,"ا");
-	search = search.replace(/b/g,"ب");
-	search = search.replace(/j/g,"ج");
-	search = search.replace(/7/g,"ح");
-	search = search.replace(/r/g,"ر");
-	search = search.replace(/3/g,"ع");
-	search = search.replace(/E/g,"ع");
-	search = search.replace(/e/g,"ع");
-	search = search.replace(/f/g,"ف");
-	search = search.replace(/q/g,"ق");
-	search = search.replace(/k/g,"ك");
-	search = search.replace(/l/g,"ل");
-	search = search.replace(/m/g,"م");
-	search = search.replace(/n/g,"ن");
-	search = search.replace(/w/g,"و");
-	search = search.replace(/y/g,"ي");
+	search = search.replace(/[xX]/g,"خ");
+	search = search.replace(/[vV]/g,"ث");
+	search = search.replace(/[aA]/g,"ا");
+	search = search.replace(/[bB]/g,"ب");
+	search = search.replace(/[jJ]/g,"ج");
+	search = search.replace(/[7]/g,"ح");
+	search = search.replace(/[rR]/g,"ر");
+	search = search.replace(/[3]/g,"ع");
+	search = search.replace(/[eE]/g,"ع");
+	search = search.replace(/[fF]/g,"ف");
+	search = search.replace(/[qQ]/g,"ق");
+	search = search.replace(/[kK]/g,"ك");
+	search = search.replace(/[lL]/g,"ل");
+	search = search.replace(/[mM]/g,"م");
+	search = search.replace(/[nN]/g,"ن");
+	search = search.replace(/[wW]/g,"و");
+	search = search.replace(/[yY]/g,"ي");
 	// debug( "Searching for: " + search);
 	// Headers 
 	req_sg_page = binarySearch( sg, search, 0);
