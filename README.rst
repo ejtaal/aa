@@ -186,7 +186,7 @@ However, the dictionary is very useful and bias is very limited, it discusses ma
 
 UQW: Urdu Qaamoos ul Waheed
 ------------------------------------------------------------
-One of the best Arabic - Urdu dictionary. 
+One of the best Arabic - Urdu dictionaries. 
 
 
 How to use
@@ -357,13 +357,16 @@ The indexes for both Hans Wehr (3rd print) & Hava has been made possible
 by using data generously provided by a fan of this website.
 
 The index for Lanes Lexicon and suggestions for including the supplement
-has been made possible by using data generously provided by Abdul Hafiz
-(contact).
+has been made possible by using data generously provided by Abdul Hafiz.
 
 The index for Steingass has been provided by some very helpful Malaysian
 students of Arabic.
 
 The index for the 4th print of Hans Wehr, Brill and Penrice have been provided by Abd Shomad.
+
+For version 4.0, Abd Shomad provided help in development by adding
+the code required for 4 new books, and Asim Iqbal 2nd for gathering content 
+( `www <http://asimiqbal2nd.wordpress.com/>`_ ).
 
 Jazakum Allahu khair :)
 
