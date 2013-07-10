@@ -228,6 +228,10 @@ _gaq.push(['_trackPageview']);
 <span id='searchbar'></span>
 <span id='version'></span> | Viewing mode: <em><span id='currentmode'></span></em>.
 </small>
+-<br>
+-<a href="/donate" style="width: 100%; color: white; background-color: navy; border: 1px solid white;">
+- ▂▃▅▇█▓▒░۩۞۩ --- Please donate --- ۩۞۩░▒▓█▇▅▃▂ 
+-</a>
 <div id=debug>
 </div>
 </center>
@@ -247,7 +251,9 @@ _gaq.push(['_trackPageview']);
 	<td>
 	<a href="javascript:set_order_preset('modern')"><div class='button'>Modern</div></a>
 	<td>
-	<a href="javascript:set_order_preset('dev')"><div class='button'>Development</div></a>
+	<a href="javascript:set_order_preset('dev')"><div class='button'>Dev</div></a>
+	<td>
+	<a href="javascript:set_order_preset('urdu')"><div class='button'>Urdu</div></a>
 	<td>
 	<a href="javascript:set_order_preset('default')"><div class='button'>Default</div></a>
 	</tr></table>
@@ -815,9 +821,9 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="jslib/shortcut.js"></script>
 <!-- Data for Hans Wehr -->
 <script type="text/javascript" src="aa-hw3-index.js?001"></script>
-<script type="text/javascript" src="aa-hw4-index.js?003"></script>
+<script type="text/javascript" src="aa-hw4-index.js?004"></script>
 <!-- Data for Lane's Lexicon &  Supplement -->
-<script type="text/javascript" src="aa-ll-index.js?000"></script>
+<script type="text/javascript" src="aa-ll-index.js?001"></script>
 <!-- Data for Hava -->
 <script type="text/javascript" src="aa-ha-index.js?001"></script>
 <script type="text/javascript" src="aa-sg-index.js?001"></script>
@@ -836,7 +842,7 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 
 // Some global vars that we need:
 var debugmode = false; 
-var version = "3.4";
+var version = "4.0";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
@@ -1602,6 +1608,7 @@ function set_order_preset( preset_requested) {
 	if ( preset_requested == "quran")  new_book_order = "BR,SG,AAN,MGF,HW4,PR,VI,LL,LS,HA,HW3,UQW,UMR";
 	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,UMR";
 	if ( preset_requested == "dev") new_book_order = "UMR,UQW,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
+	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
 	// Default is above already
 	// if ( preset_requested == "default")
 	update_settings_order( new_book_order);
@@ -1784,9 +1791,12 @@ function do_search( input) {
 	// Firstly the letters that take IMHO 2 letters to transliterate
 	search = search.replace(/th/g,"ث");
 	search = search.replace(/gh/g,"غ");
+	search = search.replace(/[gG]/g,"غ");
 	search = search.replace(/kh/g,"خ");
 	search = search.replace(/sh/g,"ش");
+	search = search.replace(/\$/g,"ش");
 	search = search.replace(/dh/g,"ذ");
+	search = search.replace(/\*/g,"ذ");
 	// Hmm, make the following case insensitive and assign different letters to different cases:
 	search = search.replace(/d/g,"د");
 	search = search.replace(/D/g,"ض");
@@ -1799,24 +1809,23 @@ function do_search( input) {
 	search = search.replace(/h/g,"ه");
 	search = search.replace(/H/g,"ح");
 	// Not much iktilaaf over these I guess:
-	search = search.replace(/x/g,"خ");
-	search = search.replace(/v/g,"ث");
-	search = search.replace(/a/g,"ا");
-	search = search.replace(/b/g,"ب");
-	search = search.replace(/j/g,"ج");
-	search = search.replace(/7/g,"ح");
-	search = search.replace(/r/g,"ر");
-	search = search.replace(/3/g,"ع");
-	search = search.replace(/E/g,"ع");
-	search = search.replace(/e/g,"ع");
-	search = search.replace(/f/g,"ف");
-	search = search.replace(/q/g,"ق");
-	search = search.replace(/k/g,"ك");
-	search = search.replace(/l/g,"ل");
-	search = search.replace(/m/g,"م");
-	search = search.replace(/n/g,"ن");
-	search = search.replace(/w/g,"و");
-	search = search.replace(/y/g,"ي");
+	search = search.replace(/[xX]/g,"خ");
+	search = search.replace(/[vV]/g,"ث");
+	search = search.replace(/[aA]/g,"ا");
+	search = search.replace(/[bB]/g,"ب");
+	search = search.replace(/[jJ]/g,"ج");
+	search = search.replace(/[7]/g,"ح");
+	search = search.replace(/[rR]/g,"ر");
+	search = search.replace(/[3]/g,"ع");
+	search = search.replace(/[eE]/g,"ع");
+	search = search.replace(/[fF]/g,"ف");
+	search = search.replace(/[qQ]/g,"ق");
+	search = search.replace(/[kK]/g,"ك");
+	search = search.replace(/[lL]/g,"ل");
+	search = search.replace(/[mM]/g,"م");
+	search = search.replace(/[nN]/g,"ن");
+	search = search.replace(/[wW]/g,"و");
+	search = search.replace(/[yY]/g,"ي");
 	// debug( "Searching for: " + search);
 	// Headers 
 	req_sg_page = binarySearch( sg, search, 0);

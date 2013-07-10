@@ -1,4 +1,4 @@
-﻿
+
 Please read below for the latest news, planned updates and more
 background information on the Arabic Almanac website which can be found here:
 `http://ejtaal.net/m/aa <http://ejtaal.net/m/aa>`_.
@@ -9,20 +9,16 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
--  version 3.6 - 10/7/2013
-   -  Included Urdu Mufradaat ar Raghiib
-   
--  version 3.5 - 6/7/2013
-   -  Included Urdu Qaamoos ul Waheed
-   
--  version 3.4 - 30/6/2013
-   -  Included Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
-   
--  version 3.3 - 13/4/2013
-   -  Included Verbal Idioms Of The Holy Quran by Mustansir Mir.
+-  version 4.0 - X/7/2013
 
--  version 3.2 - 6/4/2013
-   -  Included Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
+   Thanks to the work of 2 very enthusiastic volunteers, we present
+   version 4.0 having the following new books:
+   
+   -  Urdu: Mufraadaat ar Raghiib
+   -  Urdu: Qaamoos ul Waheed
+   -  Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
+   -  Verbal Idioms Of The Holy Quran by Mustansir Mir.
+   -  Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
 
 -  version 3.1 - 28/3/2013
    - 2 minor fixes: 1) Fix hanging with downloaded version (it was trying to contact Google analytics which is pointless when you're offline) and 2) Clear images when doing a new search so that you can see the new image being downloaded.
@@ -190,11 +186,14 @@ However, the dictionary is useful and bias is very limited, it discusses mainly 
 
 UQW: Urdu Qaamoos ul Waheed
 ------------------------------------------------------------
+
 Primarily based on the Arabic dictionary Mu'jam al Waseet which was compiled by a team of scholars in 20th century. Qaamoos ul Waheed is one of the largest available Arabic Urdu dictionaries. 
 
 UMR: Urdu Mufraadaat Alfaaz al Qur'an by ar Raghib
 ------------------------------------------------------------
+
 This is the Urdu translation of the very famous and useful Mufraadaat Alfaaz al Qur'an al Kareem by Raaghib Asfahaany. 
+
 
 
 How to use
@@ -209,27 +208,26 @@ table:
 
    <pre>
    Double letters:
-   th -> "ث"       gh -> "غ"
-   kh -> "خ"       sh -> "ش"
-   dh -> "ذ"
+   th/v/V -> "ث"       gh/g/G -> "غ"
+   kh/x/X -> "خ"       sh/$ -> "ش"
+   dh/* -> "ذ"
 
    Different cases:
-   d -> "د"        t -> "ت"
-   D -> "ض"        T -> "ط"
-   z -> "ز"        h -> "ه"
-   Z -> "ظ"        H -> "ح"
+   d -> "د"            t -> "ت"
+   D -> "ض"            T -> "ط"
+   z -> "ز"            h -> "ه"
+   Z -> "ظ"            H -> "ح"
    s -> "س"
    S -> "ص"
 
    All other "normal" letters:
-   a -> "ا"        q -> "ق"   
-   b -> "ب"        k -> "ك"
-   j -> "ج"        l -> "ل"
-   7 -> "ح"        m -> "م"
-   r -> "ر"        n -> "ن"
-   E, e or 3 -> "ع"   w -> "و"
-   f -> "ف"        y -> "ي"
-   v -> "ث"        x -> "خ"
+   a/A -> "ا"          q/Q -> "ق"   
+   b/B -> "ب"          k/L -> "ك"
+   j/J -> "ج"          l/L -> "ل"
+   7 -> "ح"            m/M -> "م"
+   r/R -> "ر"          n/N -> "ن"
+   w/W -> "و"          y/Y -> "ي"
+   f/F -> "ف"
    </pre>
 
 There are also some keyboard shortcuts you can use:
@@ -366,13 +364,16 @@ The indexes for both Hans Wehr (3rd print) & Hava has been made possible
 by using data generously provided by a fan of this website.
 
 The index for Lanes Lexicon and suggestions for including the supplement
-has been made possible by using data generously provided by Abdul Hafiz
-(contact).
+has been made possible by using data generously provided by Abdul Hafiz.
 
 The index for Steingass has been provided by some very helpful Malaysian
 students of Arabic.
 
 The index for the 4th print of Hans Wehr, Brill and Penrice have been provided by Abd Shomad.
+
+For version 4.0, Abd Shomad provided help in development by adding
+the code required for 4 new books, and Asim Iqbal 2nd for gathering content 
+( `www <http://asimiqbal2nd.wordpress.com/>`_ ).
 
 Jazakum Allahu khair :)
 
