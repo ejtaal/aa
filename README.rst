@@ -14,7 +14,7 @@ Latest news
    Thanks to the work of 2 very enthusiastic volunteers, we present
    version 4.0 having the following new books:
    
-   -  Urdu: ____
+   -  Urdu: Mufraadaat ar Raghiib
    -  Urdu: Qaamoos ul Waheed
    -  Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
    -  Verbal Idioms Of The Holy Quran by Mustansir Mir.
@@ -182,11 +182,18 @@ Similarly, in Arabic there are also thousands. The Quran uses several hundred, t
 MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A
 ------------------------------------------------------------
 Caution: This dictionary was written by a Qadiani / Ahmadiyah.
-However, the dictionary is very useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
+However, the dictionary is useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
 
 UQW: Urdu Qaamoos ul Waheed
 ------------------------------------------------------------
-One of the best Arabic - Urdu dictionaries. 
+
+Primarily based on the Arabic dictionary Mu'jam al Waseet which was compiled by a team of scholars in 20th century. Qaamoos ul Waheed is one of the largest available Arabic Urdu dictionaries. 
+
+UMR: Urdu Mufraadaat Alfaaz al Qur'an by ar Raghib
+------------------------------------------------------------
+
+This is the Urdu translation of the very famous and useful Mufraadaat Alfaaz al Qur'an al Kareem by Raaghib Asfahaany. 
+
 
 
 How to use
