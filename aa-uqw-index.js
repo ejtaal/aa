@@ -13,7 +13,6 @@ function uqw_get_img_url ( page) {
 
 var uqw=[];
 
-/* 
 uqw[1] = ""
 uqw[2] = ""
 uqw[3] = ""
@@ -119,7 +118,6 @@ uqw[102] = ""
 uqw[103] = ""
 uqw[104] = ""
 uqw[105] = ""
-*/ 
 uqw[106] = "ابب"
 uqw[107] = "ابر"
 uqw[108] = "ابل"
