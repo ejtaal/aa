@@ -14,6 +14,7 @@ Latest news
    Thanks to the work of 2 very enthusiastic volunteers, we present
    version 4.0 having the following new books:
    
+   -  Urdu: Mukhtaar us Shihah
    -  Urdu: Mufraadaat ar Raghiib
    -  Urdu: Qaamoos ul Waheed
    -  Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
@@ -181,19 +182,24 @@ Similarly, in Arabic there are also thousands. The Quran uses several hundred, t
 
 MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A
 ------------------------------------------------------------
+
 Caution: This dictionary was written by a Qadiani / Ahmadiyah.
 However, the dictionary is useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
 
 UQW: Urdu Qaamoos ul Waheed
-------------------------------------------------------------
+--------------------------------------------------
 
 Primarily based on the Arabic dictionary Mu'jam al Waseet which was compiled by a team of scholars in 20th century. Qaamoos ul Waheed is one of the largest available Arabic Urdu dictionaries. 
 
 UMR: Urdu Mufraadaat Alfaaz al Qur'an by ar Raghib
-------------------------------------------------------------
+--------------------------------------------------
 
 This is the Urdu translation of the very famous and useful Mufraadaat Alfaaz al Qur'an al Kareem by Raaghib Asfahaany. 
 
+UMS: Urdu Mukhtaar us Shihah
+----------------------------
+
+Mukhtaar us Sihaah written by al Raazi is a highly condensed abridgement of As Sihaah by Al-Jawhary with minor additions by him. Mostly words used in the Qur'an or Hadith were chosen by al Raazi in this book. This is Urdu translation of the book. 
 
 
 How to use
