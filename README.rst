@@ -201,6 +201,10 @@ UMS: Urdu Mukhtaar us Shihah
 
 Mukhtaar us Sihaah written by al Raazi is a highly condensed abridgement of As Sihaah by Al-Jawhary with minor additions by him. Mostly words used in the Qur'an or Hadith were chosen by al Raazi in this book. This is Urdu translation of the book. 
 
+UMJ: Urdu al Munjid
+-----------------------
+
+This is the Urdu translation by Ismat abu Saleem of the famous Arabic dictionary al Munjid written by Fr. Louis Ma’luf al-Yassu’i and Fr. Bernard Tottel al-Yassu’i, which has been printed, published, and distributed by a Catholic printing house since 1908. The Arabic dictionary has received some criticism from Muslim Scholars though it is still used widely. Though this is an Urdu translation by a Muslim and appears to have removed many of the concerns, still caution is advised. In Urdu, Al Munjid has been the source of 3 books. Misbaah ul Lughaat was actually based on this dictionary in which the translator removed some content and added some of his own content. The edition used in Almanac is claimed to be the 1st complete Urdu translation of Al Munjid.
 
 How to use
 ==========
