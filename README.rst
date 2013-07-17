@@ -9,17 +9,18 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
--  version 4.0 - X/7/2013
+-  version 4.0 - 20/7/2013
 
    Thanks to the work of 2 very enthusiastic volunteers, we present
-   version 4.0 having the following new books:
+   version 4.0 which now includes the following 7 new books:
    
-   -  Urdu: Mukhtaar us Shihah
-   -  Urdu: Mufraadaat ar Raghiib
-   -  Urdu: Qaamoos ul Waheed
    -  Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
    -  Verbal Idioms Of The Holy Quran by Mustansir Mir.
    -  Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
+   -  Urdu: Qaamoos ul Waheed
+   -  Urdu: Mukhtaar us Shihah
+   -  Urdu: Mufraadaat ar Raghiib
+	 -  Urdu: al-Munjid
 
 -  version 3.1 - 28/3/2013
    - 2 minor fixes: 1) Fix hanging with downloaded version (it was trying to contact Google analytics which is pointless when you're offline) and 2) Clear images when doing a new search so that you can see the new image being downloaded.
