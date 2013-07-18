@@ -4,6 +4,7 @@ background information on the Arabic Almanac website which can be found here:
 `http://ejtaal.net/m/aa <http://ejtaal.net/m/aa>`_.
 
 .. contents::
+.. sectnum::
 
 
 Latest news
@@ -32,81 +33,6 @@ Latest news
    - New way of selecting book order in the settings menu (3 bar button on top left)
    - other minor fixes and updates
 
--  version 2.0 - 30/1/2013
-
-   -  Included "The student's Arabic-English dictionary", by Steingass,
-      similar to Hans Wehr but more useful for classical arabic words.
-      Thanks to some very helpful volunteers I was able to include it
-      very quickly.
-   -  New settings dialog (click the 3 line menu on the top left) which
-      allows you to re-order the books.
-   -  A new button on top allows you to fit large pages to the window.
-      You can also use the button 'w' to toggle this on and off.
-
--  version 1.8 - 14/12/2012
-
-   -  Improved index for Hans Wehr (3rd print), about 60% done, not sure
-      if it will be completed as looking into using the 4th print
-   -  Site is now hosted at Memset.com, hopefully this will allow for
-      faster access and improved reliability :)
-
--  Version 1.7 - 19/7/2012
-
-   -  Updated images of Hava book to scans that Ahmad Sheikh had
-      prepared.
-   -  Tweak HW lookup as it often goes to the page before a root
-
--  Version 1.6 - 19/3/2012
-
-   -  include option to do '#q=bqr' or '#search' in the url bar which
-      will return the relevant search results and bring up the search
-      box respectively.
-
--  Version 1.5 - 19/11/2011
-
-   -  added some useful starting points.
-
--  Version 1.4 - 8/11/2011
-
-   -  Make it work in Internet Explorer 7/8/9 (read: use more jQuery so
-      it should support even more browsers)
-
--  Version 1.3 - 4/11/2011
-
-   -  added Hava dictionary, thanks to a fan of this website for
-      providing some missing pages :)
-   -  fixed window title to be according to order and visibility of the
-      books
-   -  provide a downloadable version. If you can provide mirroring for a
-      615MB files, then please drop me a line!
-
--  Version 1.2 - 3/11/2011
-
-   -  implemented saving order of books and restoring this on page
-      reload.
-
--  Version 1.1 - 3/11/2011
-
-   -  Use cookies to: 1) bring you back to the last page you viewed and
-      2) Save hidden states of individual books between reloads
-   -  Move a book up by clicking on the '^' button. (Not saved between
-      reloads yet...)
-
--  Version 1.0 - 1/11/2011
-
-   -  Fix issues with spaces, these are now filtered out in the search
-      function. If you search for "N S b" or "NSb", you should reach the
-      same page.
-
--  Version 1.0 beta - 29/10/2011 New features (mostly thanks to
-   inclusion of jQuery):
-
-   -  Keyboard back/forward shortcuts will only turn pages on the book
-      that you're looking at.
-   -  Ability to hide books.
-   -  Loading text to inform of images that are loading
-   -  Lanes Supplement hides itself when nothing useful is found during
-      a search.
 
 What is the Arabic Almanac?
 ===========================
@@ -159,9 +85,10 @@ BR: Brill
 ---------
 A very good dictionary devoted to the roots found in the Quran giving statistics and translations of every root listed.
 
-PR: Penrice
------------
-An older dictionary also devoted to Quranic roots.
+PR: A Dictionary and Glossary of the Koran by John Penrice
+----------------------------------------------------------
+
+An older dictionary also devoted to Quranic roots authored in the 19th century.
 
 HA: Hava
 --------
@@ -317,8 +244,8 @@ your phone's SD card or your desktop PC for super fast access. Download
 link:
 
 -  **Main download site @ archive.org:**
-   `Arabic\_Almanac\_v3.0.zip <http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac_v3.0.zip>`_
--  Secondary backup site: `here <../Arabic_Almanac_v3.0.zip>`_\ 
+   `Arabic\_Almanac\_v4.0.zip <http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac_v4.0.zip>`_
+-  Secondary backup site: `here <../Arabic_Almanac_v4.0.zip>`_\ 
 
 The size is about 815 MB. The zip file contains a folder named "aa"
 which you should place somewhere on your PC's drive or on your phone's
@@ -330,6 +257,8 @@ tablets there are 2 ways you could try to get it installed: 1) Install the free 
 
 Future plans
 ============
+
+- Enhancements are now recorded in the Github issue list: `AA issues <https://github.com/ejtaal/aa/issues>`_
 
 Request for help:
 I hope to include the following dictionaries in the future:
@@ -345,25 +274,91 @@ I hope to include the following dictionaries in the future:
       1 <http://archive.org/details/dictionnairearab01bibeuoft>`_, `Vol.
       2 <http://archive.org/details/dictionnairearab02bibeuoft>`_ )
 
--  Arabic -> Urdu:
-
-   -  al Qamoos al Waheed (
-      `1 <http://archive.org/details/Alqamoos-Ul-Waheed>`_ )
-   -  Misbah ul Lughat (The prints available at:
-      `1 <http://archive.org/details/MisbahUlLughat_part1>`_
-      `2 <http://archive.org/details/MisbahUlLughat_part22>`_
-      `3 <http://archive.org/details/MisbahUlLughat-com>`_
-      `4 <http://archive.org/details/misbah-ul-lughat>`_ however are
-      unfortunately not usable, anyone know of a better copy?)
-
 In order to include a book I would need an index of the page headers. I
 have set up a page where you can input page headers easily, it has
 already been used successfully by several volunteers for completing the
 index of the Steingass book. Contact me at ejtaal@gmail.com for more
 details.
 
--  Improve roman -> arabic letters substitution (make it more like
-   yamli)
+   
+Older news
+==========
+-  version 2.0 - 30/1/2013
+
+   -  Included "The student's Arabic-English dictionary", by Steingass,
+      similar to Hans Wehr but more useful for classical arabic words.
+      Thanks to some very helpful volunteers I was able to include it
+      very quickly.
+   -  New settings dialog (click the 3 line menu on the top left) which
+      allows you to re-order the books.
+   -  A new button on top allows you to fit large pages to the window.
+      You can also use the button 'w' to toggle this on and off.
+
+-  version 1.8 - 14/12/2012
+
+   -  Improved index for Hans Wehr (3rd print), about 60% done, not sure
+      if it will be completed as looking into using the 4th print
+   -  Site is now hosted at Memset.com, hopefully this will allow for
+      faster access and improved reliability :)
+
+-  Version 1.7 - 19/7/2012
+
+   -  Updated images of Hava book to scans that Ahmad Sheikh had
+      prepared.
+   -  Tweak HW lookup as it often goes to the page before a root
+
+-  Version 1.6 - 19/3/2012
+
+   -  include option to do '#q=bqr' or '#search' in the url bar which
+      will return the relevant search results and bring up the search
+      box respectively.
+
+-  Version 1.5 - 19/11/2011
+
+   -  added some useful starting points.
+
+-  Version 1.4 - 8/11/2011
+
+   -  Make it work in Internet Explorer 7/8/9 (read: use more jQuery so
+      it should support even more browsers)
+
+-  Version 1.3 - 4/11/2011
+
+   -  added Hava dictionary, thanks to a fan of this website for
+      providing some missing pages :)
+   -  fixed window title to be according to order and visibility of the
+      books
+   -  provide a downloadable version. If you can provide mirroring for a
+      615MB files, then please drop me a line!
+
+-  Version 1.2 - 3/11/2011
+
+   -  implemented saving order of books and restoring this on page
+      reload.
+
+-  Version 1.1 - 3/11/2011
+
+   -  Use cookies to: 1) bring you back to the last page you viewed and
+      2) Save hidden states of individual books between reloads
+   -  Move a book up by clicking on the '^' button. (Not saved between
+      reloads yet...)
+
+-  Version 1.0 - 1/11/2011
+
+   -  Fix issues with spaces, these are now filtered out in the search
+      function. If you search for "N S b" or "NSb", you should reach the
+      same page.
+
+-  Version 1.0 beta - 29/10/2011 New features (mostly thanks to
+   inclusion of jQuery):
+
+   -  Keyboard back/forward shortcuts will only turn pages on the book
+      that you're looking at.
+   -  Ability to hide books.
+   -  Loading text to inform of images that are loading
+   -  Lanes Supplement hides itself when nothing useful is found during
+      a search.
+
 
 Sources and acknowledgements
 ============================
