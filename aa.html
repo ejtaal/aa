@@ -1770,10 +1770,10 @@ function update_settings_order( order_toset) {
 
 function set_order_preset( preset_requested) {
 	var new_book_order = initial_book_order;
-	if ( preset_requested == "quran")  new_book_order = "BR,AAN,MGF,VI,PR,LL,LS,SG,HW4,HA,HW3,UQW,UMR,UMS";
-	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,UMR,UMS";
+	if ( preset_requested == "quran")  new_book_order = "BR,AAN,MGF,VI,PR,LL,LS,SG,HW4,UQW,UMR,UMS,UMJ,HA,HW3";
+	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,UMR,UMS,UMJ";
 	if ( preset_requested == "dev") new_book_order = "UMS,UMR,UQW,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
-	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
+	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3";
 	// Default is above already
 	// if ( preset_requested == "default")
 	update_settings_order( new_book_order);
