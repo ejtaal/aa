@@ -179,10 +179,11 @@ _gaq.push(['_setAccount', 'UA-34010688-1']);
 _gaq.push(['_setDomainName', 'ejtaal.net']);
 _gaq.push(['_trackPageview']);
 (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  if ('file:' != document.location.protocol)
-  	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  if ('file:' != document.location.protocol) {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	}
 })();
 </script>
 <meta name='viewport' content='width=device-width'/>  
@@ -1781,8 +1782,8 @@ function set_order_preset( preset_requested) {
 
 function save_settings() {
 	var new_book_order = "";
-	for ( i = 1; i <= 7; i++ ) new_book_order += $('input[name = "setbook' + i + '"]:checked').val() + ',';
-	new_book_order += $('input[name = "setbook8"]:checked').val();
+	for ( i = 1; i <= 12; i++ ) new_book_order += $('input[name = "setbook' + i + '"]:checked').val() + ',';
+	new_book_order += $('input[name = "setbook13"]:checked').val();
 	//new_book_order += $("#setbook8").val();
 	//debug(new_book_order);
 	aa_book_order = new_book_order;
