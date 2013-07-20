@@ -1,7 +1,7 @@
 
 Please read below for the latest news, planned updates and more
 background information on the Arabic Almanac website which can be found here:
-`http://ejtaal.net/m/aa <http://ejtaal.net/m/aa>`_.
+`http://ejtaal.net/aa <http://ejtaal.net/aa>`_.
 
 .. contents::
 .. sectnum::
@@ -247,7 +247,7 @@ link:
    `Arabic\_Almanac\_v4.0.zip <http://ia700803.us.archive.org/2/items/ArabicAlmanac/Arabic_Almanac_v4.0.zip>`_
 -  Secondary backup site: `here <../Arabic_Almanac_v4.0.zip>`_\ 
 
-The size is about 815 MB. The zip file contains a folder named "aa"
+The size is about 1.3 GB. The zip file contains a folder named "aa"
 which you should place somewhere on your PC's drive or on your phone's
 SD card. For desktops you should then be able to do "File->Open" and
 select the index.html file within the "aa" folder. On smart phones &
@@ -255,10 +255,10 @@ tablets there are 2 ways you could try to get it installed: 1) Install the free 
 `file://localhost/sdcard <file://localhost/sdcard>`_, then locate the
 "aa" folder and click on index.html or 2) Install the free Astro file manager and navigate to the aa folder that you've extracted from the zip file onto the sdcard. Tap the index.html file and it will either open in your default browser or you can choose any of the installed browser to open the file. Once in your browser you can bookmark it for quick access.
 
-Future plans
-============
+Future plans / Feedback
+=======================
 
-- Enhancements are now recorded in the Github issue list: `AA issues <https://github.com/ejtaal/aa/issues>`_
+- Enhancements as well as bugs are now recorded in the Github issue list: `AA issues <https://github.com/ejtaal/aa/issues>`_
 
 Request for help:
 I hope to include the following dictionaries in the future:
@@ -398,3 +398,4 @@ Contact
 © 2013 by Abdurahman Erik Taal
 
 License: GNU GPL v3.
+Dua-ware: You must make dua for everyone involved in this project at least once if you're using this software :)
