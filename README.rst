@@ -15,7 +15,7 @@ Latest news
    Thanks to the work of 2 very enthusiastic volunteers, we present
    version 4.0 which now includes the following 7 new books:
    
-   -  Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A.
+   -  Dictionary Of The Holy Quran, by Malik Ghulam Farid, M.A.
    -  Verbal Idioms Of The Holy Quran by Mustansir Mir.
    -  Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
    -  Urdu: Qaamoos ul Waheed
@@ -38,7 +38,7 @@ What is the Arabic Almanac?
 ===========================
 
 It is a HTML/JavaScript app for both desktop and mobile use that allows
-looking up Arabic roots in Hans Wehr and Lane's Lexicon simultaniously.
+looking up Arabic roots in Hans Wehr and Lane's Lexicon simultaneously.
 Other books are in the process of being prepared for inclusion.
 
 Additionally, you may download the entire contents to your hard disk or
@@ -64,7 +64,7 @@ This is a monumental work written in the 19th century, where the author
 has gone through dozens of arabic sources and compiled a lot of relevant
 examples for each root, from Quran, Hadeeth, poetry and proverbs. It is
 extremely verbose which sometimes makes it difficult to find the
-word you're looking for. The main work only goes uptil the letter qaf,
+word you're looking for. The main work only goes up til the letter qaf,
 and the supplement written after the author's death relies on his notes
 and is therefore unfortunately lacking. Still extremely useful
 nonetheless. In this website the supplement will close and open
@@ -108,8 +108,8 @@ VI: Verbal Idoms of the Quraan by Mustansir Mir
 An idiom is a phrase where the words together have a different meaning to the literal dictionary meaning of the words. For example, in English there are thousands, e.g. "a little bird told me", "a penny for your thoughts", "a picture is worth a thousand words", "add fuel to the fire" etc.
 Similarly, in Arabic there are also thousands. The Quran uses several hundred, thus to truly understand and study The Quran, it is very important to be able to identify, study and understand its idiomatic expressions. This book does just that. It is a very unique study (I have not come across another book that does the same in English). It is a simple list and reference for The Quran's idiomatic usage. This book is recommended for anyone wishing to undertake a deeper and more accurate study of The Quran.
 
-MGF: Dictionay Of The Holy Quran, by Malik Ghulam Farid, M.A
-------------------------------------------------------------
+MGF: Dictionary Of The Holy Quran, by Malik Ghulam Farid, M.A
+-------------------------------------------------------------
 
 Caution: This dictionary was written by a Qadiani / Ahmadiyah.
 However, the dictionary is useful and bias is very limited, it discusses mainly the basic root meaning in detail and also gives effects in shade when some other particles or words are combined with a derivative of such root and it contains unique and useful material on roots.  
