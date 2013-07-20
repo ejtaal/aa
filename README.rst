@@ -19,7 +19,7 @@ Latest news
    -  Verbal Idioms Of The Holy Quran by Mustansir Mir.
    -  Vocabulary Of The Holy Quran by Dr Abdullah Abbas Nadwi.
    -  Urdu: Qaamoos ul Waheed
-   -  Urdu: Mukhtaar us Shihah
+   -  Urdu: Mukhtaar us Sihah
    -  Urdu: Mufraadaat ar Raghiib
 	 -  Urdu: al-Munjid
 
@@ -124,8 +124,8 @@ UMR: Urdu Mufraadaat Alfaaz al Qur'an by ar Raghib
 
 This is the Urdu translation of the very famous and useful Mufraadaat Alfaaz al Qur'an al Kareem by Raaghib Asfahaany. 
 
-UMS: Urdu Mukhtaar us Shihah
-----------------------------
+UMS: Urdu Mukhtaar us Sihah
+---------------------------
 
 Mukhtaar us Sihaah written by al Raazi is a highly condensed abridgement of As Sihaah by Al-Jawhary with minor additions by him. Mostly words used in the Qur'an or Hadith were chosen by al Raazi in this book. This is Urdu translation of the book. 
 
