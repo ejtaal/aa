@@ -160,12 +160,12 @@ table:
 
    All other "normal" letters:
    a/A -> "ا"          q/Q -> "ق"   
-   b/B -> "ب"          k/L -> "ك"
+   b/B -> "ب"          k/K -> "ك"
    j/J -> "ج"          l/L -> "ل"
    7 -> "ح"            m/M -> "م"
    r/R -> "ر"          n/N -> "ن"
    w/W -> "و"          y/Y -> "ي"
-   f/F -> "ف"
+   f/F -> "ف"          3/e/E -> "ع"
    </pre>
 
 There are also some keyboard shortcuts you can use:
