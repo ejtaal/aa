@@ -159,13 +159,13 @@ table:
    S -> "ص"
 
    All other "normal" letters:
-   a/A -> "ا"          q/Q -> "ق"   
-   b/B -> "ب"          k/K -> "ك"
-   j/J -> "ج"          l/L -> "ل"
-   7 -> "ح"            m/M -> "م"
-   r/R -> "ر"          n/N -> "ن"
-   w/W -> "و"          y/Y -> "ي"
-   f/F -> "ف"          3/e/E -> "ع"
+   a/A -> "ا"          q/Q   -> "ق"   
+   b/B -> "ب"          k/K   -> "ك"
+   j/J -> "ج"          l/L   -> "ل"
+   7 -> "ح"            m/M   -> "م"
+   r/R -> "ر"          n/N   -> "ن"
+   w/W -> "و"          y/Y   -> "ي"
+   f/F -> "ف"          e/E/3 -> "ع"
    </pre>
 
 There are also some keyboard shortcuts you can use:
