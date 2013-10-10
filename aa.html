@@ -974,6 +974,8 @@ var toggle_view_mode;
 var fitwidth = false;
 var last_input = "";
 var searched_word = "";
+// This is the base directory under which all image directories will be placed:
+var img_base_dir = "img/";
 
 // Setup shortcuts:
 shortcut.add("F",function() { searchandgo(); });
@@ -1366,7 +1368,7 @@ function display_images() {
 
 	if ( ! hw4_hide) {	
 		//document.getElementById("hw4_load_status_line").innerHTML = "<br>Loading . . .";
-		var hw4_img_url = hw4_get_img_url( cur_hw4_page);
+		var hw4_img_url = img_base_dir + hw4_get_img_url( cur_hw4_page);
 		// Clear image if it's being changed so it's clearer to user that a new imagine
 		// is being downloaded
 		if ( $("#hw4_col1").attr('src') != hw4_img_url) {
@@ -1387,7 +1389,7 @@ function display_images() {
 
 	if ( ! vi_hide) {	
 		//document.getElementById("vi_load_status_line").innerHTML = "<br>Loading . . .";
-		var vi_img_url = vi_get_img_url( cur_vi_page);
+		var vi_img_url = img_base_dir + vi_get_img_url( cur_vi_page);
 		// VI doesn't have columns
 		if ( $("#vi_wideviewimg").attr('src') != vi_img_url) {
 			$("#vi_wideviewimg").attr('src', '');
@@ -1407,7 +1409,7 @@ function display_images() {
 
 	if ( ! aan_hide) {	
 		//document.getElementById("aan_load_status_line").innerHTML = "<br>Loading . . .";
-		var aan_img_url = aan_get_img_url( cur_aan_page);
+		var aan_img_url = img_base_dir + aan_get_img_url( cur_aan_page);
 		// Clear image if it's being changed so it's clearer to user that a new imagine
 		// is being downloaded
 		if ( $("#aan_col1").attr('src') != aan_img_url) {
@@ -1428,7 +1430,7 @@ function display_images() {
 
 	if ( ! umr_hide) {	
 		//document.getElementById("umr_load_status_line").innerHTML = "<br>Loading . . .";
-		var umr_img_url = umr_get_img_url( cur_umr_page);
+		var umr_img_url = img_base_dir + umr_get_img_url( cur_umr_page);
 		// Clear image if it's being changed so it's clearer to user that a new imagine
 		// is being downloaded
 		if ( $("#umr_col1").attr('src') != umr_img_url) {
@@ -1449,7 +1451,7 @@ function display_images() {
 
 	if ( ! ums_hide) {	
 		//document.getElementById("ums_load_status_line").innerHTML = "<br>Loading . . .";
-		var ums_img_url = ums_get_img_url( cur_ums_page);
+		var ums_img_url = img_base_dir + ums_get_img_url( cur_ums_page);
 		// Clear image if it's being changed so it's clearer to user that a new imagine
 		// is being downloaded
 		if ( $("#ums_col1").attr('src') != ums_img_url) {
@@ -1470,7 +1472,7 @@ function display_images() {
 
 	if ( ! hw3_hide) {	
 		//document.getElementById("hw3_load_status_line").innerHTML = "<br>Loading . . .";
-		var hw3_img_url = hw3_get_img_url( cur_hw3_page);
+		var hw3_img_url = img_base_dir + hw3_get_img_url( cur_hw3_page);
 		if ( $("#hw3_col1").attr('src') != hw3_img_url) {
 			$("#hw3_col1").attr('src', '');
 			$("#hw3_col2").attr('src', '');
@@ -1489,7 +1491,7 @@ function display_images() {
 
 	if ( ! ha_hide) {	
 		//document.getElementById("ha_load_status_line").innerHTML = "<br>Loading . . .";
-		var ha_img_url = ha_get_img_url( cur_ha_page);
+		var ha_img_url = img_base_dir + ha_get_img_url( cur_ha_page);
 		if ( $("#ha_col1").attr('src') != ha_img_url) {
 			$("#ha_col1").attr('src', '');
 			$("#ha_col2").attr('src', '');
@@ -1508,7 +1510,7 @@ function display_images() {
 
 	if ( ! sg_hide) {	
 		//document.getElementById("sg_load_status_line").innerHTML = "<br>Loading . . .";
-		var sg_img_url = sg_get_img_url( cur_sg_page);
+		var sg_img_url = img_base_dir + sg_get_img_url( cur_sg_page);
 		if ( $("#sg_col1").attr('src') != sg_img_url) {
 			$("#sg_col1").attr('src', '');
 			$("#sg_col2").attr('src', '');
@@ -1527,7 +1529,7 @@ function display_images() {
 
 	if ( ! br_hide) {	
 		//document.getElementById("br_load_status_line").innerHTML = "<br>Loading . . .";
-		var br_img_url = br_get_img_url( cur_br_page);
+		var br_img_url = img_base_dir + br_get_img_url( cur_br_page);
 		// Brill doesn't have columns
 		if ( $("#br_wideviewimg").attr('src') != br_img_url) {
 			$("#br_wideviewimg").attr('src', '');
@@ -1547,7 +1549,7 @@ function display_images() {
 
 	if ( ! mgf_hide) {	
 		//document.getElementById("mgf_load_status_line").innerHTML = "<br>Loading . . .";
-		var mgf_img_url = mgf_get_img_url( cur_mgf_page);
+		var mgf_img_url = img_base_dir + mgf_get_img_url( cur_mgf_page);
 		// MGF doesn't have columns
 		if ( $("#mgf_wideviewimg").attr('src') != mgf_img_url) {
 			$("#mgf_wideviewimg").attr('src', '');
@@ -1566,7 +1568,7 @@ function display_images() {
 	}
 	if ( ! pr_hide) {	
 		//document.getElementById("pr_load_status_line").innerHTML = "<br>Loading . . .";
-		var pr_img_url = pr_get_img_url( cur_pr_page);
+		var pr_img_url = img_base_dir + pr_get_img_url( cur_pr_page);
 		if ( $("#pr_col1").attr('src') != pr_img_url) {
 			$("#pr_col1").attr('src', '');
 			$("#pr_col2").attr('src', '');
@@ -1585,7 +1587,7 @@ function display_images() {
 
 	if ( ! ll_hide) {	
 		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
-		var ll_img_url = ll_get_img_url( cur_ll_vol, cur_ll_page);
+		var ll_img_url = img_base_dir + ll_get_img_url( cur_ll_vol, cur_ll_page);
 		if ( $("#ll_col1").attr('src') != ll_img_url) {
 			$("#ll_col1").attr('src', '');
 			$("#ll_col2").attr('src', '');
@@ -1606,7 +1608,7 @@ function display_images() {
 
 	if ( ! uqw_hide) {	
 		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
-		var uqw_img_url = uqw_get_img_url( cur_uqw_page);
+		var uqw_img_url = img_base_dir + uqw_get_img_url( cur_uqw_page);
 		if ( $("#uqw_col1").attr('src') != uqw_img_url) {
 			$("#uqw_col1").attr('src', '');
 			$("#uqw_col2").attr('src', '');
@@ -1626,7 +1628,7 @@ function display_images() {
 
 	if ( ! umj_hide) {	
 		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
-		var umj_img_url = umj_get_img_url( cur_umj_page);
+		var umj_img_url = img_base_dir + umj_get_img_url( cur_umj_page);
 		if ( $("#umj_col1").attr('src') != umj_img_url) {
 			$("#umj_col1").attr('src', '');
 			$("#umj_col2").attr('src', '');
@@ -1646,7 +1648,7 @@ function display_images() {
 
 	if ( ! ls_hide) {	
 		//document.getElementById("ls_load_status_line").innerHTML = "<br>Loading . . .";
-		var ls_img_url = ls_get_img_url( cur_ls_page);
+		var ls_img_url = img_base_dir + ls_get_img_url( cur_ls_page);
 		if ( $("#ls_col1").attr('src') != ls_img_url) {
 			$("#ls_col1").attr('src', '');
 			$("#ls_col2").attr('src', '');
