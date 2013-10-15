@@ -76,11 +76,11 @@ hr { margin: 5px; }
 	overflow: hidden;
 }
 
-#settings_container,#hw3_toggle,#ll_toggle,#uqw_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#umr_toggle,#ums_toggle,#vi_toggle,#mgf_toggle,#umj_toggle { display: none; }
+#settings_container,#hw3_toggle,#ll_toggle,#uqw_toggle,#la_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#imn_toggle,#umr_toggle,#ums_toggle,#vi_toggle,#mgf_toggle,#umj_toggle { display: none; }
 #settings_container { border: solid white 5px; }
 #settings_2 td { border-bottom: solid white 1px; }
 
-#hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2,#aan_col1,#aan_col2,#umr_col1,#umr_col2,#ums_col1,#ums_col2 {
+#hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2,#aan_col1,#aan_col2,#imn_col1,#imn_col2,#umr_col1,#umr_col2,#ums_col1,#ums_col2 {
 	position: relative;
 	width: 200%;
 }
@@ -91,6 +91,14 @@ hr { margin: 5px; }
 
 #aan_col2 {
 	width: 210%; /* fix for AAN */ 
+}
+
+#imn_col1 {
+	left: -2%; /* fix for IMN */ 
+}
+
+#imn_col2 {
+	width: 210%; /* fix for IMN */ 
 }
 
 #ums_col1 {
@@ -113,16 +121,16 @@ hr { margin: 5px; }
 	left: 0%;
 }
 
-#hw4_col2,#pr_col2,#hw3_col2,#ha_col1,#sg_col2,#aan_col2,#umr_col2,#ums_col2 {
+#hw4_col2,#pr_col2,#hw3_col2,#ha_col1,#sg_col2,#aan_col2,#imn_col2,#umr_col2,#ums_col2 {
 	right: 100%;
 }
 
-#ll_col1,#ll_col2,#ll_col3,#ls_col1,#ls_col2,#ls_col3,#umj_col1,#umj_col2,#umj_col3,#uqw_col1,#uqw_col2,#uqw_col3 {
+#ll_col1,#ll_col2,#ll_col3,#ls_col1,#ls_col2,#ls_col3,#umj_col1,#umj_col2,#umj_col3,#uqw_col1,#uqw_col2,#uqw_col3,#la_col1,#la_col2,#la_col3 {
 	position: relative;
 	width: 285%;
 }
 
-#ll_col2,#ls_col2,#uqw_col2,#umj_col2 {
+#ll_col2,#ls_col2,#uqw_col2,#la_col2,#umj_col2 {
 /*
 	right: 100%;
 	right: 200%;
@@ -131,7 +139,7 @@ hr { margin: 5px; }
 	left: -95%;
 }
 
-#ll_col3,#ls_col3,#uqw_col1,#umj_col1 {
+#ll_col3,#ls_col3,#uqw_col1,#la_col1,#umj_col1 {
 	left: -185%;
 	right: 100%;
 }
@@ -140,6 +148,7 @@ hr { margin: 5px; }
 #brill           .navtable td div, #br_toggle,  .BR_color , #br_status_line  { background-color: magenta; }
 #mgfarid         .navtable td div, #mgf_toggle, .MGF_color, #mgf_status_line { background-color: orange; }
 #aanadwi         .navtable td div, #aan_toggle, .AAN_color, #aan_status_line { background-color: slateblue; }
+#idmunawir       .navtable td div, #imn_toggle, .IMN_color, #imn_status_line { background-color: Moccasin; }
 #verbalidioms    .navtable td div, #vi_toggle,  .VI_color,  #vi_status_line  { background-color: violet; }
 #steingass       .navtable td div, #sg_toggle,  .SG_color , #sg_status_line  { background-color: turquoise; }
 #hanswehr3       .navtable td div, #hw3_toggle, .HW3_color, #hw3_status_line { background-color: coral; }
@@ -148,6 +157,7 @@ hr { margin: 5px; }
 #laneslexiconsup .navtable td div, #ls_toggle,  .LS_color , #ls_status_line  { background-color: palegreen; }
 #hava            .navtable td div, #ha_toggle,  .HA_color , #ha_status_line  { background-color: gold; }
 #uqaamoos        .navtable td div, #uqw_toggle, .UQW_color, #uqw_status_line { background-color: MediumSeaGreen; }
+#lisanularab     .navtable td div, #la_toggle,  .LA_color,  #la_status_line  { background-color: Lavender; }
 #urdumufraadaat  .navtable td div, #umr_toggle, .UMR_color, #umr_status_line { background-color: teal; }
 #urdumukhtaar    .navtable td div, #ums_toggle, .UMS_color, #ums_status_line { background-color: royalblue; }
 #umunjid         .navtable td div, #umj_toggle, .UMJ_color, #umj_status_line { background-color: LightSteelBlue; }
@@ -156,6 +166,7 @@ hr { margin: 5px; }
 #br_wideviewimg  { border: 3px solid magenta; }
 #mgf_wideviewimg { border: 3px solid orange; }
 #aan_wideviewimg { border: 3px solid slateblue; }
+#imn_wideviewimg { border: 3px solid Moccasin; }
 #vi_wideviewimg  { border: 3px solid violet; }
 #sg_wideviewimg  { border: 3px solid turquoise; }
 #hw3_wideviewimg { border: 3px solid coral; }
@@ -164,6 +175,7 @@ hr { margin: 5px; }
 #ls_wideviewimg  { border: 3px solid palegreen; }
 #ha_wideviewimg  { border: 3px solid gold; }
 #uqw_wideviewimg { border: 3px solid MediumSeaGreen; }
+#la_wideviewimg  { border: 3px solid Lavender; }
 #umr_wideviewimg { border: 3px solid teal; }
 #ums_wideviewimg { border: 3px solid royalblue; }
 #umj_wideviewimg { border: 3px solid LightSteelBlue; }
@@ -469,6 +481,50 @@ Show Supplement [_]
 <hr>
 </div>
 
+<!--
+-->
+
+<div id='LA'>
+<div class='book_toggle' id='la_toggle' onclick="javascript:hide_book('LA', false);"> Show Lisanul Arab [_] </div>
+<div id='lisanularab'>
+<table class='navtable'>
+<tr>
+	<td> <a href='javascript:shift_page("LA", -1)' id='la_a_prev2'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:la_showindex()'><div class='button'>LA</div></a> </td>
+	<td> <a href="javascript:hide_book('LA', true);"><div class='button'>hide</div></a> </td>
+	<td> <a href='javascript:shift_page("LA", 1)' id='la_a_next2'><div class='button'>&rarr;</div></a> </td>
+</tr>
+</table>
+<span class='status_line' id='la_status_line'></span>
+
+<div class='LA_color narrowview' id='la_narrowview'>
+	<div class='column'>
+		<img id='la_col1' onClick='javascript:searchandgo()'>
+	</div>
+	<hr>
+	<div class='column'>
+		<img id='la_col2' onClick='javascript:searchandgo()'>
+	</div>
+	<hr>
+	<div class='column'>
+		<img id='la_col3' onClick='javascript:searchandgo()'>
+	</div>
+			
+</div>
+		
+<div id='la_wideview'>
+	<img class='wideview' id='la_wideviewimg' onClick='javascript:searchandgo()'>
+</div>
+<table class='navtable'>
+<tr>
+	<td> <a href='javascript:shift_page("LA", -1)'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:shift_page("LA", 1)' ><div class='button'>&rarr;</div></a> </td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+
 
 <!--
 -->
@@ -745,11 +801,10 @@ Show Supplement [_]
 </div>
 <hr>
 </div>
-<!--
--->
 
 <!--
 -->
+
 <div id='AAN'>
 <div class='book_toggle' id='aan_toggle' onclick="javascript:hide_book('AAN', false);"> Show AA Nadwi [_] </div>
 <div id='aanadwi'>
@@ -785,8 +840,49 @@ Show Supplement [_]
 </div>
 <hr>
 </div>
+
+
 <!--
 -->
+
+<div id='IMN'>
+<div class='book_toggle' id='imn_toggle' onclick="javascript:hide_book('IMN', false);"> Show ID Munawir [_] </div>
+<div id='idmunawir'>
+<table class='navtable'>
+<tr>
+	<td> <a href='javascript:shift_page("IMN", -1)' id='imn_a_prev2'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:imn_showindex()'><div class='button'>IMN</div></a> </td>
+	<td> <a href="javascript:hide_book( 'IMN', true);"><div class='button'>hide</div></a> </td>
+	<td> <a href='javascript:shift_page("IMN", 1)' id='imn_a_next2'><div class='button'>&rarr;</div></a> </td>
+</tr>
+</table>
+<span class='status_line' id='imn_status_line'></span>
+<div class='IMN_color narrowview' id='imn_narrowview'>
+	<div class='column' id='div_imn_col1'>
+		<img id='imn_col2' onClick='javascript:searchandgo()'>
+	</div>
+	<hr>
+	<div class='column' id='div_imn_col1'>
+		<img id='imn_col1' onClick='javascript:searchandgo()'>
+	</div>
+			
+</div>
+		
+<div id='imn_wideview'>
+	<img class='wideview' id='imn_wideviewimg' onClick='javascript:searchandgo()'>
+</div>
+<table class='navtable'>
+<tr>
+	<td> <a href='javascript:shift_page("IMN", -1)'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:shift_page("IMN", 1)' ><div class='button'>&rarr;</div></a> </td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+<!--
+-->
+
 
 <!--
 -->
@@ -796,7 +892,7 @@ Show Supplement [_]
 <table class='navtable'>
 <tr>
 	<td> <a href='javascript:shift_page("UMS", -1)' id='ums_a_prev2'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:aan_showindex()'><div class='button'>UMS</div></a> </td>
+	<td> <a href='javascript:ums_showindex()'><div class='button'>UMS</div></a> </td>
 	<td> <a href="javascript:hide_book( 'UMS', true);"><div class='button'>hide</div></a> </td>
 	<td> <a href='javascript:shift_page("UMS", 1)' id='ums_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
@@ -837,7 +933,7 @@ Show Supplement [_]
 <table class='navtable'>
 <tr>
 	<td> <a href='javascript:shift_page("UMR", -1)' id='umr_a_prev2'><div class='button'>&larr;</div></a> </td>
-	<td> <a href='javascript:aan_showindex()'><div class='button'>UMR</div></a> </td>
+	<td> <a href='javascript:umr_showindex()'><div class='button'>UMR</div></a> </td>
 	<td> <a href="javascript:hide_book( 'UMR', true);"><div class='button'>hide</div></a> </td>
 	<td> <a href='javascript:shift_page("UMR", 1)' id='umr_a_next2'><div class='button'>&rarr;</div></a> </td>
 </tr>
@@ -902,9 +998,11 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="aa-br-index.js?005"></script>
 <script type="text/javascript" src="aa-pr-index.js?003"></script>
 <script type="text/javascript" src="aa-aan-index.js?004"></script>
+<script type="text/javascript" src="aa-imn-index.js?004"></script>
 <script type="text/javascript" src="aa-vi-index.js?005"></script>
 <script type="text/javascript" src="aa-mgf-index.js?004"></script>
 <script type="text/javascript" src="aa-uqw-index.js?005"></script>
+<script type="text/javascript" src="aa-la-index.js?005"></script>
 <script type="text/javascript" src="aa-umr-index.js?002"></script>
 <script type="text/javascript" src="aa-ums-index.js?002"></script>
 <script type="text/javascript" src="aa-umj-index.js?002"></script>
@@ -922,6 +1020,7 @@ var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
 var aan_offset = 24;
+var imn_offset = 1;
 var vi_offset = 51; 
 var hw3_offset = 19;
 var ha_offset = 21;
@@ -930,16 +1029,18 @@ var br_offset = 26;
 var mgf_offset = 33;
 var pr_offset = 9;
 var uqw_offset = 106;
+var la_offset = 1; // TODO: Check 
 var umr_offset = 26;
 var ums_offset = 14;
 var umj_offset = 34; //TODO
 //var total_pages = 1129;
-var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,MGF,HW3,UQW,UMR,UMS,UMJ"; // TODO: Br. Ejtaal to review the book order
+var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,MGF,HW3,LA,UQW,UMR,UMS,UMJ,IMN"; // TODO: Br. Ejtaal to review the book order
 var aa_book_order = initial_book_order;
-var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,VI=51,MGF=33,UQW=106,UMR=26,UMS=14,UMJ=34"; //TODO
+var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,IMN=1,VI=51,MGF=33,UQW=106,LA=1,UMR=26,UMS=14,UMJ=34"; //TODO
 var cur_hw3_page = 19, req_hw3_page = 19;
 var cur_hw4_page = 14, req_hw4_page = 14;
 var cur_aan_page = 24, req_aan_page = 24;
+var cur_imn_page = 1, req_imn_page = 1;
 var cur_vi_page = 51, req_vi_page = 51;
 var cur_br_page = 26, req_br_page = 26;
 var cur_mgf_page = 33, req_mgf_page = 33; 
@@ -950,6 +1051,7 @@ var cur_ls_page = 3, req_ls_page = 3;
 var cur_ha_page = 20, req_ha_page = 20;
 var cur_sg_page = 20, req_sg_page = 20;
 var cur_uqw_page = 106, req_uqw_page = 106;
+var cur_la_page = 1, req_la_page = 1;
 var cur_umr_page = 26, req_umr_page = 26;
 var cur_ums_page = 14, req_ums_page = 14;
 var cur_umj_page = req_umj_page = umj_offset;
@@ -962,9 +1064,11 @@ var hw4_hide = false,
 	ha_hide = false, 
 	sg_hide = false, 
 	aan_hide = false, 
+	imn_hide = false, 
 	vi_hide = false, 
 	mgf_hide = false, 
 	uqw_hide = false,
+	la_hide = false,
 	umr_hide = false, 
 	ums_hide = false, 
 	umj_hide = false
@@ -1022,6 +1126,11 @@ function hide_book( book, should_hide) {
 		if ( should_hide) hide_show( 'aanadwi', 'aan_toggle');
 		else              hide_show( 'aan_toggle', 'aanadwi');
 	}
+	if ( book == "IMN") { 
+		imn_hide = should_hide;
+		if ( should_hide) hide_show( 'idmunawir', 'imn_toggle');
+		else              hide_show( 'imn_toggle', 'idmunawir');
+	}
 	if ( book == "HW3") { 
 		hw3_hide = should_hide;
 		if ( should_hide) hide_show( 'hanswehr3', 'hw3_toggle');
@@ -1066,6 +1175,11 @@ function hide_book( book, should_hide) {
 		uqw_hide = should_hide;
 		if ( should_hide) hide_show( 'uqaamoos', 'uqw_toggle');
 		else              hide_show( 'uqw_toggle', 'uqaamoos');
+	}
+	if ( book == "LA") { 
+		la_hide = should_hide;
+		if ( should_hide) hide_show( 'lisanularab', 'la_toggle');
+		else              hide_show( 'la_toggle', 'lisanularab');
 	}
 	if ( book == "UMR") { 
 		umr_hide = should_hide;
@@ -1126,9 +1240,11 @@ function build_hash() {
 		+ ",SG=" + req_sg_page + ",BR=" + req_br_page
 		+ ",PR=" + req_pr_page 
 		+ ",AAN=" + req_aan_page
+		+ ",IMN=" + req_imn_page
 		+ ",VI=" + req_vi_page
 		+ ",MGF=" + req_mgf_page
 		+ ",UQW=" + req_uqw_page
+		+ ",LA=" + req_la_page
 		+ ",UMR=" + req_umr_page
 		+ ",UMS=" + req_ums_page
 		+ ",UMJ=" + req_umj_page
@@ -1136,6 +1252,7 @@ function build_hash() {
 	if ( hw4_hide) new_hash += ",HW4_HIDE";
 	if ( vi_hide) new_hash += ",VI_HIDE";
 	if ( aan_hide) new_hash += ",AAN_HIDE";
+	if ( imn_hide) new_hash += ",IMN_HIDE";
 	if ( hw3_hide) new_hash += ",HW3_HIDE";
 	if ( ll_hide) new_hash += ",LL_HIDE";
 	if ( ls_hide) new_hash += ",LS_HIDE";
@@ -1145,6 +1262,7 @@ function build_hash() {
 	if ( mgf_hide) new_hash += ",MGF_HIDE";
 	if ( pr_hide) new_hash += ",PR_HIDE";
 	if ( uqw_hide) new_hash += ",UQW_HIDE";
+	if ( la_hide) new_hash += ",LA_HIDE";
 	if ( umr_hide) new_hash += ",UMR_HIDE";
 	if ( ums_hide) new_hash += ",UMS_HIDE";
 	if ( umj_hide) new_hash += ",UMJ_HIDE";
@@ -1166,6 +1284,7 @@ function set_title() {
 			if ( id == "HW4" && ! hw4_hide) add_text = "HW4: " + hw4[cur_hw4_page];
 			if ( id == "VI" && ! vi_hide) add_text = "VI: " + vi[cur_vi_page];
 			if ( id == "AAN" && ! aan_hide) add_text = "AAN: " + aan[cur_aan_page];
+			if ( id == "IMN" && ! imn_hide) add_text = "IMN: " + imn[cur_imn_page];
 			if ( id == "LL" && ! ll_hide) add_text = "LL: " + ll_p[get_ll_page( cur_ll_vol, cur_ll_page)];
 			if ( id == "LS" && ! ls_hide) add_text = "LS: " + ls_p[cur_ls_page];
 			if ( id == "SG" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
@@ -1173,6 +1292,7 @@ function set_title() {
 			if ( id == "MGF" && ! mgf_hide) add_text = "MGF: " + mgf[cur_mgf_page];
 			if ( id == "PR" && ! pr_hide) add_text = "PR: " + pr[cur_pr_page];
 			if ( id == "UQW" && ! uqw_hide) add_text = "UQW: " + uqw[cur_uqw_page];
+			if ( id == "LA" && ! la_hide) add_text = "LA: " + la[cur_la_page];
 			if ( id == "UMR" && ! umr_hide) add_text = "UMR: " + umr[cur_umr_page];
 			if ( id == "UMS" && ! ums_hide) add_text = "UMS: " + ums[cur_ums_page];
 			if ( id == "UMJ" && ! umj_hide) add_text = "UMJ: " + umj[cur_umj_page];
@@ -1207,6 +1327,7 @@ function parse_hash() {
 					if ( book == "HW3") { req_hw3_page = cur_hw3_page = parseInt(page); }
 					if ( book == "HW4") { req_hw4_page = cur_hw4_page = parseInt(page); }
 					if ( book == "AAN") { req_aan_page = cur_aan_page = parseInt(page); }
+					if ( book == "IMN") { req_imn_page = cur_imn_page = parseInt(page); }
 					if ( book == "VI") { req_vi_page = cur_vi_page = parseInt(page); }
 					if ( book == "HA") { req_ha_page = cur_ha_page = parseInt(page); }
 					if ( book == "SG") { req_sg_page = cur_sg_page = parseInt(page); }
@@ -1214,6 +1335,7 @@ function parse_hash() {
 					if ( book == "MGF") { req_mgf_page = cur_mgf_page = parseInt(page); }
 					if ( book == "PR") { req_pr_page = cur_pr_page = parseInt(page); }
 					if ( book == "UQW") { req_uqw_page = cur_uqw_page = parseInt(page); }
+					if ( book == "LA") { req_la_page = cur_la_page = parseInt(page); }
 					if ( book == "UMR") { req_umr_page = cur_umr_page = parseInt(page); }
 					if ( book == "UMS") { req_ums_page = cur_ums_page = parseInt(page); }
 					if ( book == "UMJ") { req_umj_page = cur_umj_page = parseInt(page); }
@@ -1226,6 +1348,7 @@ function parse_hash() {
 					if ( book == "LS") { req_ls_page = cur_ls_page = parseInt(page); }
 					if ( book == "HW4_HIDE" && ! hw4_hide ) { hw4_hide = true; hide_show( 'hanswehr4', 'hw4_toggle'); }
 					if ( book == "AAN_HIDE" && ! aan_hide ) { aan_hide = true; hide_show( 'aanadwi', 'aan_toggle'); }
+					if ( book == "IMN_HIDE" && ! imn_hide ) { imn_hide = true; hide_show( 'idmunawir', 'imn_toggle'); }
 					if ( book == "VI_HIDE" && ! vi_hide ) { vi_hide = true; hide_show( 'verbalidioms', 'vi_toggle'); }
 					if ( book == "HW3_HIDE" && ! hw3_hide ) { hw3_hide = true; hide_show( 'hanswehr3', 'hw3_toggle'); }
 					if ( book == "HA_HIDE" && ! ha_hide ) { ha_hide = true; hide_show( 'hava', 'ha_toggle'); }
@@ -1236,6 +1359,7 @@ function parse_hash() {
 					if ( book == "MGF_HIDE" && ! mgf_hide ) { mgf_hide = true; hide_show( 'mgfarid', 'mgf_toggle'); }
 					if ( book == "PR_HIDE" && ! pr_hide ) { pr_hide = true; hide_show( 'penrice', 'pr_toggle'); }
 					if ( book == "UQW_HIDE" && ! uqw_hide ) { uqw_hide = true; hide_show( 'uqaamoos', 'uqw_toggle'); }
+					if ( book == "LA_HIDE" && ! la_hide ) { la_hide = true; hide_show( 'lisanularab', 'la_toggle'); }
 					if ( book == "UMR_HIDE" && ! umr_hide ) { umr_hide = true; hide_show( 'urdumufraadaat', 'umr_toggle'); }
 					if ( book == "UMS_HIDE" && ! ums_hide ) { ums_hide = true; hide_show( 'urdumukhtaar', 'ums_toggle'); }
 					if ( book == "UMJ_HIDE" && ! umj_hide ) { umj_hide = true; hide_show( 'umunjid', 'umj_toggle'); }
@@ -1260,6 +1384,10 @@ function shift_page( book, offset) {
 	if ( book == "AAN") { 
 		req_aan_page = cur_aan_page + offset;
 		$(window).scrollTop( $("#aanadwi").offset().top);
+	}
+	if ( book == "IMN") { 
+		req_imn_page = cur_imn_page + offset;
+		$(window).scrollTop( $("#idmunawir").offset().top);
 	}
 	if ( book == "VI") { 
 		req_vi_page = cur_vi_page + offset;
@@ -1302,6 +1430,10 @@ function shift_page( book, offset) {
 	if ( book == "UQW") { 
 		req_uqw_page = cur_uqw_page + offset;
 		$(window).scrollTop( $("#uqaamoos").offset().top);
+	}
+	if ( book == "LA") { 
+		req_la_page = cur_la_page + offset;
+		$(window).scrollTop( $("#lisanularab").offset().top);
 	}
 	if ( book == "UMR") { 
 		req_umr_page = cur_umr_page + offset;
@@ -1348,6 +1480,7 @@ function visible_book_shift( offset) {
 	if ( percentVisible("#hanswehr3") > 50) shift_page( 'HW3', offset);
 	else if ( percentVisible("#hanswehr4") > 50) shift_page( 'HW4', offset);
 	else if ( percentVisible("#aanadwi") > 50) shift_page( 'AAN', offset);
+	else if ( percentVisible("#idmunawir") > 50) shift_page( 'IMN', offset);
 	else if ( percentVisible("#verbalidioms") > 50) shift_page( 'VI', offset);
 	else if ( percentVisible("#laneslexicon") > 50) shift_page( 'LL', offset);
 	else if ( percentVisible("#laneslexiconsup") > 50) shift_page( 'LS', offset);
@@ -1357,6 +1490,7 @@ function visible_book_shift( offset) {
 	else if ( percentVisible("#mgfarid") > 50) shift_page( 'MGF', offset);
 	else if ( percentVisible("#penrice") > 50) shift_page( 'PR', offset);
 	else if ( percentVisible("#uqaamoos") > 50) shift_page( 'UQW', offset);
+	else if ( percentVisible("#lisanularab") > 50) shift_page( 'LA', offset);
 	else if ( percentVisible("#urdumufraadaat") > 50) shift_page( 'UMR', offset);
 	else if ( percentVisible("#urdumukhtaar") > 50) shift_page( 'UMS', offset);
 	else if ( percentVisible("#umunjid") > 50) shift_page( 'UMJ', offset);
@@ -1427,6 +1561,27 @@ function display_images() {
 			" <b>" + aan[cur_aan_page] + "</b> | " +
 			"AA Nadwi, page " + (cur_aan_page-aan_offset+1) + 
 			" <small>(of " + (aan.length-1-aan_offset) + ") " +
+			"</small>"
+			;
+	}
+
+	if ( ! imn_hide) {	
+		//document.getElementById("imn_load_status_line").innerHTML = "<br>Loading . . .";
+		var imn_img_url = img_base_dir + imn_get_img_url( cur_imn_page);
+		// Clear image if it's being changed so it's clearer to user that a new imagine
+		// is being downloaded
+		if ( $("#imn_col1").attr('src') != imn_img_url) {
+			$("#imn_col1").attr('src', '');
+			$("#imn_col2").attr('src', '');
+			$("#imn_wideviewimg").attr('src', '');
+		}
+		document.getElementById("imn_col1").src = 
+			document.getElementById("imn_col2").src = 
+			document.getElementById("imn_wideviewimg").src = imn_img_url;
+		document.getElementById("imn_status_line").innerHTML = 
+			" <b>" + imn[cur_imn_page] + "</b> | " +
+			"ID Munawir, page " + (cur_imn_page-imn_offset+1) + 
+			" <small>(of " + (imn.length-1-imn_offset) + ") " +
 			"</small>"
 			;
 	}
@@ -1629,6 +1784,26 @@ function display_images() {
 		//debug ( document.getElementById("ll_col1").src );
 	}
 
+	if ( ! la_hide) {	
+		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
+		var la_img_url = img_base_dir + la_get_img_url( cur_la_page);
+		if ( $("#la_col1").attr('src') != la_img_url) {
+			$("#la_col1").attr('src', '');
+			$("#la_col2").attr('src', '');
+			$("#la_wideviewimg").attr('src', '');
+		}
+		document.getElementById("la_col1").src = 
+			document.getElementById("la_col2").src = 
+			document.getElementById("la_col3").src = 
+			document.getElementById("la_wideviewimg").src = la_img_url;
+		document.getElementById("la_status_line").innerHTML = 
+			" <b>" + la[cur_la_page] + "</b> | " +
+			"Lisanul Arab, page " + cur_la_page + 
+			" <small>(of " + (la.length) + ".</small>"
+			;
+		//debug ( document.getElementById("ll_col1").src );
+	}
+
 	if ( ! umj_hide) {	
 		//document.getElementById("ll_load_status_line").innerHTML = "<br>Loading . . .";
 		var umj_img_url = img_base_dir + umj_get_img_url( cur_umj_page);
@@ -1738,7 +1913,7 @@ function set_book_order() {
 }
 
 function init_settings() {
-	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "VI", "MGF", "UQW", "UMR", "UMS", "UMJ"];
+	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "IMN", "VI", "MGF", "UQW", "LA", "UMR", "UMS", "UMJ"];
 	var table_html = "<table><tr>\n";
 	for (var row = 0; row <= available_books.length; row++) {
 		//var rowpp = row + 1;
@@ -1776,10 +1951,11 @@ function update_settings_order( order_toset) {
 
 function set_order_preset( preset_requested) {
 	var new_book_order = initial_book_order;
-	if ( preset_requested == "quran")  new_book_order = "BR,AAN,MGF,VI,PR,LL,LS,SG,HW4,UQW,UMR,UMS,UMJ,HA,HW3";
-	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,UMR,UMS,UMJ";
-	if ( preset_requested == "dev") new_book_order = "UMS,UMR,UQW,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
-	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3";
+	if ( preset_requested == "quran")  new_book_order = "BR,AAN,MGF,VI,PR,LL,LS,SG,HW4,UQW,LA,UMR,UMS,UMJ,HA,HW3,IMN";
+	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,LA,UMR,UMS,UMJ,IMN";
+	if ( preset_requested == "dev") new_book_order = "IMN,LA,UMS,UMR,UQW,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
+	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA,IMN";
+	if ( preset_requested == "indo") new_book_order = "IMN,UQW,UMR,UMS,UMJ,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA";
 	// Default is above already
 	// if ( preset_requested == "default")
 	update_settings_order( new_book_order);
@@ -2008,11 +2184,13 @@ function do_search( input) {
 	req_hw3_page = binarySearch( hw3, search, 0);
 	req_hw4_page = binarySearch( hw4, search, 0);
 	req_aan_page = binarySearch( aan, search, 0);
+	req_imn_page = binarySearch( imn, search, 0);
 	req_umr_page = binarySearch( umr, search, 0);
 	req_ums_page = binarySearch( ums, search, 0);
 	req_umj_page = binarySearch( umj, search, 0);
 	req_vi_page  = binarySearch( vi, search, 0);
 	req_uqw_page  = binarySearch( uqw, search, 0);
+	req_la_page  = binarySearch( la, search, 0);
 	req_ll = get_ll_volume_page( binarySearch( ll_p, search, -1));
 	req_ll_vol = req_ll[0];
 	req_ll_page = req_ll[1];
