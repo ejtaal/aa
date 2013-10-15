@@ -10,6 +10,10 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
+-  version 4.1 - 15/10/2013
+
+   - Lisan al-'Arab, by Ibn Manzur
+   - Indonesia: Kamus Al-Munawwir, Arab-Indonesia Terlengkap, oleh KH. Ahmad Warson Munawwir
 -  version 4.0 - 20/7/2013
 
    Thanks to the work of 2 very enthusiastic volunteers, we present
@@ -24,6 +28,7 @@ Latest news
 	 -  Urdu: al-Munjid
 
 -  version 3.1 - 28/3/2013
+
    - 2 minor fixes: 1) Fix hanging with downloaded version (it was trying to contact Google analytics which is pointless when you're offline) and 2) Clear images when doing a new search so that you can see the new image being downloaded.
 
 -  version 3.0 - 25/2/2013
@@ -133,6 +138,14 @@ UMJ: Urdu al Munjid
 -----------------------
 
 This is the Urdu translation by Ismat abu Saleem of the famous Arabic dictionary al Munjid written by Fr. Louis Ma’luf al-Yassu’i and Fr. Bernard Tottel al-Yassu’i, which has been printed, published, and distributed by a Catholic printing house since 1908. The Arabic dictionary has received some criticism from Muslim Scholars though it is still used widely. Though this is an Urdu translation by a Muslim and appears to have removed many of the concerns, still caution is advised. In Urdu, Al Munjid has been the source of 3 books. Misbaah ul Lughaat was actually based on this dictionary in which the translator removed some content and added some of his own content. The edition used in Almanac is claimed to be the 1st complete Urdu translation of Al Munjid.
+
+LA: Lisan al-'Arab
+-----------------------
+The Lisān al-ʿArab (لسان العرب, "The Arab Tongue") was completed by Ibn Manzur in 1290. Occupying 20 printed book volumes (in the most frequently cited edition), it is the most well-known dictionary of the Arabic language,[3] as well as one of the most comprehensive. Ibn Manzur compiled it from other sources, to a large degree.
+
+IMN: Indonesia, Al-Munawwir, Kamus Arab-Indonesia Terlengkap, oleh KH. Ahmad Warson Munawwir
+-----------------------
+Kamus Al-Munawwir merupakan sebuah kamus bahasa Arab-Indonesia yang merupakan kamus bahasa Arab terlengkap, paling tebal dan legendaris di Indonesia. Kamus ini telah banyak digunakan oleh para penuntut ilmu (thullabul Ilmi) untuk mengetahui arti kosakata Arab ke dalam bahasa Indonesia juga sebagai acuan pada bendahara kosakata terjemahan kitab kuning. Kamus ini termasuk kategori best seller, karena telah dicetak berulangkali dan dicetak sekitar 10 ribu-15 ribu eksemplar pertahun. Untuk melengkapinya kamus ini kemudian diikuti edisi Indonesia-Arab-nya.
 
 How to use
 ==========
