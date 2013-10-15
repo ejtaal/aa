@@ -1304,6 +1304,9 @@ function set_title() {
 	else title = "Search: " + searched_word;
 	if (title != "") title += " - ";
 	title += title_text;
+  if ('file:' == document.location.protocol) {
+		title = "[L] - " + title;
+	}
 	//alert( title);
 	document.title = title;
 }
