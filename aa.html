@@ -76,7 +76,7 @@ hr { margin: 5px; }
 	overflow: hidden;
 }
 
-#settings_container,#hw3_toggle,#ll_toggle,#uqw_toggle,#la_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#imn_toggle,#umr_toggle,#ums_toggle,#vi_toggle,#mgf_toggle,#umj_toggle { display: none; }
+#settings_container,#hw3_toggle,#ll_toggle,#uqw_toggle,#la_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#imn_toggle,#umr_toggle,#ums_toggle,#vi_toggle,#mgf_toggle,#ulq_toggle,#uqa_toggle,#umj_toggle { display: none; }
 #settings_container { border: solid white 5px; }
 #settings_2 td { border-bottom: solid white 1px; }
 
@@ -147,6 +147,8 @@ hr { margin: 5px; }
 #penrice         .navtable td div, #pr_toggle,  .PR_color , #pr_status_line  { background-color: orchid; }
 #brill           .navtable td div, #br_toggle,  .BR_color , #br_status_line  { background-color: magenta; }
 #mgfarid         .navtable td div, #mgf_toggle, .MGF_color, #mgf_status_line { background-color: orange; }
+#ulughaat        .navtable td div, #ulq_toggle, .ULQ_color, #ulq_status_line { background-color: orange; }
+#uqalfaaz        .navtable td div, #uqa_toggle, .UQA_color, #uqa_status_line { background-color: orange; }
 #aanadwi         .navtable td div, #aan_toggle, .AAN_color, #aan_status_line { background-color: slateblue; }
 #idmunawir       .navtable td div, #imn_toggle, .IMN_color, #imn_status_line { background-color: Moccasin; }
 #verbalidioms    .navtable td div, #vi_toggle,  .VI_color,  #vi_status_line  { background-color: violet; }
@@ -165,6 +167,8 @@ hr { margin: 5px; }
 #pr_wideviewimg  { border: 3px solid orchid; }
 #br_wideviewimg  { border: 3px solid magenta; }
 #mgf_wideviewimg { border: 3px solid orange; }
+#ulq_wideviewimg { border: 3px solid orange; }
+#uqa_wideviewimg { border: 3px solid orange; }
 #aan_wideviewimg { border: 3px solid slateblue; }
 #imn_wideviewimg { border: 3px solid Moccasin; }
 #vi_wideviewimg  { border: 3px solid violet; }
@@ -247,6 +251,14 @@ _gaq.push(['_trackPageview']);
 	You can also choose from these presets:
 	<table><tr>
 	<td>
+<script type="text/javascript">
+if ( (document.location.hostname == "localhost") || (window.location.protocol=='file:') ) { 
+</script>
+	<a href="javascript:set_order_preset('dev')"><div class='button'>Dev</div></a>
+	<td>
+<script type="text/javascript">
+}
+</script>
 	<a href="javascript:set_order_preset('quran')"><div class='button'>Quran</div></a>
 	<td>
 	<a href="javascript:set_order_preset('modern')"><div class='button'>Modern</div></a>
@@ -722,6 +734,84 @@ Show Supplement [_]
 	<hr>
 </div>
 
+<div id='ULQ'>
+	<div class='book_toggle' id='ulq_toggle' onclick="javascript:hide_book('ULQ', false);"> Show Urdu: Lughaat ul Qur'aan, by GA Parwez [_] </div>
+	<div id='ulughaat'>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("ULQ", -1)' id='ulq_a_prev2'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:ulq_showindex()'><div class='button'>ULQ</div></a> </td>
+			<td> <a href="javascript:hide_book( 'ULQ', true);"><div class='button'>hide</div></a> </td>
+			<td> <a href='javascript:shift_page("ULQ", 1)' id='ulq_a_next2'><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+		<span class='status_line' id='ulq_status_line'></span>
+		<!-- ULQ doesn't have columns, hence no narrowview -->
+		<!--
+		<div class='teal-gradient' id='ulq_narrowview'>
+			<div class='column' id='div_ulq_col1'>
+				<img id='ulq_col1' onClick='javascript:searchandgo()'>
+			</div>
+			<hr>
+			<div class='column' id='div_ulq_col1'>
+				<img id='ulq_col2' onClick='javascript:searchandgo()'>
+			</div>
+		</div>
+			<img class='wideview' id='ulq_wideviewimg' onClick='javascript:searchandgo()'>
+		-->		
+		<div id='ulq_wideview'>
+		<!-- ULQ doesn't have columns, hence no wideview classed img either -->
+			<img id='ulq_wideviewimg' onClick='javascript:searchandgo()'>
+		</div>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("ULQ", -1)'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:shift_page("ULQ", 1)' ><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+	</div>
+	<hr>
+</div>
+
+<div id='UQA'>
+	<div class='book_toggle' id='uqa_toggle' onclick="javascript:hide_book('UQA', false);"> Show Urdu: Qaamoos alfaaz o Istelehaat e Qur'an [_] </div>
+	<div id='uqalfaaz'>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("UQA", -1)' id='uqa_a_prev2'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:uqa_showindex()'><div class='button'>UQA</div></a> </td>
+			<td> <a href="javascript:hide_book( 'UQA', true);"><div class='button'>hide</div></a> </td>
+			<td> <a href='javascript:shift_page("UQA", 1)' id='uqa_a_next2'><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+		<span class='status_line' id='uqa_status_line'></span>
+		<!-- UQA doesn't have columns, hence no narrowview -->
+		<!--
+		<div class='teal-gradient' id='uqa_narrowview'>
+			<div class='column' id='div_uqa_col1'>
+				<img id='uqa_col1' onClick='javascript:searchandgo()'>
+			</div>
+			<hr>
+			<div class='column' id='div_uqa_col1'>
+				<img id='uqa_col2' onClick='javascript:searchandgo()'>
+			</div>
+		</div>
+			<img class='wideview' id='uqa_wideviewimg' onClick='javascript:searchandgo()'>
+		-->		
+		<div id='uqa_wideview'>
+		<!-- UQA doesn't have columns, hence no wideview classed img either -->
+			<img id='uqa_wideviewimg' onClick='javascript:searchandgo()'>
+		</div>
+		<table class='navtable'>
+		<tr>
+			<td> <a href='javascript:shift_page("UQA", -1)'><div class='button'>&larr;</div></a> </td>
+			<td> <a href='javascript:shift_page("UQA", 1)' ><div class='button'>&rarr;</div></a> </td>
+		</tr>
+		</table>
+	</div>
+	<hr>
+</div>
+
 <div id='PR'>
 	<div class='book_toggle' id='pr_toggle' onclick="javascript:hide_book('PR', false);"> Show Penrice [_] </div>
 	<div id='penrice'>
@@ -1001,6 +1091,8 @@ http://www.openjs.com/scripts/events/keyboard_shortcuts/
 <script type="text/javascript" src="aa-imn-index.js?004"></script>
 <script type="text/javascript" src="aa-vi-index.js?005"></script>
 <script type="text/javascript" src="aa-mgf-index.js?004"></script>
+<script type="text/javascript" src="aa-ulq-index.js?004"></script>
+<script type="text/javascript" src="aa-uqa-index.js?004"></script>
 <script type="text/javascript" src="aa-uqw-index.js?005"></script>
 <script type="text/javascript" src="aa-la-index.js?005"></script>
 <script type="text/javascript" src="aa-umr-index.js?002"></script>
@@ -1027,6 +1119,8 @@ var ha_offset = 21;
 var sg_offset = 20;
 var br_offset = 26;
 var mgf_offset = 33;
+var ulq_offset = 247;
+var uqa_offset = 17;
 var pr_offset = 9;
 var uqw_offset = 106;
 var la_offset = 1; // TODO: Check 
@@ -1034,9 +1128,9 @@ var umr_offset = 26;
 var ums_offset = 14;
 var umj_offset = 34; //TODO
 //var total_pages = 1129;
-var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,MGF,HW3,LA,UQW,UMR,UMS,UMJ,IMN"; // TODO: Br. Ejtaal to review the book order
+var initial_book_order = "LL,LS,HW4,SG,PR,BR,AAN,HA,VI,MGF,HW3,LA,UQW,UMR,UMS,UMJ,ULQ,UQA,IMN"; // TODO: Br. Ejtaal to review the book order
 var aa_book_order = initial_book_order;
-var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,IMN=1,VI=51,MGF=33,UQW=106,LA=1,UMR=26,UMS=14,UMJ=34"; //TODO
+var starting_hash = "#HW3=19,LL=1_38,LS=3,HA=21,SG=20,BR=26,PR=9,HW4=14,AAN=24,IMN=1,VI=51,MGF=33,ULQ=247,UQA=17,UQW=106,LA=1,UMR=26,UMS=14,UMJ=34"; //TODO
 var cur_hw3_page = 19, req_hw3_page = 19;
 var cur_hw4_page = 14, req_hw4_page = 14;
 var cur_aan_page = 24, req_aan_page = 24;
@@ -1044,6 +1138,8 @@ var cur_imn_page = 1, req_imn_page = 1;
 var cur_vi_page = 51, req_vi_page = 51;
 var cur_br_page = 26, req_br_page = 26;
 var cur_mgf_page = 33, req_mgf_page = 33; 
+var cur_ulq_page = 247, req_ulq_page = 247; 
+var cur_uqa_page = 17, req_uqa_page = 17; 
 var cur_pr_page = 9, req_pr_page = 9;
 var cur_ll_page = 38, req_ll_page = 38;
 var cur_ll_vol = 1, req_ll_vol = 1;
@@ -1067,6 +1163,8 @@ var hw4_hide = false,
 	imn_hide = false, 
 	vi_hide = false, 
 	mgf_hide = false, 
+	ulq_hide = false, 
+	uqa_hide = false, 
 	uqw_hide = false,
 	la_hide = false,
 	umr_hide = false, 
@@ -1166,6 +1264,16 @@ function hide_book( book, should_hide) {
 		if ( should_hide) hide_show( 'mgfarid', 'mgf_toggle');
 		else              hide_show( 'mgf_toggle', 'mgfarid');
 	}
+	if ( book == "ULQ") { 
+		ulq_hide = should_hide;
+		if ( should_hide) hide_show( 'ulughaat',   'ulq_toggle');
+		else              hide_show( 'ulq_toggle', 'ulughaat');
+	}
+	if ( book == "UQA") { 
+		uqa_hide = should_hide;
+		if ( should_hide) hide_show( 'uqalfaaz',   'uqa_toggle');
+		else              hide_show( 'uqa_toggle', 'uqalfaaz');
+	}
 	if ( book == "PR") { 
 		pr_hide = should_hide;
 		if ( should_hide) hide_show( 'penrice', 'pr_toggle');
@@ -1243,6 +1351,8 @@ function build_hash() {
 		+ ",IMN=" + req_imn_page
 		+ ",VI=" + req_vi_page
 		+ ",MGF=" + req_mgf_page
+		+ ",ULQ=" + req_ulq_page
+		+ ",UQA=" + req_uqa_page
 		+ ",UQW=" + req_uqw_page
 		+ ",LA=" + req_la_page
 		+ ",UMR=" + req_umr_page
@@ -1260,6 +1370,8 @@ function build_hash() {
 	if ( sg_hide) new_hash += ",SG_HIDE";
 	if ( br_hide) new_hash += ",BR_HIDE";
 	if ( mgf_hide) new_hash += ",MGF_HIDE";
+	if ( ulq_hide) new_hash += ",ULQ_HIDE";
+	if ( uqa_hide) new_hash += ",UQA_HIDE";
 	if ( pr_hide) new_hash += ",PR_HIDE";
 	if ( uqw_hide) new_hash += ",UQW_HIDE";
 	if ( la_hide) new_hash += ",LA_HIDE";
@@ -1290,6 +1402,8 @@ function set_title() {
 			if ( id == "SG" && ! sg_hide) add_text = "SG: " + sg[cur_sg_page];
 			if ( id == "BR" && ! br_hide) add_text = "BR: " + br[cur_br_page];
 			if ( id == "MGF" && ! mgf_hide) add_text = "MGF: " + mgf[cur_mgf_page];
+			if ( id == "ULQ" && ! ulq_hide) add_text = "ULQ: " + ulq[cur_ulq_page];
+			if ( id == "UQA" && ! uqa_hide) add_text = "UQA: " + uqa[cur_uqa_page];
 			if ( id == "PR" && ! pr_hide) add_text = "PR: " + pr[cur_pr_page];
 			if ( id == "UQW" && ! uqw_hide) add_text = "UQW: " + uqw[cur_uqw_page];
 			if ( id == "LA" && ! la_hide) add_text = "LA: " + la[cur_la_page];
@@ -1333,6 +1447,8 @@ function parse_hash() {
 					if ( book == "SG") { req_sg_page = cur_sg_page = parseInt(page); }
 					if ( book == "BR") { req_br_page = cur_br_page = parseInt(page); }
 					if ( book == "MGF") { req_mgf_page = cur_mgf_page = parseInt(page); }
+					if ( book == "ULQ") { req_ulq_page = cur_ulq_page = parseInt(page); }
+					if ( book == "UQA") { req_uqa_page = cur_uqa_page = parseInt(page); }
 					if ( book == "PR") { req_pr_page = cur_pr_page = parseInt(page); }
 					if ( book == "UQW") { req_uqw_page = cur_uqw_page = parseInt(page); }
 					if ( book == "LA") { req_la_page = cur_la_page = parseInt(page); }
@@ -1357,6 +1473,8 @@ function parse_hash() {
 					if ( book == "LS_HIDE" && ! ls_hide ) { ls_hide = true; hide_show( 'laneslexiconsup', 'ls_toggle'); }
 					if ( book == "BR_HIDE" && ! br_hide ) { br_hide = true; hide_show( 'brill', 'br_toggle'); }
 					if ( book == "MGF_HIDE" && ! mgf_hide ) { mgf_hide = true; hide_show( 'mgfarid', 'mgf_toggle'); }
+					if ( book == "ULQ_HIDE" && ! ulq_hide ) { ulq_hide = true; hide_show( 'ulughaat', 'ulq_toggle'); }
+					if ( book == "UQA_HIDE" && ! uqa_hide ) { uqa_hide = true; hide_show( 'uqalfaaz', 'uqa_toggle'); }
 					if ( book == "PR_HIDE" && ! pr_hide ) { pr_hide = true; hide_show( 'penrice', 'pr_toggle'); }
 					if ( book == "UQW_HIDE" && ! uqw_hide ) { uqw_hide = true; hide_show( 'uqaamoos', 'uqw_toggle'); }
 					if ( book == "LA_HIDE" && ! la_hide ) { la_hide = true; hide_show( 'lisanularab', 'la_toggle'); }
@@ -1412,6 +1530,14 @@ function shift_page( book, offset) {
 	if ( book == "MGF") { 
 		req_mgf_page = cur_mgf_page + offset;
 		$(window).scrollTop( $("#mgfarid").offset().top);
+	}
+	if ( book == "ULQ") { 
+		req_ulq_page = cur_ulq_page + offset;
+		$(window).scrollTop( $("#ulughaat").offset().top);
+	}
+	if ( book == "UQA") { 
+		req_uqa_page = cur_uqa_page + offset;
+		$(window).scrollTop( $("#ulughaat").offset().top);
 	}
 	if ( book == "PR") { 
 		req_pr_page = cur_pr_page + offset;
@@ -1488,6 +1614,8 @@ function visible_book_shift( offset) {
 	else if ( percentVisible("#steingass") > 50) shift_page( 'SG', offset);
 	else if ( percentVisible("#brill") > 50) shift_page( 'BR', offset);
 	else if ( percentVisible("#mgfarid") > 50) shift_page( 'MGF', offset);
+	else if ( percentVisible("#ulughaat") > 50) shift_page( 'ULQ', offset);
+	else if ( percentVisible("#uqalfaaz") > 50) shift_page( 'UQA', offset);
 	else if ( percentVisible("#penrice") > 50) shift_page( 'PR', offset);
 	else if ( percentVisible("#uqaamoos") > 50) shift_page( 'UQW', offset);
 	else if ( percentVisible("#lisanularab") > 50) shift_page( 'LA', offset);
@@ -1724,6 +1852,47 @@ function display_images() {
 			"</small>"
 			;
 	}
+	
+	if ( ! ulq_hide) {	
+		//document.getElementById("ulq_load_status_line").innerHTML = "<br>Loading . . .";
+		var ulq_img_url = img_base_dir + ulq_get_img_url( cur_ulq_page);
+		// ULQ doesn't have columns
+		if ( $("#ulq_wideviewimg").attr('src') != ulq_img_url) {
+			$("#ulq_wideviewimg").attr('src', '');
+		}
+		/*
+		document.getElementById("ulq_col1").src = 
+			document.getElementById("ulq_col2").src = 
+		*/
+			document.getElementById("ulq_wideviewimg").src = ulq_img_url;
+		document.getElementById("ulq_status_line").innerHTML = 
+			" <b>" + ulq[cur_ulq_page] + "</b> | " +
+			"Urdu: Lughaat ul Qur'aan, by GA Parwez, page " + (cur_ulq_page-ulq_offset+1) + 
+			" <small>(of " + (ulq.length-1-ulq_offset) + ") " +
+			"</small>"
+			;
+	}
+
+	if ( ! uqa_hide) {	
+		//document.getElementById("uqa_load_status_line").innerHTML = "<br>Loading . . .";
+		var uqa_img_url = img_base_dir + uqa_get_img_url( cur_uqa_page);
+		// UQA doesn't have columns
+		if ( $("#uqa_wideviewimg").attr('src') != uqa_img_url) {
+			$("#uqa_wideviewimg").attr('src', '');
+		}
+		/*
+		document.getElementById("uqa_col1").src = 
+			document.getElementById("uqa_col2").src = 
+		*/
+			document.getElementById("uqa_wideviewimg").src = uqa_img_url;
+		document.getElementById("uqa_status_line").innerHTML = 
+			" <b>" + uqa[cur_uqa_page] + "</b> | " +
+			"Urdu: Qaamoos alfaaz o Istelehaat e Qur'an, page " + (cur_uqa_page-uqa_offset+1) + 
+			" <small>(of " + (uqa.length-1-uqa_offset) + ") " +
+			"</small>"
+			;
+	}
+
 	if ( ! pr_hide) {	
 		//document.getElementById("pr_load_status_line").innerHTML = "<br>Loading . . .";
 		var pr_img_url = img_base_dir + pr_get_img_url( cur_pr_page);
@@ -1913,7 +2082,7 @@ function set_book_order() {
 }
 
 function init_settings() {
-	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "IMN", "VI", "MGF", "UQW", "LA", "UMR", "UMS", "UMJ"];
+	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "IMN", "VI", "MGF", "UQW", "LA", "UMR", "UMS", "UMJ", "ULQ", "UQA"];
 	var table_html = "<table><tr>\n";
 	for (var row = 0; row <= available_books.length; row++) {
 		//var rowpp = row + 1;
@@ -1951,11 +2120,11 @@ function update_settings_order( order_toset) {
 
 function set_order_preset( preset_requested) {
 	var new_book_order = initial_book_order;
-	if ( preset_requested == "quran")  new_book_order = "BR,AAN,MGF,VI,PR,LL,LS,SG,HW4,UQW,LA,UMR,UMS,UMJ,HA,HW3,IMN";
-	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,LA,UMR,UMS,UMJ,IMN";
-	if ( preset_requested == "dev") new_book_order = "IMN,LA,UMS,UMR,UQW,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
-	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA,IMN";
-	if ( preset_requested == "indo") new_book_order = "IMN,UQW,UMR,UMS,UMJ,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA";
+	if ( preset_requested == "quran")  new_book_order = "BR,AAN,MGF,VI,PR,LL,LS,SG,HW4,UQW,LA,UMR,UMS,UMJ,ULQ,UQA,HA,HW3,IMN";
+	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,LA,UMR,UMS,UMJ,ULQ,UQA,IMN";
+	if ( preset_requested == "dev") new_book_order = "UQA,ULQ,IMN,LA,UMS,UMR,UQW,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
+	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,ULQ,UQA,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA,IMN";
+	if ( preset_requested == "indo") new_book_order = "IMN,UQW,UMR,UMS,UMJ,ULQ,UQA,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA";
 	// Default is above already
 	// if ( preset_requested == "default")
 	update_settings_order( new_book_order);
@@ -2062,6 +2231,8 @@ function set_fitwidth() {
 		$("#br_wideviewimg").css('max-width', mw);
 		$("#vi_wideviewimg").css('max-width', mw); // TODO: Need or not?
 		$("#mgf_wideviewimg").css('max-width', mw);// TODO: Need or not?
+		$("#ulq_wideviewimg").css('max-width', mw);// TODO: Need or not?
+		$("#uqa_wideviewimg").css('max-width', mw);// TODO: Need or not?
 		//debug("br_wideview: " + $("#br_wideview").css('max-width'));
 	}
 }
@@ -2074,6 +2245,8 @@ function toggle_view() {
 		$(".wideview").show();
 		$("#br_wideviewimg").css('max-width', '');
 		$("#mgf_wideviewimg").css('max-width', ''); // TODO: Need or not?
+		$("#ulq_wideviewimg").css('max-width', ''); // TODO: Need or not?
+		$("#uqa_wideviewimg").css('max-width', ''); // TODO: Need or not?
 		$("#vi_wideviewimg").css('max-width', '');
 		$("#currentmode").html("Desktop (full page)");
 		toggle_view_mode = 1;
@@ -2083,6 +2256,8 @@ function toggle_view() {
 		$(".wideview").hide();
 		$("#br_wideviewimg").css('max-width', '99%');
 		$("#mgf_wideviewimg").css('max-width', '99%'); // TODO: Need or not?
+		$("#ulq_wideviewimg").css('max-width', '99%'); // TODO: Need or not?
+		$("#uqa_wideviewimg").css('max-width', '99%'); // TODO: Need or not?
 		$("#vi_wideviewimg").css('max-width', '99%');
 		$("#currentmode").html("Mobile (column)");
 		toggle = 1;
@@ -2178,6 +2353,8 @@ function do_search( input) {
 	req_sg_page = binarySearch( sg, search, 0);
 	req_br_page = binarySearch( br, search, 0);
 	req_mgf_page = binarySearch( mgf, search, 0);
+	req_ulq_page = binarySearch( ulq, search, 0);
+	req_uqa_page = binarySearch( uqa, search, 0);
 	req_pr_page = binarySearch( pr, search, 0);
 	req_ha_page = binarySearch( ha_p, search, 0);
 	// Fudge was set to -1, but this often leads to the wrong page

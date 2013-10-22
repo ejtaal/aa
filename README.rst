@@ -10,10 +10,16 @@ background information on the Arabic Almanac website which can be found here:
 Latest news
 ===========
 
+-  version 4.2 - 22/10/2013
+
+   - ULQ: Lughaat ul Qur'an by GA Parwez
+   - UQA: Qaamoos alfaaz o Istelehaat e Qur'an
+   
 -  version 4.1 - 15/10/2013
 
    - Lisan al-'Arab, by Ibn Manzur
    - Indonesia: Kamus Al-Munawwir, Arab-Indonesia Terlengkap, oleh KH. Ahmad Warson Munawwir
+   
 -  version 4.0 - 20/7/2013
 
    Thanks to the work of 2 very enthusiastic volunteers, we present
@@ -145,7 +151,15 @@ The Lisān al-ʿArab (لسان العرب, "The Arab Tongue") was completed by I
 
 IMN: Indonesia, Al-Munawwir, Kamus Arab-Indonesia Terlengkap, oleh KH. Ahmad Warson Munawwir
 -----------------------
-Kamus Al-Munawwir merupakan sebuah kamus bahasa Arab-Indonesia yang merupakan kamus bahasa Arab terlengkap, paling tebal dan legendaris di Indonesia. Kamus ini telah banyak digunakan oleh para penuntut ilmu (thullabul Ilmi) untuk mengetahui arti kosakata Arab ke dalam bahasa Indonesia juga sebagai acuan pada bendahara kosakata terjemahan kitab kuning. Kamus ini termasuk kategori best seller, karena telah dicetak berulangkali dan dicetak sekitar 10 ribu-15 ribu eksemplar pertahun. Untuk melengkapinya kamus ini kemudian diikuti edisi Indonesia-Arab-nya.
+Kamus Al-Munawwir merupakan sebuah kamus bahasa Arab-Indonesia yang merupakan kamus bahasa Arab terlengkap, paling tebal dan legendaris di Indonesia. Kamus ini telah banyak digunakan oleh para penuntut ilmu (thullabul Ilmi) untuk mengetahui arti kosakata Arab ke dalam bahasa Indonesia juga sebagai acuan pada bendahara kosakata terjemahan kitab kuning. Kamus ini termasuk kategori best seller, karena telah dicetak berulangkali dan dicetak sekitar 10 ribu-15 ribu eksemplar pertahun. Untuk melengkapinya kamus ini kemudian diikuti edisi Indonesia-Arab-nya. Link: http://id.wikipedia.org/wiki/Al-Munawwir_(kamus)
+
+ULQ: Urdu Lughaat ul Qur'an by GA Parwez
+----------------------------------------
+This Arabic Urdu dictionary of the Qur'an has quoted material from some important works and many entries contain useful material. But since the author is a Sunnah rejector, he has inserted baseless material in few of the roots. Caution is advised. It contains some rare and useful material but this caution and his bias should be kept in mind.
+
+UQA: Qaamoos alfaaz o Istelehaat e Qur'an
+----------------------------------------- 
+This dictionary is extracted from the notes on words given in the large Urdu Tafseer of The Qur'an Tadabbur e Qur'an by Amin Ahsan Islahi. The focus appears to be on giving meaning based on usage of the word in language.
 
 How to use
 ==========
