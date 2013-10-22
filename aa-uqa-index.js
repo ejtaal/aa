@@ -3,10 +3,16 @@
 	if ( page > uqa.length - 1) page = uqa.length - 1;
 	cur_uqa_page = page;
 	var p = page;
+	/*
 	var prefixed_page = p;
 	if ( p < 10) prefixed_page = "000" + p;
 	else if ( p < 100) prefixed_page = "00" + p;
 	else if ( p < 1000) prefixed_page = "0" + p;
+	*/
+  var str = "" + p;
+  var pad = "000";
+  prefixed_page = pad.substring(0, pad.length - str.length) + str;
+	// alert(prefixed_page); 
 	return "uqa/" + Math.floor(page/100) + "/uqa-" + prefixed_page + ".png";
 }
 
