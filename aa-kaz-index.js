@@ -17,6 +17,7 @@ function kaz_get_img_url ( page) {
 }
 
 var kaz=[];
+for (i=0; i<=10; i++) kaz[i] = "";
 kaz[11]="ا";
 kaz[12]="ابث";
 kaz[13]="ابر";
