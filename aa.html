@@ -1142,7 +1142,7 @@ even though the file on the server has changed. -->
 <script type="text/javascript" src="aa-vi-index.js?005"></script>
 <script type="text/javascript" src="aa-mgf-index.js?004"></script>
 <script type="text/javascript" src="aa-ulq-index.js?005"></script>
-<script type="text/javascript" src="aa-uqa-index.js?005"></script>
+<script type="text/javascript" src="aa-uqa-index.js?006"></script>
 <script type="text/javascript" src="aa-uqw-index.js?005"></script>
 <script type="text/javascript" src="aa-la-index.js?006"></script>
 <script type="text/javascript" src="aa-umr-index.js?002"></script>
@@ -1158,7 +1158,7 @@ even though the file on the server has changed. -->
 
 // Some global vars that we need:
 var debugmode = false; 
-var version = "4.0";
+var version = "5.0";
 var title_text = "Arabic Almanac" + " v" + version;
 var toggle = 1;
 var hw4_offset = 14;
@@ -1608,7 +1608,7 @@ function shift_page( book, offset) {
 	}
 	if ( book == "UQA") { 
 		req_uqa_page = cur_uqa_page + offset;
-		$(window).scrollTop( $("#ulughaat").offset().top);
+		$(window).scrollTop( $("#uqalfaaz").offset().top);
 	}
 	if ( book == "PR") { 
 		req_pr_page = cur_pr_page + offset;
