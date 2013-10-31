@@ -6,7 +6,7 @@ for indexfile in aa-*-index.js; do
 	echo "Comparison for file '${indexfile}':"
 	echo "======================================="
 	if cmp -s /tmp/${indexfile}.orig /tmp/${indexfile}.sorted; then
-		echo "Index of $(wc -l /tmp/${indexfile}.orig) lines looks well sorted and OK!! :)"
+		echo "Index of $(wc -l < /tmp/${indexfile}.orig) lines looks well sorted and OK!! :)"
 	else
 		echo "Problems found in this index at the following locations:"
 		diff -u /tmp/${indexfile}.orig /tmp/${indexfile}.sorted | \
