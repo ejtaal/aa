@@ -161,7 +161,7 @@ UQA: Qaamoos alfaaz o Istelehaat e Qur'an
 ----------------------------------------- 
 This dictionary is extracted from the notes on words given in the large Urdu Tafseer of The Qur'an Tadabbur e Qur'an by Amin Ahsan Islahi. The focus appears to be on giving meaning based on usage of the word in language.
 
-Kaz: Kazimirski, French Dictionnaire Arabe-Francais
+KAZ: Kazimirski, French Dictionnaire Arabe-Francais
 ---------------------------------------------------
 This work has been the standard dictionary for translation of Arabic into French for many years. It contains most of the known roots of the Arabic language and also includes the dialects of Algiers and Morocco. Albert de Biberstein Kazimirski (1808-1887) was a lexicographer of repute in the nineteenth century. Among his many accomplishments was the translation of the Quran into French and the production of multiple dictionaries.
 
