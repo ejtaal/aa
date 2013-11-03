@@ -297,13 +297,6 @@ I hope to include the following dictionaries in the future:
 -  Arabic -> English:
 
    - Mustansir Mir - Dictionary of Quranic Terms + Coherence + Verbal Idioms ( `link <http://archive.org/details/MustansirMir-DictionaryOfQuranicTermsCoherenceVerbalIdioms>`_ ) (Status: DONE for Verbal Idioms, Next: Dictionary of Quranic Terms)
-   - Al-Mawrid - by Dr. Roohi Baalbaki
-
--  Arabic -> French:
-
-   -  Kazimirski, a popular Arabic -> French dictionary ( `Vol.
-      1 <http://archive.org/details/dictionnairearab01bibeuoft>`_, `Vol.
-      2 <http://archive.org/details/dictionnairearab02bibeuoft>`_ )
 
 In order to include a book I would need an index of the page headers. I
 have set up a page where you can input page headers easily, it has
