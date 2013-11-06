@@ -164,6 +164,7 @@ hr { margin: 5px; }
 #urdumukhtaar    .navtable td div, #ums_toggle, .UMS_color, #ums_status_line { background-color: royalblue; }
 #umunjid         .navtable td div, #umj_toggle, .UMJ_color, #umj_status_line { background-color: LightSteelBlue; }
 #kazir           .navtable td div, #kaz_toggle, .KAZ_color, #kaz_status_line { background-color: Green; }
+#marbawi         .navtable td div, #maw_toggle, .MAR_color, #mar_status_line { background-color: Plum; }
 
 
 #pr_wideviewimg  { border: 3px solid orchid; }
@@ -186,6 +187,7 @@ hr { margin: 5px; }
 #ums_wideviewimg { border: 3px solid royalblue; }
 #umj_wideviewimg { border: 3px solid LightSteelBlue; }
 #kaz_wideviewimg { border: 3px solid Green; }
+#mar_wideviewimg { border: 3px solid Plum; }
 
 
 /*
@@ -270,6 +272,8 @@ _gaq.push(['_trackPageview']);
 	<a href="javascript:set_order_preset('french')"><div class='button'>French</div></a>
 	<td>
 	<a href="javascript:set_order_preset('default')"><div class='button'>Default</div></a>
+	<td>
+	<a href="javascript:set_order_preset('malay')"><div class='button'>Indo/Malay</div></a>
 	<td class=".dev">
 	<a href="javascript:set_order_preset('dev')"><div class='button'>Dev</div></a>
 	<td>
@@ -979,6 +983,43 @@ Show Supplement [_]
 </div>
 <!--
 -->
+<div id='MAR'>
+<div class='book_toggle' id='mar_toggle' onclick="javascript:hide_book('MAR', false);"> Show Marbawi [_] </div>
+<div id='marbawi'>
+<table class='navtable'>
+<tr>
+	<td> <a href='javascript:shift_page("MAR", -1)' id='imn_a_prev2'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:imn_showindex()'><div class='button'>MAR</div></a> </td>
+	<td> <a href="javascript:hide_book( 'MAR', true);"><div class='button'>hide</div></a> </td>
+	<td> <a href='javascript:shift_page("MAR", 1)' id='imn_a_next2'><div class='button'>&rarr;</div></a> </td>
+</tr>
+</table>
+<span class='status_line' id='mar_status_line'></span>
+<div class='MAR_color narrowview' id='mar_narrowview'>
+	<div class='column' id='div_mar_col1'>
+		<img id='mar_col2' onClick='javascript:searchandgo()'>
+	</div>
+	<hr>
+	<div class='column' id='div_mar_col1'>
+		<img id='mar_col1' onClick='javascript:searchandgo()'>
+	</div>
+			
+</div>
+		
+<div id='mar_wideview'>
+	<img class='wideview' id='mar_wideviewimg' onClick='javascript:searchandgo()'>
+</div>
+<table class='navtable'>
+<tr>
+	<td> <a href='javascript:shift_page("MAR", -1)'><div class='button'>&larr;</div></a> </td>
+	<td> <a href='javascript:shift_page("MAR", 1)' ><div class='button'>&rarr;</div></a> </td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+<!--
+-->
 
 <div id='IMN'>
 <div class='book_toggle' id='imn_toggle' onclick="javascript:hide_book('IMN', false);"> Show ID Munawir [_] </div>
@@ -1149,6 +1190,7 @@ even though the file on the server has changed. -->
 <script type="text/javascript" src="aa-ums-index.js?010"></script>
 <script type="text/javascript" src="aa-umj-index.js?010"></script>
 <script type="text/javascript" src="aa-kaz-index.js?010"></script>
+<script type="text/javascript" src="aa-mar-index.js?010"></script>
 
 <!--
 <script type="text/javascript" src="aa-ll-data.js"></script>
@@ -1179,6 +1221,7 @@ var umr_offset = 26;
 var ums_offset = 14;
 var umj_offset = 34; //TODO
 var kaz_offset = 10;
+var mar_offset = 10;
 //var total_pages = 1129;
 var initial_book_order = "HW4,LL,LS,SG,PR,BR,AAN,HA,VI,MGF,HW3,LA,UQW,UMR,UMS,UMJ,ULQ,UQA,IMN,KAZ"; // TODO: Br. Ejtaal to review the book order
 var aa_book_order = initial_book_order;
@@ -1204,6 +1247,7 @@ var cur_umr_page = 26, req_umr_page = 26;
 var cur_ums_page = 14, req_ums_page = 14;
 var cur_umj_page = req_umj_page = umj_offset;
 var cur_kaz_page = req_kaz_page = kaz_offset;
+var cur_mar_page = req_mar_page = mar_offset;
 var hw4_hide = false, 
 	br_hide = false, 
 	pr_hide = false, 
@@ -1223,7 +1267,8 @@ var hw4_hide = false,
 	umr_hide = false, 
 	ums_hide = false, 
 	umj_hide = false,
-	kaz_hide = false
+	kaz_hide = false,
+	mar_hide = false
 	;
 var toggle_view_auto = 1;
 var toggle_view_mode;
@@ -1293,6 +1338,11 @@ function hide_book( book, should_hide) {
 		kaz_hide = should_hide;
 		if ( should_hide) hide_show( 'kazir', 'kaz_toggle');
 		else              hide_show( 'kaz_toggle', 'kazir');
+	}
+	if ( book == "MAR") { 
+		mar_hide = should_hide;
+		if ( should_hide) hide_show( 'marbawi', 'mar_toggle');
+		else              hide_show( 'mar_toggle', 'marbawi');
 	}
 	if ( book == "HW3") { 
 		hw3_hide = should_hide;
@@ -1424,6 +1474,7 @@ function build_hash() {
 		+ ",UMS=" + req_ums_page
 		+ ",UMJ=" + req_umj_page
 		+ ",KAZ=" + req_kaz_page
+		+ ",MAR=" + req_mar_page
 		;
 	if ( hw4_hide) new_hash += ",HW4_HIDE";
 	if ( vi_hide) new_hash += ",VI_HIDE";
@@ -1445,6 +1496,7 @@ function build_hash() {
 	if ( ums_hide) new_hash += ",UMS_HIDE";
 	if ( umj_hide) new_hash += ",UMJ_HIDE";
 	if ( kaz_hide) new_hash += ",KAZ_HIDE";
+	if ( mar_hide) new_hash += ",MAR_HIDE";
 	window.location.hash = new_hash;
 	setCookie( "aa_last_hash", window.location.hash, 365);
 }
@@ -1478,6 +1530,7 @@ function set_title() {
 			if ( id == "UMS" && ! ums_hide) add_text = "UMS: " + ums[cur_ums_page];
 			if ( id == "UMJ" && ! umj_hide) add_text = "UMJ: " + umj[cur_umj_page];
 			if ( id == "KAZ" && ! kaz_hide) add_text = "KAZ: " + kaz[cur_kaz_page];
+			if ( id == "MAR" && ! mar_hide) add_text = "MAR: " + mar[cur_mar_page];
 			if ( add_text != "") 
 				if ( title != "") title += " / " + add_text;
 				else title = add_text;
@@ -1524,6 +1577,7 @@ function parse_hash() {
 					if ( book == "UMS") { req_ums_page = cur_ums_page = parseInt(page); }
 					if ( book == "UMJ") { req_umj_page = cur_umj_page = parseInt(page); }
 					if ( book == "KAZ") { req_kaz_page = cur_kaz_page = parseInt(page); }
+					if ( book == "MAR") { req_mar_page = cur_mar_page = parseInt(page); }
 					if ( book == "LL") {
 		  			var cgi_vol_page = keyValuePair[1].split('_');
 			  		//debug( cgi_vol_page);
@@ -1551,6 +1605,7 @@ function parse_hash() {
 					if ( book == "UMS_HIDE" && ! ums_hide ) { ums_hide = true; hide_show( 'urdumukhtaar', 'ums_toggle'); }
 					if ( book == "UMJ_HIDE" && ! umj_hide ) { umj_hide = true; hide_show( 'umunjid', 'umj_toggle'); }
 					if ( book == "KAZ_HIDE" && ! kaz_hide ) { kaz_hide = true; hide_show( 'kazir', 'kaz_toggle'); }
+					if ( book == "MAR_HIDE" && ! mar_hide ) { mar_hide = true; hide_show( 'marir', 'mar_toggle'); }
 
 					}
 	}
@@ -1648,6 +1703,10 @@ function shift_page( book, offset) {
 		req_kaz_page = cur_kaz_page + offset;
 		$(window).scrollTop( $("#kazir").offset().top);
 	}
+	if ( book == "MAR") { 
+		req_kaz_page = cur_mar_page + offset;
+		$(window).scrollTop( $("#marbawi").offset().top);
+	}
 	//debug( book + cur_ll_vol + "_" + req_ll_page);
 	searched_word = "";
 	build_hash();
@@ -1698,6 +1757,7 @@ function visible_book_shift( offset) {
 	else if ( percentVisible("#urdumukhtaar") > 50) shift_page( 'UMS', offset);
 	else if ( percentVisible("#umunjid") > 50) shift_page( 'UMJ', offset);
 	else if ( percentVisible("#kazir") > 50) shift_page( 'KAZ', offset);
+	else if ( percentVisible("#marbawi") > 50) shift_page( 'MAR', offset);
 }
 
 
@@ -1807,6 +1867,27 @@ function display_images() {
 			" <b>" + kaz[cur_kaz_page] + "</b> | " +
 			"Kazimirski, page " + (cur_kaz_page-kaz_offset+1) + 
 			" <small>(of " + (kaz.length-1-kaz_offset) + ") " +
+			"</small>"
+			;
+	}
+
+	if ( ! mar_hide) {	
+		//document.getElementById("imn_load_status_line").innerHTML = "<br>Loading . . .";
+		var mar_img_url = img_base_dir + mar_get_img_url( cur_mar_page);
+		// Clear image if it's being changed so it's clearer to user that a new imagine
+		// is being downloaded
+		if ( $("#mar_col1").attr('src') != mar_img_url) {
+			$("#mar_col1").attr('src', '');
+			$("#mar_col2").attr('src', '');
+			$("#mar_wideviewimg").attr('src', '');
+		}
+		document.getElementById("mar_col1").src = 
+			document.getElementById("mar_col2").src = 
+			document.getElementById("mar_wideviewimg").src = mar_img_url;
+		document.getElementById("mar_status_line").innerHTML = 
+			" <b>" + mar[cur_mar_page] + "</b> | " +
+			"Marbawi, page " + (cur_mar_page-mar_offset+1) + 
+			" <small>(of " + (mar.length-1-mar_offset) + ") " +
 			"</small>"
 			;
 	}
@@ -2221,7 +2302,7 @@ function set_order_preset( preset_requested) {
 	if ( preset_requested == "modern") new_book_order = "HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,LA,UMR,UMS,UMJ,ULQ,UQA,IMN,KAZ";
 	if ( preset_requested == "dev") new_book_order = "KAZ,UQA,ULQ,IMN,LA,UMS,UMR,UQW,UMJ,MGF,VI,AAN,HW4,SG,BR,PR,LL,LS,HA,HW3";
 	if ( preset_requested == "urdu") new_book_order = "UQW,UMR,UMS,UMJ,ULQ,UQA,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA,IMN,KAZ";
-	if ( preset_requested == "indo") new_book_order = "IMN,UQW,UMR,UMS,UMJ,ULQ,UQA,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA,KAZ";
+	if ( preset_requested == "malay") new_book_order = "MAR,IMN,UQW,UMR,UMS,UMJ,ULQ,UQA,HW4,LL,LS,MGF,VI,AAN,SG,BR,PR,HA,HW3,LA,KAZ";
 	if ( preset_requested == "french") new_book_order = "KAZ,HW4,SG,LL,LS,HA,BR,PR,MGF,HW3,AAN,VI,UQW,LA,UMR,UMS,UMJ,ULQ,UQA,IMN";
 	// Default is above already
 	// if ( preset_requested == "default")
@@ -2467,6 +2548,7 @@ function do_search( input) {
 	req_uqw_page  = binarySearch( uqw, search, 0);
 	req_la_page  = binarySearch( la, search, 0);
 	req_kaz_page  = binarySearch( kaz, search, 0);
+	req_mar_page  = binarySearch( mar, search, 0);
 	req_ll = get_ll_volume_page( binarySearch( ll_p, search, -1));
 	req_ll_vol = req_ll[0];
 	req_ll_page = req_ll[1];
