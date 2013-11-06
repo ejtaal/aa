@@ -76,7 +76,7 @@ hr { margin: 5px; }
 	overflow: hidden;
 }
 
-#settings_container,#hw3_toggle,#ll_toggle,#uqw_toggle,#la_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#imn_toggle,#umr_toggle,#ums_toggle,#vi_toggle,#mgf_toggle,#ulq_toggle,#uqa_toggle,#umj_toggle,#kaz_toggle { display: none; }
+#settings_container,#hw3_toggle,#ll_toggle,#uqw_toggle,#la_toggle,#ls_toggle,#ha_toggle,#sg_toggle,#hw4_toggle,#br_toggle,#pr_toggle,#aan_toggle,#imn_toggle,#umr_toggle,#ums_toggle,#vi_toggle,#mgf_toggle,#ulq_toggle,#uqa_toggle,#umj_toggle,#kaz_toggle,#mar_toggle { display: none; }
 #settings_container { border: solid white 5px; }
 #settings_2 td { border-bottom: solid white 1px; }
 
@@ -1221,7 +1221,7 @@ var umr_offset = 26;
 var ums_offset = 14;
 var umj_offset = 34; //TODO
 var kaz_offset = 10;
-var mar_offset = 10;
+var mar_offset = 25;
 //var total_pages = 1129;
 var initial_book_order = "HW4,LL,LS,SG,PR,BR,AAN,HA,VI,MGF,HW3,LA,UQW,UMR,UMS,UMJ,ULQ,UQA,IMN,KAZ"; // TODO: Br. Ejtaal to review the book order
 var aa_book_order = initial_book_order;
@@ -2260,7 +2260,7 @@ function set_book_order() {
 }
 
 function init_settings() {
-	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "IMN", "VI", "MGF", "UQW", "LA", "UMR", "UMS", "UMJ", "ULQ", "UQA", "KAZ"];
+	var available_books = ["HW4","LL","LS","BR","PR","SG","HA","HW3","AAN", "IMN", "VI", "MGF", "UQW", "LA", "UMR", "UMS", "UMJ", "ULQ", "UQA", "KAZ", "MAR"];
 	var table_html = "<table><tr>\n";
 	for (var row = 0; row <= available_books.length; row++) {
 		//var rowpp = row + 1;

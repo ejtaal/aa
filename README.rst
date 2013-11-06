@@ -168,6 +168,12 @@ This work has been the standard dictionary for translation of Arabic into French
 How to use
 ==========
 
+For an in-depth description, please see this howto documents with screenshots:
+`http://revivearabic.blogspot.com/p/using-arabic-almanac.html
+<http://revivearabic.blogspot.com/p/using-arabic-almanac.html>`_
+
+Here's a summary to get you started:
+
 Click on the search button and enter the arabic root you would like to
 look up. You may use roman (english) letters incase you don't have an
 arabic keyboard. The letters will be replaced according to the following
