@@ -80,7 +80,7 @@ hr { margin: 5px; }
 #settings_container { border: solid white 5px; }
 #settings_2 td { border-bottom: solid white 1px; }
 
-#hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2,#aan_col1,#aan_col2,#imn_col1,#imn_col2,#umr_col1,#umr_col2,#ums_col1,#ums_col2,#kaz_col1,#kaz_col2 {
+#hw4_col1,#hw4_col2,#pr_col1,#pr_col2,#hw3_col1,#hw3_col2,#ha_col1,#ha_col2,#sg_col1,#sg_col2,#aan_col1,#aan_col2,#imn_col1,#imn_col2,#umr_col1,#umr_col2,#ums_col1,#ums_col2,#kaz_col1,#kaz_col2,#mar_col1,#mar_col2 {
 	position: relative;
 	width: 200%;
 }
@@ -121,7 +121,7 @@ hr { margin: 5px; }
 	left: 0%;
 }
 
-#hw4_col2,#pr_col2,#hw3_col2,#ha_col1,#sg_col2,#aan_col2,#imn_col2,#umr_col2,#ums_col2,#kaz_col2 {
+#hw4_col2,#pr_col2,#hw3_col2,#ha_col1,#sg_col2,#aan_col2,#imn_col2,#umr_col2,#ums_col2,#kaz_col2,#mar_col2 {
 	right: 100%;
 }
 
@@ -164,7 +164,7 @@ hr { margin: 5px; }
 #urdumukhtaar    .navtable td div, #ums_toggle, .UMS_color, #ums_status_line { background-color: royalblue; }
 #umunjid         .navtable td div, #umj_toggle, .UMJ_color, #umj_status_line { background-color: LightSteelBlue; }
 #kazir           .navtable td div, #kaz_toggle, .KAZ_color, #kaz_status_line { background-color: Green; }
-#marbawi         .navtable td div, #maw_toggle, .MAR_color, #mar_status_line { background-color: Plum; }
+#marbawi         .navtable td div, #mar_toggle, .MAR_color, #mar_status_line { background-color: Plum; }
 
 
 #pr_wideviewimg  { border: 3px solid orchid; }
@@ -1704,7 +1704,7 @@ function shift_page( book, offset) {
 		$(window).scrollTop( $("#kazir").offset().top);
 	}
 	if ( book == "MAR") { 
-		req_kaz_page = cur_mar_page + offset;
+		req_mar_page = cur_mar_page + offset;
 		$(window).scrollTop( $("#marbawi").offset().top);
 	}
 	//debug( book + cur_ll_vol + "_" + req_ll_page);
