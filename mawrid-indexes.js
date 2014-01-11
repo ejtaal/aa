@@ -1,0 +1,1 @@
+../mr/mr-aa-indexes.min.js

@@ -1,0 +1,1 @@
+../mr/mawrid-app.js
